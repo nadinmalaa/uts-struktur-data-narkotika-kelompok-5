@@ -110,6 +110,24 @@ public class PutusanManager {
         }
     }
 
+    // Mengurutkan putusan berdasarkan lama vonis (ascending)
+    public void urutkanBerdasarkanVonis() {
+        for (int i = 1; i < daftarPutusan.size(); i++) {
+            Putusan key = daftarPutusan.get(i);
+            int j = i - 1;
+
+            while (j >= 0 &&
+                    daftarPutusan.get(j).getVonisBulan()
+                    > key.getVonisBulan()) {
+
+                daftarPutusan.set(j + 1, daftarPutusan.get(j));
+                j--;
+            }
+
+            daftarPutusan.set(j + 1, key);
+        }
+    }
+
     // Memeriksa invariant
     public boolean validateInvariant() {
         return daftarPutusan.validateInvariant();
