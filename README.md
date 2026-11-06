@@ -1,41 +1,58 @@
-# uts-struktur-data-kelompok-5
+# UTS Struktur Data Kelompok 5
 
 Aplikasi Pengelolaan Data Putusan Pengadilan untuk Proyek UTS Struktur Data Kelompok 5.
 
 ## Deskripsi Proyek
 
-Proyek ini merupakan aplikasi berbasis Java untuk mengelola 50 data putusan pengadilan terkait kasus narkotika. Aplikasi menyediakan fitur penyimpanan, pencarian, pengurutan, pengolahan, dan ekspor data.
+Proyek ini merupakan aplikasi berbasis Java untuk mengelola 50 data putusan pengadilan terkait kasus narkotika. Aplikasi dirancang untuk mendukung penyimpanan, pencarian, pengurutan, pengolahan, serta pengelolaan data putusan.
 
 ## Anggota Kelompok
 
-1. Nadin Mala Aprilia 
+1. Nadin Mala Aprilia
 2. Bima Nalasakti Nugraha
 
-## Teknologi
+## Teknologi yang Digunakan
 
-- Java
+- Java JDK 17
 - Maven
-- GitHub
+- Git dan GitHub
+- IntelliJ IDEA
 
 ## Fitur Aplikasi
 
-- Import 50 data putusan dari CSV.
-- Menampilkan seluruh data.
+- Import data putusan dari file CSV.
+- Menampilkan seluruh data putusan.
 - Menambah dan menghapus data.
 - Mencari data berdasarkan nomor perkara.
-- Memfilter data.
-- Mengurutkan data.
+- Memfilter data putusan.
+- Mengurutkan data menggunakan algoritma Insertion Sort.
 - Menghitung statistik data.
-- Mencatat aktivitas melalui audit.
-- Mengekspor data ke TXT atau CSV.
+- Mencatat aktivitas menggunakan Audit Log.
+- Mengekspor data ke format TXT atau CSV.
 
 ## Struktur Repository
 
-- `src/main/java/` — kode program utama.
-- `src/test/java/` — kode pengujian.
-- `data/` — dataset putusan.
-- `docs/` — dokumentasi proyek.
+```text
+uts-struktur-data-kelompok-5/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   └── test/
+│       └── java/
+├── data/
+├── docs/
+├── pom.xml
+└── README.md
+```
 
 ## Cara Menjalankan
 
-Petunjuk menjalankan aplikasi akan ditambahkan setelah implementasi program selesai.
+1. Pastikan Java JDK 17 sudah terinstal.
+2. Clone repository GitHub.
+3. Buka proyek menggunakan IntelliJ IDEA.
+4. Tunggu proses sinkronisasi Maven selesai.
+5. Jalankan file `Main.java`.
+
+## Status Pengembangan
+
+Pengembangan struktur data dan pengujian awal menggunakan data dummy telah dilakukan. Pengolahan dataset putusan asli, integrasi fitur, dan pengujian akhir masih dalam proses.
