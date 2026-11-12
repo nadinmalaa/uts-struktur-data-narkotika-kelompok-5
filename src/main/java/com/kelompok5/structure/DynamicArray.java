@@ -1,6 +1,6 @@
 package com.kelompok5.structure;
 
-public class DynamicArray<T> {
+public class DynamicArray<T> implements StrukturData<T> {
 
     private Object[] elements;
     private int size;
@@ -14,10 +14,11 @@ public class DynamicArray<T> {
     }
 
     // Menambahkan data ke akhir array
+    @Override
     public void add(T data) {
         if (data == null) {
             throw new IllegalArgumentException(
-                "Data tidak boleh null"
+                    "Data tidak boleh null"
             );
         }
 
@@ -28,6 +29,7 @@ public class DynamicArray<T> {
     }
 
     // Mengambil data berdasarkan index
+    @Override
     @SuppressWarnings("unchecked")
     public T get(int index) {
         checkIndex(index);
@@ -36,12 +38,13 @@ public class DynamicArray<T> {
     }
 
     // Mengubah data berdasarkan index
+    @Override
     public void set(int index, T data) {
         checkIndex(index);
 
         if (data == null) {
             throw new IllegalArgumentException(
-                "Data tidak boleh null"
+                    "Data tidak boleh null"
             );
         }
 
@@ -49,6 +52,7 @@ public class DynamicArray<T> {
     }
 
     // Menghapus data berdasarkan index
+    @Override
     public void remove(int index) {
         checkIndex(index);
 
@@ -60,17 +64,32 @@ public class DynamicArray<T> {
         size--;
     }
 
+    // Memeriksa apakah data tersedia
+    @Override
+    public boolean contains(T data) {
+        for (int i = 0; i < size; i++) {
+            if (data.equals(elements[i])) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     // Mengembalikan jumlah elemen
+    @Override
     public int size() {
         return size;
     }
 
     // Memeriksa apakah array kosong
+    @Override
     public boolean isEmpty() {
         return size == 0;
     }
 
     // Menghapus seluruh data
+    @Override
     public void clear() {
         for (int i = 0; i < size; i++) {
             elements[i] = null;
@@ -79,7 +98,7 @@ public class DynamicArray<T> {
         size = 0;
     }
 
-    // Memeriksa kapasitas array
+    // Mengembalikan kapasitas array
     public int capacity() {
         return elements.length;
     }
@@ -91,7 +110,7 @@ public class DynamicArray<T> {
             int newCapacity = elements.length * 2;
 
             Object[] newElements =
-                new Object[newCapacity];
+                    new Object[newCapacity];
 
             for (int i = 0; i < size; i++) {
                 newElements[i] = elements[i];
@@ -105,12 +124,13 @@ public class DynamicArray<T> {
     private void checkIndex(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException(
-                "Index tidak valid: " + index
+                    "Index tidak valid: " + index
             );
         }
     }
 
     // Memeriksa konsistensi struktur data
+    @Override
     public boolean validateInvariant() {
 
         if (elements == null) {
@@ -121,12 +141,14 @@ public class DynamicArray<T> {
             return false;
         }
 
+        // Memastikan elemen yang terisi tidak null
         for (int i = 0; i < size; i++) {
             if (elements[i] == null) {
                 return false;
             }
         }
 
+        // Memastikan bagian kosong bernilai null
         for (int i = size; i < elements.length; i++) {
             if (elements[i] != null) {
                 return false;

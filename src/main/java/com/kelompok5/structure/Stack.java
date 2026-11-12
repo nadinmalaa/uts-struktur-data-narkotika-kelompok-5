@@ -1,3 +1,4 @@
+
 package com.kelompok5.structure;
 
 public class Stack<T> {
@@ -17,7 +18,7 @@ public class Stack<T> {
     public void push(T data) {
         if (data == null) {
             throw new IllegalArgumentException(
-                "Data tidak boleh null"
+                    "Data tidak boleh null"
             );
         }
 
@@ -32,7 +33,7 @@ public class Stack<T> {
     public T pop() {
         if (isEmpty()) {
             throw new IllegalStateException(
-                "Stack kosong"
+                    "Stack kosong"
             );
         }
 
@@ -49,7 +50,7 @@ public class Stack<T> {
     public T peek() {
         if (isEmpty()) {
             throw new IllegalStateException(
-                "Stack kosong"
+                    "Stack kosong"
             );
         }
 
@@ -83,11 +84,10 @@ public class Stack<T> {
     // Memperbesar kapasitas jika Stack penuh
     private void ensureCapacity() {
         if (size == elements.length) {
-
             int newCapacity = elements.length * 2;
 
             Object[] newElements =
-                new Object[newCapacity];
+                    new Object[newCapacity];
 
             for (int i = 0; i < size; i++) {
                 newElements[i] = elements[i];
@@ -99,7 +99,6 @@ public class Stack<T> {
 
     // Memeriksa konsistensi Stack
     public boolean validateInvariant() {
-
         if (elements == null) {
             return false;
         }
