@@ -21,9 +21,15 @@ Penggunaan AI pada proyek ini difokuskan sebagai rekan diskusi teknis (*thought 
     * Membantu menyusun kerangka penulisan *Architecture Decision Records* (`001-pemilihan-struktur-data.md` dan `002-strategi-pencarian-pengurutan.md`), `README.md`, serta `CONTRIBUTIONS.md` agar terstruktur rapi sesuai standar dokumentasi perangkat lunak.
 
 ---
+# AI Usage Documentation
 
-## Batasan & Validasi Mandiri
+Dokumen ini mencatat penggunaan Artificial Intelligence (AI) selama pengerjaan proyek UTS Struktur Data.
 
-Seluruh keluaran (*output*) dari AI telah melalui proses peninjauan, penyesuaian, dan pengujian mandiri oleh anggota kelompok:
-* **Ekstraksi Data Hukum**: Seluruh 50 data putusan narkotika dikumpulkan, dibaca, dan diverifikasi secara manual dari dokumen asli Direktori Putusan Mahkamah Agung RI (`P001`–`P050`).
-* **Verifikasi Kode**: Seluruh implementasi kode Java telah dikompilasi dan diuji secara lokal untuk memastikan logika berjalan akurat dan bebas dari *bug*.
+## Tujuan Penggunaan AI
+AI digunakan sebagai alat bantu untuk memahami konsep pemrograman, mencari solusi kesalahan kode, dan membantu dokumentasi proyek.
+
+## Catatan Penggunaan
+Penggunaan AI akan dicatat berdasarkan aktivitas selama pengerjaan proyek.
+
+## Verifikasi
+Seluruh kode dan hasil yang dibantu AI akan diperiksa, diuji, dan dipahami kembali oleh anggota kelompok.
