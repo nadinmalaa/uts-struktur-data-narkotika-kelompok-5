@@ -175,13 +175,14 @@ public class PutusanManager {
     // =====================================================
 
     /**
-     * Rata-rata vonis seluruh terdakwa.
-     * Setiap terdakwa dihitung satu kali.
+     * Menghitung rata-rata vonis seluruh terdakwa.
+     * Nilai 0 berarti data vonis tidak ditemukan,
+     * sehingga tidak dimasukkan ke perhitungan.
      */
     public double rataRataVonis() {
 
         long totalVonis = 0;
-        int jumlahTerdakwa = 0;
+        int jumlahDataValid = 0;
 
         for (int i = 0; i < daftarPutusan.size(); i++) {
 
@@ -190,17 +191,20 @@ public class PutusanManager {
             for (int j = 0; j < putusan.jumlahTerdakwa(); j++) {
 
                 TerdakwaData terdakwa = putusan.getTerdakwa(j);
+                int vonis = terdakwa.getVonisBulan();
 
-                totalVonis += terdakwa.getVonisBulan();
-                jumlahTerdakwa++;
+                if (vonis > 0) {
+                    totalVonis += vonis;
+                    jumlahDataValid++;
+                }
             }
         }
 
-        if (jumlahTerdakwa == 0) {
+        if (jumlahDataValid == 0) {
             return 0.0;
         }
 
-        return (double) totalVonis / jumlahTerdakwa;
+        return (double) totalVonis / jumlahDataValid;
     }
 
     /**
@@ -231,19 +235,37 @@ public class PutusanManager {
         return total;
     }
 
+    /**
+     * Menghitung rata-rata vonis dalam satu perkara.
+     * Nilai 0 tidak dimasukkan ke perhitungan.
+     * Perkara tanpa data vonis valid diberi nilai
+     * positif tak hingga agar ditempatkan paling akhir
+     * pada pengurutan ascending.
+     */
     private double rataRataVonisPerkara(Putusan putusan) {
 
         if (putusan == null || putusan.jumlahTerdakwa() == 0) {
-            return 0.0;
+            return Double.POSITIVE_INFINITY;
         }
 
         long total = 0;
+        int jumlahDataValid = 0;
 
         for (int i = 0; i < putusan.jumlahTerdakwa(); i++) {
-            total += putusan.getTerdakwa(i).getVonisBulan();
+
+            int vonis = putusan.getTerdakwa(i).getVonisBulan();
+
+            if (vonis > 0) {
+                total += vonis;
+                jumlahDataValid++;
+            }
         }
 
-        return (double) total / putusan.jumlahTerdakwa();
+        if (jumlahDataValid == 0) {
+            return Double.POSITIVE_INFINITY;
+        }
+
+        return (double) total / jumlahDataValid;
     }
 
     // =====================================================
@@ -303,7 +325,11 @@ public class PutusanManager {
 
     public void filterRentangBerat(double minimum, double maksimum) {
 
-        if (minimum < 0 || maksimum < minimum) {
+        if (!Double.isFinite(minimum)
+                || !Double.isFinite(maksimum)
+                || minimum < 0
+                || maksimum < minimum) {
+
             System.out.println("Rentang berat tidak valid.");
             return;
         }
@@ -359,7 +385,8 @@ public class PutusanManager {
 
     /**
      * Perkara ditampilkan jika minimal satu terdakwa
-     * memiliki vonis dalam rentang yang dipilih.
+     * memiliki vonis valid dalam rentang yang dipilih.
+     * Nilai 0 tidak dianggap sebagai vonis aktual.
      */
     public void filterRentangVonis(int minimum, int maksimum) {
 
@@ -379,7 +406,10 @@ public class PutusanManager {
 
                 int vonis = putusan.getTerdakwa(j).getVonisBulan();
 
-                if (vonis >= minimum && vonis <= maksimum) {
+                if (vonis > 0
+                        && vonis >= minimum
+                        && vonis <= maksimum) {
+
                     cocok = true;
                     break;
                 }
@@ -405,6 +435,8 @@ public class PutusanManager {
     /**
      * Insertion Sort berdasarkan rata-rata vonis terdakwa
      * pada setiap perkara, secara ascending.
+     *
+     * Perkara tanpa vonis valid ditempatkan paling akhir.
      */
     public void urutkanBerdasarkanVonis() {
 
@@ -519,8 +551,15 @@ public class PutusanManager {
                      k < putusan.jumlahTerdakwa();
                      k++) {
 
+                    TerdakwaData terdakwaLain =
+                            putusan.getTerdakwa(k);
+
+                    if (terdakwaLain == null) {
+                        return false;
+                    }
+
                     if (terdakwa.getKode().equalsIgnoreCase(
-                            putusan.getTerdakwa(k).getKode())) {
+                            terdakwaLain.getKode())) {
                         return false;
                     }
                 }
@@ -529,8 +568,14 @@ public class PutusanManager {
             // Validasi caseId putusan tidak duplikat.
             for (int j = i + 1; j < daftarPutusan.size(); j++) {
 
+                Putusan putusanLain = daftarPutusan.get(j);
+
+                if (putusanLain == null) {
+                    return false;
+                }
+
                 if (putusan.getCaseId().equalsIgnoreCase(
-                        daftarPutusan.get(j).getCaseId())) {
+                        putusanLain.getCaseId())) {
                     return false;
                 }
             }
