@@ -9,12 +9,47 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CsvParser {
 
     // ALIAS: Menjaga kompatibilitas dengan test lama yang memanggil CsvParser.parseCsv(...)
     public static SinglyLinkedList<Putusan> parseCsv(String filePath) {
         return parsePutusan(filePath);
+    }
+
+    /**
+     * Helper untuk memecah baris CSV dengan aman terhadap koma di dalam tanda kutip (quoted fields).
+     */
+    private static String[] parseCsvLine(String line) {
+        List<String> tokens = new ArrayList<>();
+        boolean inQuotes = false;
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < line.length(); i++) {
+            char c = line.charAt(i);
+            if (c == '"') {
+                inQuotes = !inQuotes; // Toggle status dalam tanda kutip
+            } else if (c == ',' && !inQuotes) {
+                tokens.add(sb.toString());
+                sb.setLength(0);
+            } else {
+                sb.append(c);
+            }
+        }
+        tokens.add(sb.toString());
+
+        // Bersihkan spasi dan tanda kutip pembungkus jika ada
+        String[] result = new String[tokens.size()];
+        for (int i = 0; i < tokens.size(); i++) {
+            String val = tokens.get(i).trim();
+            if (val.startsWith("\"") && val.endsWith("\"") && val.length() >= 2) {
+                val = val.substring(1, val.length() - 1).trim();
+            }
+            result[i] = val;
+        }
+        return result;
     }
 
     // 1. Parser untuk Data Putusan Utama
@@ -31,7 +66,7 @@ public class CsvParser {
                 if (line.trim().isEmpty()) continue;
                 if (isHeader) { isHeader = false; continue; }
 
-                String[] values = line.split(",");
+                String[] values = parseCsvLine(line);
                 if (values.length >= 4) {
                     try {
                         Putusan p = new Putusan();
@@ -71,7 +106,7 @@ public class CsvParser {
                 if (line.trim().isEmpty()) continue;
                 if (isHeader) { isHeader = false; continue; }
 
-                String[] values = line.split(",");
+                String[] values = parseCsvLine(line);
                 if (values.length >= 4) {
                     try {
                         Terdakwa t = new Terdakwa();
@@ -110,7 +145,7 @@ public class CsvParser {
                 if (line.trim().isEmpty()) continue;
                 if (isHeader) { isHeader = false; continue; }
 
-                String[] values = line.split(",");
+                String[] values = parseCsvLine(line);
                 if (values.length >= 8) {
                     try {
                         Provenance prov = new Provenance();
