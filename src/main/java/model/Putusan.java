@@ -20,7 +20,13 @@ public class Putusan {
     private String keadaanMeringankan;
     private String sourcePages;
 
-    public Putusan(String caseId, String nomorPerkara, String pengadilan, LocalDate tanggalPutusan, String terdakwaKode, String jenisNarkotika, double beratBarangBuktiGram, String pasalDakwaan, String pasalTerbukti, int tuntutanBulan, int vonisBulan, double dendaRupiah, String barangBukti, String keadaanMemberatkan, String keadaanMeringankan, String sourcePages) {
+    public Putusan(String caseId, String nomorPerkara, String pengadilan,
+                   LocalDate tanggalPutusan, String terdakwaKode,
+                   String jenisNarkotika, double beratBarangBuktiGram,
+                   String pasalDakwaan, String pasalTerbukti,
+                   int tuntutanBulan, int vonisBulan, double dendaRupiah,
+                   String barangBukti, String keadaanMemberatkan,
+                   String keadaanMeringankan, String sourcePages) {
         this.caseId = caseId;
         this.nomorPerkara = nomorPerkara;
         this.pengadilan = pengadilan;
@@ -42,131 +48,51 @@ public class Putusan {
     public Putusan() {
     }
 
-    public String getCaseId() {
-        return this.caseId;
-    }
+    public String getCaseId() { return caseId; }
+    public void setCaseId(String caseId) { this.caseId = caseId; }
 
-    public void setCaseId(String caseId) {
-        this.caseId = caseId;
-    }
+    public String getNomorPerkara() { return nomorPerkara; }
+    public void setNomorPerkara(String nomorPerkara) { this.nomorPerkara = nomorPerkara; }
 
-    public String getNomorPerkara() {
-        return this.nomorPerkara;
-    }
+    public String getPengadilan() { return pengadilan; }
+    public void setPengadilan(String pengadilan) { this.pengadilan = pengadilan; }
 
-    public void setNomorPerkara(String nomorPerkara) {
-        this.nomorPerkara = nomorPerkara;
-    }
+    public LocalDate getTanggalPutusan() { return tanggalPutusan; }
+    public void setTanggalPutusan(LocalDate tanggalPutusan) { this.tanggalPutusan = tanggalPutusan; }
 
-    public String getPengadilan() {
-        return this.pengadilan;
-    }
+    public String getTerdakwaKode() { return terdakwaKode; }
+    public void setTerdakwaKode(String terdakwaKode) { this.terdakwaKode = terdakwaKode; }
 
-    public void setPengadilan(String pengadilan) {
-        this.pengadilan = pengadilan;
-    }
+    public String getJenisNarkotika() { return jenisNarkotika; }
+    public void setJenisNarkotika(String jenisNarkotika) { this.jenisNarkotika = jenisNarkotika; }
 
-    public LocalDate getTanggalPutusan() {
-        return this.tanggalPutusan;
-    }
+    public double getBeratBarangBuktiGram() { return beratBarangBuktiGram; }
+    public void setBeratBarangBuktiGram(double beratBarangBuktiGram) { this.beratBarangBuktiGram = beratBarangBuktiGram; }
 
-    public void setTanggalPutusan(LocalDate tanggalPutusan) {
-        this.tanggalPutusan = tanggalPutusan;
-    }
+    public String getPasalDakwaan() { return pasalDakwaan; }
+    public void setPasalDakwaan(String pasalDakwaan) { this.pasalDakwaan = pasalDakwaan; }
 
-    public String getTerdakwaKode() {
-        return this.terdakwaKode;
-    }
+    public String getPasalTerbukti() { return pasalTerbukti; }
+    public void setPasalTerbukti(String pasalTerbukti) { this.pasalTerbukti = pasalTerbukti; }
 
-    public void setTerdakwaKode(String terdakwaKode) {
-        this.terdakwaKode = terdakwaKode;
-    }
+    public int getTuntutanBulan() { return tuntutanBulan; }
+    public void setTuntutanBulan(int tuntutanBulan) { this.tuntutanBulan = tuntutanBulan; }
 
-    public String getJenisNarkotika() {
-        return this.jenisNarkotika;
-    }
+    public int getVonisBulan() { return vonisBulan; }
+    public void setVonisBulan(int vonisBulan) { this.vonisBulan = vonisBulan; }
 
-    public void setJenisNarkotika(String jenisNarkotika) {
-        this.jenisNarkotika = jenisNarkotika;
-    }
+    public double getDendaRupiah() { return dendaRupiah; }
+    public void setDendaRupiah(double dendaRupiah) { this.dendaRupiah = dendaRupiah; }
 
-    public double getBeratBarangBuktiGram() {
-        return this.beratBarangBuktiGram;
-    }
+    public String getBarangBukti() { return barangBukti; }
+    public void setBarangBukti(String barangBukti) { this.barangBukti = barangBukti; }
 
-    public void setBeratBarangBuktiGram(double beratBarangBuktiGram) {
-        this.beratBarangBuktiGram = beratBarangBuktiGram;
-    }
+    public String getKeadaanMemberatkan() { return keadaanMemberatkan; }
+    public void setKeadaanMemberatkan(String keadaanMemberatkan) { this.keadaanMemberatkan = keadaanMemberatkan; }
 
-    public String getPasalDakwaan() {
-        return this.pasalDakwaan;
-    }
+    public String getKeadaanMeringankan() { return keadaanMeringankan; }
+    public void setKeadaanMeringankan(String keadaanMeringankan) { this.keadaanMeringankan = keadaanMeringankan; }
 
-    public void setPasalDakwaan(String pasalDakwaan) {
-        this.pasalDakwaan = pasalDakwaan;
-    }
-
-    public String getPasalTerbukti() {
-        return this.pasalTerbukti;
-    }
-
-    public void setPasalTerbukti(String pasalTerbukti) {
-        this.pasalTerbukti = pasalTerbukti;
-    }
-
-    public int getTuntutanBulan() {
-        return this.tuntutanBulan;
-    }
-
-    public void setTuntutanBulan(int tuntutanBulan) {
-        this.tuntutanBulan = tuntutanBulan;
-    }
-
-    public int getVonisBulan() {
-        return this.vonisBulan;
-    }
-
-    public void setVonisBulan(int vonisBulan) {
-        this.vonisBulan = vonisBulan;
-    }
-
-    public double getDendaRupiah() {
-        return this.dendaRupiah;
-    }
-
-    public void setDendaRupiah(double dendaRupiah) {
-        this.dendaRupiah = dendaRupiah;
-    }
-
-    public String getBarangBukti() {
-        return this.barangBukti;
-    }
-
-    public void setBarangBukti(String barangBukti) {
-        this.barangBukti = barangBukti;
-    }
-
-    public String getKeadaanMemberatkan() {
-        return this.keadaanMemberatkan;
-    }
-
-    public void setKeadaanMemberatkan(String keadaanMemberatkan) {
-        this.keadaanMemberatkan = keadaanMemberatkan;
-    }
-
-    public String getKeadaanMeringankan() {
-        return this.keadaanMeringankan;
-    }
-
-    public void setKeadaanMeringankan(String keadaanMeringankan) {
-        this.keadaanMeringankan = keadaanMeringankan;
-    }
-
-    public String getSourcePages() {
-        return this.sourcePages;
-    }
-
-    public void setSourcePages(String sourcePages) {
-        this.sourcePages = sourcePages;
-    }
+    public String getSourcePages() { return sourcePages; }
+    public void setSourcePages(String sourcePages) { this.sourcePages = sourcePages; }
 }
