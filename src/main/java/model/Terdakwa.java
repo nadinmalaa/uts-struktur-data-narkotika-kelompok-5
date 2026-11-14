@@ -1,6 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by Fernflower dec
 package model;
 
 public class Terdakwa {
@@ -10,43 +7,19 @@ public class Terdakwa {
     private int vonisBulan;
     private String catatan;
 
-    public String getCaseId() {
-        return this.caseId;
-    }
+    // Getter dan Setter
+    public String getCaseId() { return caseId; }
+    public void setCaseId(String caseId) { this.caseId = caseId; }
 
-    public void setCaseId(String caseId) {
-        this.caseId = caseId;
-    }
+    public String getKodeTerdakwa() { return kodeTerdakwa; }
+    public void setKodeTerdakwa(String kodeTerdakwa) { this.kodeTerdakwa = kodeTerdakwa; }
 
-    public String getKodeTerdakwa() {
-        return this.kodeTerdakwa;
-    }
+    public int getTuntutanBulan() { return tuntutanBulan; }
+    public void setTuntutanBulan(int tuntutanBulan) { this.tuntutanBulan = tuntutanBulan; }
 
-    public void setKodeTerdakwa(String kodeTerdakwa) {
-        this.kodeTerdakwa = kodeTerdakwa;
-    }
+    public int getVonisBulan() { return vonisBulan; }
+    public void setVonisBulan(int vonisBulan) { this.vonisBulan = vonisBulan; }
 
-    public int getTuntutanBulan() {
-        return this.tuntutanBulan;
-    }
-
-    public void setTuntutanBulan(int tuntutanBulan) {
-        this.tuntutanBulan = tuntutanBulan;
-    }
-
-    public int getVonisBulan() {
-        return this.vonisBulan;
-    }
-
-    public void setVonisBulan(int vonisBulan) {
-        this.vonisBulan = vonisBulan;
-    }
-
-    public String getCatatan() {
-        return this.catatan;
-    }
-
-    public void setCatatan(String catatan) {
-        this.catatan = catatan;
-    }
+    public String getCatatan() { return catatan; }
+    public void setCatatan(String catatan) { this.catatan = catatan; }
 }

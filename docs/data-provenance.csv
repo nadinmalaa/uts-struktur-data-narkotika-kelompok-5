@@ -1,0 +1,1159 @@
+case_id,field_name,value,source_file,source_page,extractor,reviewer,status
+P001,nomorPerkara,114/Pid.Sus/2025/PN Dps,putusan_114_pid.sus_2025_pn_dps_20261105170252,1,Nadin,Bima,verified
+P001,pengadilan,Pengadilan Negeri Denpasar,putusan_114_pid.sus_2025_pn_dps_20261105170252,1,Nadin,Bima,verified
+P001,tanggalPutusan,2025-03-06,putusan_114_pid.sus_2025_pn_dps_20261105170252,45,Nadin,Bima,verified
+P001,T1.terdakwaKode,P001_1,putusan_114_pid.sus_2025_pn_dps_20261105170252,1,Nadin,Bima,verified
+P001,T2.terdakwaKode,P001_2,putusan_114_pid.sus_2025_pn_dps_20261105170252,2,Nadin,Bima,verified
+P001,jenisNarkotika,Ganja,putusan_114_pid.sus_2025_pn_dps_20261105170252,"6, 37, 40",Nadin,Bima,verified
+P001,beratBarangBuktiGram,68.0,putusan_114_pid.sus_2025_pn_dps_20261105170252,"5, 6, 39, 40",Nadin,Bima,verified
+P001,pasalDakwaan,"Dakwaan Alternatif Pertama: Pasal 111 Ayat (1) Jo. Pasal 132 Ayat (1) Undang-Undang RI Nomor 35 Tahun 2009 tentang Narkotika, atau Dakwaan Alternatif Kedua: Pasal 131 Jo. Pasal 111 Ayat (1) Undang-Undang RI Nomor 35 Tahun 2009 tentang Narkotika",putusan_114_pid.sus_2025_pn_dps_20261105170252,"6, 7, 2008",Nadin,Bima,verified
+P001,pasalTerbukti,Pasal 111 Ayat (1) Jo. Pasal 132 Ayat (1) UU RI No. 35 Tahun 2009 tentang Narkotika,putusan_114_pid.sus_2025_pn_dps_20261105170252,43,Nadin,Bima,verified
+P001,T1.tuntutanBulan,72,putusan_114_pid.sus_2025_pn_dps_20261105170252,3,Nadin,Bima,verified
+P001,T1.vonisBulan,48,putusan_114_pid.sus_2025_pn_dps_20261105170252,44,Nadin,Bima,verified
+P001,T2.tuntutanBulan,60,putusan_114_pid.sus_2025_pn_dps_20261105170252,3,Nadin,Bima,verified
+P001,T2.vonisBulan,72,putusan_114_pid.sus_2025_pn_dps_20261105170252,44,Nadin,Bima,verified
+P001,dendaRupiah,2000000000,putusan_114_pid.sus_2025_pn_dps_20261105170252,44,Nadin,Bima,verified
+P001,barangBukti,"40 (empat puluh) kantong plastik warna hitam dililit lakban cokelat berisi daun, biji, dan batang kering mengandung sediaan narkotika jenis ganja dengan total berat bersih 15.984 gram dan berat kotor 16.594 gram (kode A1 s.d. kode A20 dan kode B1 s.d. kode B20); 1 (satu) kantong plastik warna hitam berisi daun, biji, dan batang kering mengandung narkotika jenis ganja dengan berat bersih 58 gram dan berat kotor 65 gram (kode C1); 1 (satu) buah piring berisi daun, biji, dan batang kering mengandung narkotika jenis ganja dengan berat bersih 10 gram dan berat kotor 10,5 gram (kode C2); 2 (dua) tas gendong merek Martenal dan Eiger; 1 (satu) kotak kertas pelinting rokok; 1 (satu) buah HP merek iPhone milik A.R.B; 1 (satu) buah HP merek Oppo milik B; 1 (satu) buah HP merek iPhone milik Terdakwa I; 1 (satu) buah HP merek Vivo milik Terdakwa II; 1 (satu) unit mobil merek Suzuki Ertiga warna putih nomor polisi DK 1982 FBY dikembalikan kepada Penuntut Umum untuk dipergunakan dalam perkara atas nama A.R.B, dkk.",putusan_114_pid.sus_2025_pn_dps_20261105170252,"5, 9, 44",Nadin,Bima,verified
+P001,keadaanMemberatkan,Perbuatan para terdakwa bertentangan dengan program pemerintah yang saat ini sedang giat- giatnya memberantas peredaran gelap maupun penyalahgunaan Narkotika,putusan_114_pid.sus_2025_pn_dps_20261105170252,43,Nadin,Bima,verified
+P001,keadaanMeringankan,Para Terdakwa berterus terang di persidangan; Para Terdakwa menyesali perbuatanya dan berjanji tidak akan mengulangi; Para Terdakwa belum pernah dipidana,putusan_114_pid.sus_2025_pn_dps_20261105170252,43,Nadin,Bima,verified
+P002,nomorPerkara,182/Pid.Sus/2026/PN Dps,putusan_182_pid.sus_2026_pn_dps_20261105165420,1,Nadin,Bima,verified
+P002,pengadilan,Pengadilan Negeri Denpasar,putusan_182_pid.sus_2026_pn_dps_20261105165420,1,Nadin,Bima,verified
+P002,tanggalPutusan,2026-04-09,putusan_182_pid.sus_2026_pn_dps_20261105165420,23,Nadin,Bima,verified
+P002,terdakwaKode,P002,putusan_182_pid.sus_2026_pn_dps_20261105165420,1,Nadin,Bima,verified
+P002,jenisNarkotika,Ganja,putusan_182_pid.sus_2026_pn_dps_20261105165420,"4, 6, 16",Nadin,Bima,verified
+P002,beratBarangBuktiGram,20.51,putusan_182_pid.sus_2026_pn_dps_20261105165420,"4, 9, 15",Nadin,Bima,verified
+P002,pasalDakwaan,Kesatu: Pasal 114 Ayat (1) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 111 Ayat (1) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika jo. UU No. 1 Tahun 2023 jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_182_pid.sus_2026_pn_dps_20261105165420,"4, 5, 2006",Nadin,Bima,verified
+P002,pasalTerbukti,Pasal 111 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Nomor 1 Tahun 2023 tentang KUHP jo. Undang-Undang Nomor 1 Tahun 2026 tentang penyesuaian Pidana,putusan_182_pid.sus_2026_pn_dps_20261105165420,22,Nadin,Bima,verified
+P002,tuntutanBulan,60,putusan_182_pid.sus_2026_pn_dps_20261105165420,2,Nadin,Bima,verified
+P002,vonisBulan,36,putusan_182_pid.sus_2026_pn_dps_20261105165420,22,Nadin,Bima,verified
+P002,dendaRupiah,50000000,putusan_182_pid.sus_2026_pn_dps_20261105165420,22,Nadin,Bima,verified
+P002,barangBukti,"1 (satu) paket klip berisi daun, batang, dan biji kering mengandung sediaan narkotika dengan berat total 20,51 gram netto atau 24,46 gram brutto; 1 (satu) plastik pembungkus paket berisikan tulisan express; 1 (satu) buah baju anak berwarna pink agar dimusnahkan; 1 (satu) buah HP merk Vivo warna hitam nomor IMEI 860735050501196 beserta kartu SIM-nya milik Terdakwa agar dirampas untuk negara.",putusan_182_pid.sus_2026_pn_dps_20261105165420,"21, 22",Nadin,Bima,verified
+P002,keadaanMemberatkan,"Perbuatan Terdakwa bertentangan dengan program pemerintah untuk
+memberantas peredaran gelap/ilegal Narkotika;  Terdakwa sudah pernah dipenjara",putusan_182_pid.sus_2026_pn_dps_20261105165420,21,Nadin,Bima,verified
+P002,keadaanMeringankan,Terdakwa belum pernah dihukum; Terdakwa bersikap sopan dalam persidangan; Terdakwa mengakui secara terus terang perbuatannya sehingga memperlancar jalannya persidangan; Terdakwa menyesali perbuatan yang dilakukannya,putusan_182_pid.sus_2026_pn_dps_20261105165420,22,Nadin,Bima,verified
+P003,nomorPerkara,244/Pid.Sus/2026/PN Dps,putusan_244_pid.sus_2026_pn_dps_20261105165439,1,Nadin,Bima,verified
+P003,pengadilan,Pengadilan Negeri Denpasar,putusan_244_pid.sus_2026_pn_dps_20261105165439,1,Nadin,Bima,verified
+P003,tanggalPutusan,2026-04-09,putusan_244_pid.sus_2026_pn_dps_20261105165439,56,Nadin,Bima,verified
+P003,T1.terdakwaKode,P003,putusan_244_pid.sus_2026_pn_dps_20261105165439,1,Nadin,Bima,verified
+P003,jenisNarkotika,Sabu (Metamfetamina) dan Ekstasi (MDMA),putusan_244_pid.sus_2026_pn_dps_20261105165439,"8, 9",Nadin,Bima,verified
+P003,beratBarangBuktiGram,57.74,putusan_244_pid.sus_2026_pn_dps_20261105165439,"3, 4",Nadin,Bima,verified
+P003,pasalDakwaan,Kesatu: Pasal 114 ayat (2) Undang-undang Nomor 35 Tahun 2009 tentang Narkotika Jo Undang-undang Nomor 1 Tahun 2023 Tentang Kitab Undang Undang Hukum Pidana Jo Undang Undang Nomor 1 Tahun 2026 Tentang Penyesuaian Pidana; Kedua: Pasal 609 Ayat (2) huruf a Undang-Undang Nomor 1 Tahun 2026 Tentang Penyesuaian Pidana,putusan_244_pid.sus_2026_pn_dps_20261105165439,"2, 5, 2009",Nadin,Bima,verified
+P003,pasalTerbukti,Pasal 114 ayat (2) Undang-undang Nomor 35 Tahun 2009 tentang Narkotika Jo Undang-undang Nomor 1 Tahun 2023 Tentang Kitab Undang Undang Hukum Pidana Jo Undang Undang Nomor 1 Tahun 2026 Tentang Penyesuaian Pidana (sebagaimana dalam dakwaan kesatu),putusan_244_pid.sus_2026_pn_dps_20261105165439,"50, 54",Nadin,Bima,verified
+P003,tuntutanBulan,102,putusan_244_pid.sus_2026_pn_dps_20261105165439,2,Nadin,Bima,verified
+P003,vonisBulan,102,putusan_244_pid.sus_2026_pn_dps_20261105165439,54,Nadin,Bima,verified
+P003,dendaRupiah,510000000,putusan_244_pid.sus_2026_pn_dps_20261105165439,"2, 4, 54",Nadin,Bima,verified
+P003,barangBukti,"1 (satu) buah celana panjang warna hitam di saku belakang sebelah kiri yang di dalamnya berisi 2 (dua) plastik klip bening masing-masing terbungkus plastik kemasan warna biru kombinasi putih yang di dalamnya masing-masing berisi benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan rincian berat: 1,00 gram brutto atau 0,88 gram netto (kode A1); 0,30 gram brutto atau 0,12 gram netto (kode A2) (dengan berat total 2 buah plastik klip bening yang di dalamnya masing-masing berisi benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu adalah 1,30 gram brutto atau 1,00 gram netto [kode A1 dan A2]); 1 (satu) buah tas selempang warna hitam merk Polosail yang di dalamnya berisi: 6 (enam) plastik klip bening yang masing-masing terbungkus plastik kemasan warna biru kombinasi putih yang di dalamnya masing-masing berisi benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan rincian berat: 2,00 gram brutto atau 1,80 gram netto (kode B1); 2,91 gram brutto atau 2,71 gram netto (kode B2); 0,31 gram brutto atau 0,19 gram netto (kode B3); 0,30 gram brutto atau 0,18 gram netto (kode B4); 0,47 gram brutto atau 0,35 gram netto (kode B5); 0,30 gram brutto atau 0,18 gram netto (kode B6); serta 5 (lima) plastik klip bening yang masing-masing terbungkus plastik kemasan warna oranye yang di dalamnya masing-masing berisi benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan rincian berat: 1,00 gram brutto atau 0,88 gram netto (kode B7); 0,51 gram brutto atau 0,39 gram netto (kode B8); 0,28 gram brutto atau 0,16 gram netto (kode B9); 0,48 gram brutto atau 0,36 gram netto (kode B10); 0,31 gram brutto atau 0,19 gram netto (kode B11); serta 1 (satu) plastik klip bening yang di dalamnya berisi benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 24,61 gram brutto atau 22,16 gram netto (kode B12) (dengan berat total 12 buah plastik klip bening yang di dalamnya masing-masing berisi benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu adalah 33,48 gram brutto atau 30,55 gram netto [kode B1 s.d. B12], sehingga berat total 14 buah paket plastik klip bening yang di dalamnya masing-masing berisi benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu adalah 34,78 gram brutto atau 30,55 gram netto [kode A1-A2 dan B1-B12]); 4 (empat) buah plastik klip bening yang di dalamnya masing-masing berisi 10 (sepuluh) tablet warna hijau merah muda logo LV diduga mengandung sediaan narkotika jenis ekstasi dengan rincian berat: 4,11 gram brutto atau 3,91 gram netto (kode C1); 4,11 gram brutto atau 3,91 gram netto (kode C2); 4,11 gram brutto atau 3,91 gram netto (kode C3); 4,00 gram brutto atau 3,82 gram netto (kode C4); serta 2 (dua) buah plastik klip bening yang di dalamnya masing-masing berisi 15 (lima belas) tablet warna hijau merah muda logo LV diduga mengandung sediaan narkotika jenis ekstasi dengan rincian berat: 6,00 gram brutto atau 5,82 gram netto (kode C5); 6,00 gram brutto atau 5,82 gram netto (kode C6) (sehingga berat total 6 buah plastik klip bening yang di dalamnya berisi 70 [tujuh puluh] tablet warna hijau merah muda logo LV diduga mengandung sediaan narkotika jenis ekstasi adalah 28,33 gram brutto atau 27,19 gram netto [kode C1-C6]); 1 (satu) buah timbangan digital warna hitam; 1 (satu) buah gunting warna hijau; 1 (satu) bendel plastik klip kecil; 1 (satu) buah bong agar dimusnahkan; 1 (satu) buah handphone merk Samsung A05s warna hitam dengan nomor SIM card 085857515513 IMEI 351305120459845 agar dirampas untuk negara.",putusan_244_pid.sus_2026_pn_dps_20261105165439,"54, 55, 56",Nadin,Bima,verified
+P003,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan program pemerintah untuk memberantas peredaran gelap/ilegal Narkotika; Terdakwa sudah pernah dipenjara (pengulangan tindak pidana),putusan_244_pid.sus_2026_pn_dps_20261105165439,54,Nadin,Bima,verified
+P003,keadaanMeringankan,Terdakwa menyesali perbuatannya,putusan_244_pid.sus_2026_pn_dps_20261105165439,54,Nadin,Bima,verified
+P004,nomorPerkara,289/Pid.Sus/2026/PN Dps,putusan_289_pid.sus_2026_pn_dps_20261105170046,1,Nadin,Bima,verified
+P004,pengadilan,Pengadilan Negeri Denpasar,putusan_289_pid.sus_2026_pn_dps_20261105170046,1,Nadin,Bima,verified
+P004,tanggalPutusan,2026-05-12,putusan_289_pid.sus_2026_pn_dps_20261105170046,73,Nadin,Bima,verified
+P004,T1.terdakwaKode,P004_1,putusan_289_pid.sus_2026_pn_dps_20261105170046,1,Nadin,Bima,verified
+P004,T2.terdakwaKode,P004_2,putusan_289_pid.sus_2026_pn_dps_20261105170046,2,Nadin,Bima,verified
+P004,jenisNarkotika,Sabu (Metamfetamina) dan Ekstasi (MDMA),putusan_289_pid.sus_2026_pn_dps_20261105170046,"4, 12, 16",Nadin,Bima,verified
+P004,beratBarangBuktiGram,153.29,putusan_289_pid.sus_2026_pn_dps_20261105170046,"6, 10, 20",Nadin,Bima,verified
+P004,pasalDakwaan,Alternatif Pertama: Pasal 114 ayat (2) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Nomor 1 Tahun 2023 tentang KUHP Jo. Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Pidana; atau Alternatif Kedua: Pasal 609 ayat (2) huruf a Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_289_pid.sus_2026_pn_dps_20261105170046,"7, 13",Nadin,Bima,verified
+P004,pasalTerbukti,Pasal 114 ayat (2) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_289_pid.sus_2026_pn_dps_20261105170046,"69, 70",Nadin,Bima,verified
+P004,T1.tuntutanBulan,102,putusan_289_pid.sus_2026_pn_dps_20261105170046,3,Nadin,Bima,verified
+P004,T1.vonisBulan,102,putusan_289_pid.sus_2026_pn_dps_20261105170046,70,Nadin,Bima,verified
+P004,T2.tuntutanBulan,102,putusan_289_pid.sus_2026_pn_dps_20261105170046,3,Nadin,Bima,verified
+P004,T2.vonisBulan,102,putusan_289_pid.sus_2026_pn_dps_20261105170046,70,Nadin,Bima,verified
+P004,dendaRupiah,500000000,putusan_289_pid.sus_2026_pn_dps_20261105170046,70,Nadin,Bima,verified
+P004,barangBukti,"1 (satu) buah bungkusan kantong plastik warna hitam di dalamnya terdapat 2 (dua) paket plastik klip bening di dalamnya masing-masing berisi kristal bening yang mengandung sediaan narkotika jenis shabu dengan rincian berat: 50,63 gram brutto atau 49,83 gram netto (kode A1); 50,60 gram brutto atau 49,08 gram netto (kode A2) (sehingga jumlah berat 2 paket plastik klip bening yang mengandung sediaan narkotika jenis sabu adalah 101,23 gram brutto atau 98,91 gram netto [kode A1 s.d. kode A2]); 1 (satu) buah plastik klip bening besar yang di dalamnya terdapat barang sebagai berikut: 1 (satu) buah paket plastik klip bening yang di dalamnya terdapat 12 (dua belas) tabung plastik masing-masing berisi paket plastik klip berisi kristal bening yang mengandung sediaan narkotika jenis shabu dengan rincian berat masing-masing 1,07 gram brutto atau 0,93 gram netto (kode B1 s.d. kode B12) (sehingga jumlah berat keseluruhan 12 tabung plastik masing-masing berisi paket plastik klip berisi kristal bening yang mengandung sediaan narkotika jenis shabu adalah 12,84 gram brutto atau 11,16 gram netto); 1 (satu) buah paket plastik klip bening yang di dalamnya terdapat 13 (tiga belas) tabung plastik masing-masing berisi paket plastik klip berisi kristal bening yang mengandung sediaan narkotika jenis shabu dengan rincian berat masing-masing 0,49 gram brutto atau 0,35 gram netto (kode C1 s.d. kode C13) (sehingga jumlah berat keseluruhan 13 tabung plastik masing-masing berisi paket plastik klip berisi kristal bening yang mengandung sediaan narkotika jenis shabu adalah 6,37 gram brutto atau 4,55 gram netto); 1 (satu) buah paket plastik klip bening yang di dalamnya terdapat 12 (dua belas) tabung plastik masing-masing berisi paket plastik klip berisi kristal bening yang mengandung sediaan narkotika jenis shabu dengan rincian berat masing-masing 0,22 gram brutto atau 0,17 gram netto (kode D1 s.d. kode D12) (sehingga jumlah berat keseluruhan 12 tabung plastik yang masing-masing di dalamnya terdapat plastik klip bening yang mengandung sediaan narkotika jenis shabu adalah 2,64 gram brutto atau 2,04 gram netto); 1 (satu) buah kotak plastik bening di dalamnya terdapat 7 (tujuh) plastik klip masing-masing berisi kristal bening yang mengandung sediaan narkotika jenis shabu dengan rincian berat: 13,76 gram brutto atau 12,96 gram netto (kode E1); 5,06 gram brutto atau 4,09 gram netto (kode E2); 5,06 gram brutto atau 4,09 gram netto (kode E3); 4,07 gram brutto atau 3,91 gram netto (kode E4); 3,75 gram brutto atau 3,59 gram netto (kode E5); 6,31 gram brutto atau 6,09 gram netto (kode E6); 2,16 gram brutto atau 1,90 gram netto (kode E7) (sehingga jumlah berat keseluruhan 7 plastik klip yang masing-masing berisi kristal bening mengandung sediaan narkotika jenis shabu adalah 40,17 gram brutto atau 36,63 gram netto [kode E1 s.d. kode E7]); (dengan jumlah total keseluruhan paket yang mengandung sediaan narkotika jenis shabu yang ditemukan di TKP adalah sebanyak 46 paket dengan berat 163,25 gram brutto atau 153,29 gram netto [kode A1 s.d. kode A2, kode B1 s.d. kode B12, kode C1 s.d. kode C13, kode D1 s.d. kode D12, dan kode E1 s.d. kode E7], yang disisihkan masing-masing sebanyak 0,01 gram netto untuk pemeriksaan di Labforensik sehingga tersisa 162,79 gram brutto atau 152,83 gram netto); 1 (satu) buah celana panjang jeans warna biru; 3 (tiga) buah lakban warna biru, putih, dan cokelat; 1 (satu) buah plastik wrap; 2 (dua) bungkus besar tabung plastik; 2 (dua) buah timbangan digital warna silver dan hitam bertuliskan “Camry”; 4 (empat) buah buku rekapan; 1 (satu) kotak plastik klip bening agar dimusnahkan; 1 (satu) unit handphone merk Oppo warna hitam dengan kartu SIM Telkomsel nomor 081230496320 (IMEI 1: 867428071598812, IMEI 2: 867428071598804) milik Terdakwa I; 1 (satu) unit handphone merk Vivo warna hitam dengan kartu SIM Indosat nomor 081547113212 (IMEI 1: 867355047360474, IMEI 2: 867355047360466) milik Terdakwa II agar dirampas untuk negara.",putusan_289_pid.sus_2026_pn_dps_20261105170046,"70, 71, 72, 73",Nadin,Bima,verified
+P004,keadaanMemberatkan,Perbuatan Para Terdakwa bertentangan dengan program pemerintah yang sedang giat-giatnya memberantas peredaran gelap narkotika; Perbuatan Para Terdakwa merusak generasi muda,putusan_289_pid.sus_2026_pn_dps_20261105170046,69,Nadin,Bima,verified
+P004,keadaanMeringankan,Para Terdakwa mengakui dan menyesali perbuatannya; Para Terdakwa bersikap sopan selama persidangan,putusan_289_pid.sus_2026_pn_dps_20261105170046,69,Nadin,Bima,verified
+P005,nomorPerkara,363/Pid.Sus/2026/PN Dps,putusan_363_pid.sus_2026_pn_dps_20261105165703,1,Nadin,Bima,verified
+P005,pengadilan,Pengadilan Negeri Denpasar,putusan_363_pid.sus_2026_pn_dps_20261105165703,1,Nadin,Bima,verified
+P005,tanggalPutusan,2026-05-21,putusan_363_pid.sus_2026_pn_dps_20261105165703,15,Nadin,Bima,verified
+P005,T1.terdakwaKode,P005,putusan_363_pid.sus_2026_pn_dps_20261105165703,1,Nadin,Bima,verified
+P005,jenisNarkotika,Tembakau sintetis (mengandung sediaan MDMB-4en-PINACA),putusan_363_pid.sus_2026_pn_dps_20261105165703,"5, 7, 11",Nadin,Bima,verified
+P005,beratBarangBuktiGram,18.84,putusan_363_pid.sus_2026_pn_dps_20261105165703,"3, 4, 10",Nadin,Bima,verified
+P005,pasalDakwaan,Kesatu: Pasal 114 Ayat (1) Undang-Undang No. 35 Tahun 2009 tentang Narkotika Jo. UU No. 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana Jo. Permenkes No. 15 Tahun 2025; Atau Kedua: Pasal 609 Ayat (1) huruf a Undang-Undang Nomor 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana Jo. Permenkes No. 15 Tahun 2025,putusan_363_pid.sus_2026_pn_dps_20261105165703,"5, 7",Nadin,Bima,verified
+P005,pasalTerbukti,Pasal 609 Ayat (1) huruf a Undang-Undang Nomor 1 Tahun 2023 tentang KUHP Jo. Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (Dakwaan Alternatif Kedua),putusan_363_pid.sus_2026_pn_dps_20261105165703,"12, 13, 14",Nadin,Bima,verified
+P005,T1.tuntutanBulan,72,putusan_363_pid.sus_2026_pn_dps_20261105165703,2,Nadin,Bima,verified
+P005,T1.vonisBulan,54,putusan_363_pid.sus_2026_pn_dps_20261105165703,14,Nadin,Bima,verified
+P005,dendaRupiah,500000000,putusan_363_pid.sus_2026_pn_dps_20261105165703,14,Nadin,Bima,verified
+P005,barangBukti,"1 (satu) paket plastik klip masing-masing berisi daun-daun kering narkotika jenis tembakau sintetis dengan berat bersih keseluruhannya yaitu 18,84 gram netto atau berat kotor 23,77 gram brutto (kode A1 s.d. A13); 1 (satu) buah timbangan elektrik; 1 (satu) buah korek api gas; 1 (satu) kotak kertas papir; 1 (satu) bendel plastik klip kosong; 1 (satu) buah piring plastik hijau agar dirampas untuk dimusnahkan.",putusan_363_pid.sus_2026_pn_dps_20261105165703,14,Nadin,Bima,verified
+P005,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; Terdakwa tidak mendukung program pemerintah yang lagi giat-giatnya memberantas narkotika,putusan_363_pid.sus_2026_pn_dps_20261105165703,13,Nadin,Bima,verified
+P005,keadaanMeringankan,Terdakwa sopan dan berterus terang di persidangan sehingga memperlancar jalannya persidangan; Terdakwa merasa bersalah dan menyesali perbuatannya; Terdakwa belum pernah dihukum,putusan_363_pid.sus_2026_pn_dps_20261105165703,13,Nadin,Bima,verified
+P006,nomorPerkara,375/Pid.Sus/2026/PN Dps,putusan_375_pid.sus_2026_pn_dps_20261105165543,1,Nadin,Bima,verified
+P006,pengadilan,Pengadilan Negeri Denpasar,putusan_375_pid.sus_2026_pn_dps_20261105165543,1,Nadin,Bima,verified
+P006,tanggalPutusan,2026-06-02,putusan_375_pid.sus_2026_pn_dps_20261105165543,80,Nadin,Bima,verified
+P006,T1.terdakwaKode,P006_1,putusan_375_pid.sus_2026_pn_dps_20261105165543,1,Nadin,Bima,verified
+P006,T2.terdakwaKode,P006_2,putusan_375_pid.sus_2026_pn_dps_20261105165543,1,Nadin,Bima,verified
+P006,jenisNarkotika,"Ganja, Sabu (Metamfetamina), dan Ekstasi (MDMA)",putusan_375_pid.sus_2026_pn_dps_20261105165543,"11, 16, 21",Nadin,Bima,verified
+P006,beratBarangBuktiGram,101.34,putusan_375_pid.sus_2026_pn_dps_20261105165543,"10, 11, 20",Nadin,Bima,verified
+P006,pasalDakwaan,Kesatu: Pasal 114 Ayat (1) Jo Pasal 132 ayat (1) UU No. 35 Tahun 2009 tentang Narkotika Jo. UU No. 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana; Atau Kedua: Pasal 609 Ayat (1) huruf a UU No. 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana Jo. Pasal 132 ayat (1) UU No. 35 Tahun 2009 tentang Narkotika (kesatu) dan Pasal 111 Ayat (1) Jo Pasal 132 ayat (1) UU No. 35 Tahun 2009 tentang Narkotika Jo. UU No. 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana (kedua),putusan_375_pid.sus_2026_pn_dps_20261105165543,"12, 17",Nadin,Bima,verified
+P006,pasalTerbukti,Pasal 609 ayat (1) huruf a UU No. 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana Jo. Pasal 132 ayat (1) Undang-undang Republik Indonesia No. 35 Tahun 2009 tentang Narkotika dan Pasal 111 ayat (1) Jo Pasal 132 ayat (1) UU Narkotika Jo. KUHP Jo. UU Nomor 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_375_pid.sus_2026_pn_dps_20261105165543,"69, 72",Nadin,Bima,verified
+P006,T1.tuntutanBulan,66,putusan_375_pid.sus_2026_pn_dps_20261105165543,2,Nadin,Bima,verified
+P006,T1.vonisBulan,0,putusan_375_pid.sus_2026_pn_dps_20261105165543,77,Nadin,Bima,verified
+P006,T2.tuntutanBulan,66,putusan_375_pid.sus_2026_pn_dps_20261105165543,2,Nadin,Bima,verified
+P006,T2.vonisBulan,0,putusan_375_pid.sus_2026_pn_dps_20261105165543,77,Nadin,Bima,verified
+P006,dendaRupiah,100000000,putusan_375_pid.sus_2026_pn_dps_20261105165543,77,Nadin,Bima,verified
+P006,barangBukti,"1 (satu) bekas pembungkus rokok Sampoerna Mild yang didalamnya berisi paket plastik klip bening berisi daun, batang, dan biji yang diduga mengandung sediaan narkotika jenis ganja dengan berat 8,17 gram brutto atau 7,85 gram netto (kode 1a); 1 (satu) bekas pembungkus rokok Sampoerna Mild yang didalamnya berisi paket plastik klip bening berisi daun, batang, dan biji yang diduga mengandung sediaan narkotika jenis ganja dengan berat 8,70 gram brutto atau 8,38 gram netto (kode 1b); 1 (satu) bekas pembungkus rokok Sampoerna Mild/robekan Surya Gudang Garam yang didalamnya berisi paket plastik klip bening berisi daun, batang, dan biji kering yang diduga mengandung sediaan narkotika jenis ganja dengan berat 6,28 gram brutto atau 5,96 gram netto (kode 1c); 1 (satu) bekas pembungkus rokok Surya Gudang Garam yang didalamnya berisi paket plastik klip bening berisi daun, batang, dan biji kering yang diduga mengandung sediaan narkotika jenis ganja dengan berat 8,64 gram brutto atau 8,23 gram netto (kode 1d) (dengan jumlah berat keseluruhan 4 paket plastik klip bening berisi daun, batang, dan biji kering yang diduga mengandung sediaan narkotika jenis ganja di TKP 1 adalah 31,79 gram brutto atau 30,51 gram netto); 1 (satu) bekas pembungkus rokok Surya Gudang Garam yang didalamnya berisi 7 (tujuh) plastik klip bening; 1 (satu) buah tas kresek hitam yang didalamnya berisi: 8 (delapan) plastik bening masing-masing berisi daun, batang, dan biji kering yang diduga mengandung sediaan narkotika jenis ganja dengan berat masing-masing: 10,37 gram brutto atau 9,85 gram netto (kode 2a); 10,46 gram brutto atau 9,94 gram netto (kode 2b); 10,00 gram brutto atau 9,48 gram netto (kode 2c); 10,27 gram brutto atau 9,75 gram netto (kode 2d); 10,45 gram brutto atau 9,93 gram netto (kode 2e); 9,87 gram brutto atau 9,35 gram netto (kode 2f); 9,86 gram brutto atau 9,34 gram netto (kode 2g); 1,91 gram brutto atau 1,71 gram netto (kode 2h); serta 1 (satu) plastik klip bening di dalamnya berisi 3 (tiga) plastik klip bening masing-masing berisi kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat masing-masing: 0,37 gram brutto atau 0,16 gram netto (kode 3a); 0,32 gram brutto atau 0,11 gram netto (kode 3b); 0,32 gram brutto atau 0,11 gram netto (kode 3c) (dengan jumlah berat keseluruhan 3 paket plastik klip bening berisi kristal bening yang diduga mengandung sediaan narkotika jenis sabu di TKP 2 adalah 1,01 gram brutto atau 0,38 gram netto); 1 (satu) bekas pembungkus rokok Sampoerna Mild kecil yang didalamnya berisi lintingan daun kering yang diduga mengandung sediaan narkotika jenis ganja dengan berat 1,85 gram brutto atau 1,48 gram netto (kode 4) (dengan jumlah berat keseluruhan 9 paket plastik klip bening berisi daun, batang, dan biji kering yang diduga mengandung sediaan narkotika jenis ganja di TKP 2 adalah 75,04 gram brutto atau 70,83 gram netto, serta jumlah berat keseluruhan 13 paket plastik klip bening berisi daun, batang, dan biji kering yang diduga mengandung sediaan narkotika jenis ganja di TKP 1 dan TKP 2 adalah 106,83 gram brutto atau 101,34 gram netto); 1 (satu) buah tas belanja warna merah bertuliskan M Mart berisi: 1 (satu) buah kotak rokok Dji Sam Soe berisi 1 (satu) plastik klip bening berisi 5 (lima) butir tablet yang berwarna hijau kombinasi merah muda yang diduga mengandung sediaan narkotika dengan berat 2,00 gram brutto atau 1,88 gram netto (kode 5); 1 (satu) lembar nota pembayaran Losmen Arthawan dengan No. 0789; 1 (satu) buah timbangan digital bertuliskan Pocket Scale; 1 (satu) bendel plastik klip bening agar dimusnahkan; 1 (satu) buah handphone merk Vivo Y04s berwarna hitam No. IMEI 863332086038794 dengan nomor WhatsApp 0881037970778 milik Terdakwa I; 1 (satu) buah handphone merk Redmi 9A berwarna biru silver No. IMEI 359440090174652 dengan nomor WhatsApp 0895429354091 milik Terdakwa II; 1 (satu) buah handphone merk iPhone 11 Pro Max berwarna rosegold No. IMEI 353912103688023 dengan nomor WhatsApp 085808479422 milik Terdakwa III agar dirampas untuk negara; 1 (satu) buah sepeda motor Vario DK 6320 ACT beserta STNK atas nama I.N.Y. dikembalikan kepada Terdakwa.",putusan_375_pid.sus_2026_pn_dps_20261105165543,"78, 79, 80",Nadin,Bima,verified
+P006,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan program pemerintah dalam pemberantasan narkotika; Terdakwa pernah dihukum,putusan_375_pid.sus_2026_pn_dps_20261105165543,76,Nadin,Bima,verified
+P006,keadaanMeringankan,Terdakwa sebagai tulang punggung keluarga; Terdakwa mengakui terus terang perbuatannya; Terdakwa menyesali perbuatannya dan berjanji tidak akan mengulangi lagi;,putusan_375_pid.sus_2026_pn_dps_20261105165543,76,Nadin,Bima,verified
+P007,nomorPerkara,447/Pid.Sus/2026/PN Dps,putusan_447_pid.sus_2026_pn_dps_20261105165511,1,Nadin,Bima,verified
+P007,pengadilan,Pengadilan Negeri Denpasar,putusan_447_pid.sus_2026_pn_dps_20261105165511,1,Nadin,Bima,verified
+P007,tanggalPutusan,2026-06-11,putusan_447_pid.sus_2026_pn_dps_20261105165511,43,Nadin,Bima,verified
+P007,T1.terdakwaKode,P007,putusan_447_pid.sus_2026_pn_dps_20261105165511,1,Nadin,Bima,verified
+P007,jenisNarkotika,Ganja dan Sabu (Metamfetamina),putusan_447_pid.sus_2026_pn_dps_20261105165511,"6, 9, 12",Nadin,Bima,verified
+P007,beratBarangBuktiGram,150.66,putusan_447_pid.sus_2026_pn_dps_20261105165511,"6, 9, 12",Nadin,Bima,verified
+P007,pasalDakwaan,Kesatu: Pasal 114 ayat (2) UU No. 35 Tahun 2009 Tentang Narkotika Jo. UU No. 1 Tahun 2023 Tentang KUHP Jo. UU No. 1 Tahun 2026 Tentang Penyesuaian Pidana; Atau Kedua Pertama: Pasal 609 ayat (2) huruf a UU No. 1 Tahun 2023 Tentang KUHP Jo. UU No. 1 Tahun 2026 Tentang Penyesuaian Pidana; Atau Kedua Kedua: Pasal 111 ayat (2) UU No. 35 Tahun 2009 Tentang Narkotika Jo. UU No. 1 Tahun 2023 Tentang KUHP Jo. UU No. 1 Tahun 2026 Tentang Penyesuaian Pidana,putusan_447_pid.sus_2026_pn_dps_20261105165511,"7, 10, 13",Nadin,Bima,verified
+P007,pasalTerbukti,Pasal 114 ayat (2) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika Jo Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_447_pid.sus_2026_pn_dps_20261105165511,42,Nadin,Bima,verified
+P007,T1.tuntutanBulan,96,putusan_447_pid.sus_2026_pn_dps_20261105165511,2,Nadin,Bima,verified
+P007,T1.vonisBulan,96,putusan_447_pid.sus_2026_pn_dps_20261105165511,42,Nadin,Bima,verified
+P007,dendaRupiah,100000000,putusan_447_pid.sus_2026_pn_dps_20261105165511,42,Nadin,Bima,verified
+P007,barangBukti,"1 (satu) buah celana pendek warna hitam; 1 (satu) buah plastik klip berisi kristal bening diduga narkotika berat kotor 0,55 gram, berat bersih 0,35 gram (kode A1); 1 (satu) buah plastik klip berisi kristal bening diduga narkotika berat kotor 1,41 gram, berat bersih 1,21 gram (kode A2); 1 (satu) buah plastik klip berisi daun, biji, dan batang kering diduga narkotika berat kotor 42,30 gram, berat bersih 35,20 gram (kode B1); 1 (satu) buah plastik klip berisi daun, biji, dan batang kering diduga narkotika berat kotor 10,50 gram, berat bersih 8,80 gram (kode B2); 1 (satu) buah plastik klip berisi daun, biji, dan batang kering diduga narkotika berat kotor 5,30 gram, berat bersih 3,50 gram (kode B3); 1 (satu) buah timbangan elektrik; 1 (satu) buah alat press; 1 (satu) ball pipet; 1 (satu) ball plastik klip kosong; 1 (satu) buah plastik berisi potongan plastik warna merah; 1 (satu) buah plastik berisi PCR tube; 1 (satu) buah lakban warna bening; 1 (satu) buah dus merah bertuliskan nomor HP penerima paket (+62881038105626); 1 (satu) bungkus plastik warna hitam di dalamnya berisi 1 (satu) buah plastik klip berisi kristal bening diduga narkotika berat kotor 90,40 gram, berat bersih 88,60 gram (kode C1); 1 (satu) bungkus plastik warna hitam di dalamnya berisi 1 (satu) buah plastik klip berisi kristal bening diduga narkotika berat kotor 5,14 gram, berat bersih 4,96 gram (kode C2); 1 (satu) bungkus plastik warna hitam di dalamnya berisi 1 (satu) buah plastik klip berisi kristal bening diduga narkotika berat kotor 5,11 gram, berat bersih 4,93 gram (kode C3); 1 (satu) bungkus plastik warna hitam di dalamnya berisi 1 (satu) buah plastik klip berisi kristal bening diduga narkotika berat kotor 3,12 gram, berat bersih 3,02 gram (kode C4); 1 (satu) lembar resi bukti pengiriman PT Gunung Harta Transport Solution dengan nomor resi M264497 dan nomor HP penerima +62881038105626; 1 (satu) buah handuk bekas; 2 (dua) bungkus plastik gula pasir; 1 (satu) buntalan plastik bekas (dengan berat total ganja 47,59 gram netto dan sabu 103,07 gram netto) agar dimusnahkan; 1 (satu) buah HP Redmi warna biru milik Terdakwa (No. IMEI 860565058018343); 1 (satu) buah HP Oppo warna krem milik Terdakwa (No. IMEI 866899061499438) agar dirampas untuk negara.",putusan_447_pid.sus_2026_pn_dps_20261105165511,"42, 43",Nadin,Bima,verified
+P007,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan program pemerintah dalam pemberantasan narkotika; Terdakwa pernah dihukum,putusan_447_pid.sus_2026_pn_dps_20261105165511,41,Nadin,Bima,verified
+P007,keadaanMeringankan,Terdakwa bersikap sopan dalam persidangan; Terdakwa menyesali perbuatannya dan berjanji tidak akan mengulanginya,putusan_447_pid.sus_2026_pn_dps_20261105165511,"41, 42",Nadin,Bima,verified
+P008,nomorPerkara,448/Pid.Sus/2026/PN Dps,putusan_448_pid.sus_2026_pn_dps_20261105165645,1,Nadin,Bima,verified
+P008,pengadilan,Pengadilan Negeri Denpasar,putusan_448_pid.sus_2026_pn_dps_20261105165645,1,Nadin,Bima,verified
+P008,tanggalPutusan,2026-06-04,putusan_448_pid.sus_2026_pn_dps_20261105165645,31,Nadin,Bima,verified
+P008,T1.terdakwaKode,P008,putusan_448_pid.sus_2026_pn_dps_20261105165645,1,Nadin,Bima,verified
+P008,jenisNarkotika,Sabu (Metamfetamina) dan Ineks / Ekstasi (MDMA),putusan_448_pid.sus_2026_pn_dps_20261105165645,"2, 5, 6, 9",Nadin,Bima,verified
+P008,beratBarangBuktiGram,80.94,putusan_448_pid.sus_2026_pn_dps_20261105165645,"2, 5, 22",Nadin,Bima,verified
+P008,pasalDakwaan,Kesatu: Pasal 114 ayat (2) UU No. 35 Tahun 2009 Tentang Narkotika Jo. UU No. 1 Tahun 2023 Tentang KUHP Jo. UU No. 1 Tahun 2026 Tentang Penyesuaian Pidana; Atau Kedua: Pasal 609 ayat (2) huruf a UU No. 1 Tahun 2023 Tentang KUHP Jo. UU No.1 Tahun 2026 Tentang Penyesuaian Pidana,putusan_448_pid.sus_2026_pn_dps_20261105165645,"2, 6, 2009",Nadin,Bima,verified
+P008,pasalTerbukti,Pasal 609 ayat (2) huruf a UU No. 1 Tahun 2023 Tentang KUHP Jo. UU No. 1 Tahun 2026 Tentang Penyesuaian Pidana (dalam dakwaan alternatif kedua),putusan_448_pid.sus_2026_pn_dps_20261105165645,30,Nadin,Bima,verified
+P008,T1.tuntutanBulan,96,putusan_448_pid.sus_2026_pn_dps_20261105165645,2,Nadin,Bima,verified
+P008,T1.vonisBulan,84,putusan_448_pid.sus_2026_pn_dps_20261105165645,30,Nadin,Bima,verified
+P008,dendaRupiah,100000000,putusan_448_pid.sus_2026_pn_dps_20261105165645,30,Nadin,Bima,verified
+P008,barangBukti,"7 (tujuh) paket methamphetamine/shabu berat bersih total 48,63 gram atau berat kotor total 50,72 gram (kode A dan D1 s/d D6); 1 (satu) plastik klip berisi 4 (empat) butir ekstasi warna oranye berat bersih total 1,56 gram atau berat kotor total 1,77 gram (kode B); 1 (satu) plastik klip berisi 3 (tiga) butir ekstasi warna hijau biru berat bersih total 1,11 gram atau berat kotor total 1,29 gram (kode C); 2 (dua) bekas bungkus snack berisi 76 (tujuh puluh enam) butir ekstasi warna oranye diduga mengandung narkotika berat bersih total 29,64 gram atau berat kotor total 31,58 gram (kode E1 & E2) (dengan total shabu 48,63 gram netto, total ekstasi 32,31 gram netto, serta total keseluruhan narkotika 80,94 gram netto); 1 (satu) buah bulatan plastisin warna merah; 1 (satu) buah tas selempang warna hitam; 1 (satu) buah timbangan elektrik; 1 (satu) bendel plastik klip kosong; 3 (tiga) buah sendok terbuat dari potongan pipet; 1 (satu) kotak plastisin warna merah; 1 (satu) buah gunting; 1 (satu) buah tas jinjing warna hitam; 1 (satu) buah bong agar dirampas untuk dimusnahkan; 1 (satu) buah HP merk Redmi warna hitam No. IMEI 868694079619921 agar dirampas untuk negara.",putusan_448_pid.sus_2026_pn_dps_20261105165645,31,Nadin,Bima,verified
+P008,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan usaha pemerintah yang sedang gencar-gencarnya melakukan pemberantasan terhadap segala jenis peredaran gelap dan penyalahgunaan Narkotika; Perbuatan terdakwa meresahkan masyarakat,putusan_448_pid.sus_2026_pn_dps_20261105165645,29,Nadin,Bima,verified
+P008,keadaanMeringankan,Terdakwa bersikap sopan dipersidangan; Terdakwa mengakui dan menyesali perbuatannya; Terdakwa belum pernah dihukum,putusan_448_pid.sus_2026_pn_dps_20261105165645,29,Nadin,Bima,verified
+P009,nomorPerkara,478/Pid.Sus/2026/PN Dps,putusan_478_pid.sus_2026_pn_dps_20261105165735,1,Nadin,Bima,verified
+P009,pengadilan,Pengadilan Negeri Denpasar,putusan_478_pid.sus_2026_pn_dps_20261105165735,1,Nadin,Bima,verified
+P009,tanggalPutusan,2026-07-02,putusan_478_pid.sus_2026_pn_dps_20261105165735,29,Nadin,Bima,verified
+P009,T1.terdakwaKode,P009,putusan_478_pid.sus_2026_pn_dps_20261105165735,1,Nadin,Bima,verified
+P009,jenisNarkotika,Sabu (Metamfetamina),putusan_478_pid.sus_2026_pn_dps_20261105165735,"2, 7, 14",Nadin,Bima,verified
+P009,beratBarangBuktiGram,1.98,putusan_478_pid.sus_2026_pn_dps_20261105165735,"2, 7, 14",Nadin,Bima,verified
+P009,pasalDakwaan,Kesatu: Pasal 114 ayat (1) UURI No. 35 Tahun 2009 tentang Narkotika Jo. UU No. 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana; Atau Kedua: Pasal 609 ayat (1) huruf a UU No. 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_478_pid.sus_2026_pn_dps_20261105165735,"2, 3, 7, 10",Nadin,Bima,verified
+P009,pasalTerbukti,Pasal 114 ayat (1) UURI No. 35 Tahun 2009 tentang Narkotika Jo. Lampiran II UURI No. 1 Tahun 2026 tentang Penyesuaian Pidana (dalam dakwaan alternatif kesatu),putusan_478_pid.sus_2026_pn_dps_20261105165735,28,Nadin,Bima,verified
+P009,T1.tuntutanBulan,84,putusan_478_pid.sus_2026_pn_dps_20261105165735,2,Nadin,Bima,verified
+P009,T1.vonisBulan,60,putusan_478_pid.sus_2026_pn_dps_20261105165735,28,Nadin,Bima,verified
+P009,dendaRupiah,200000000,putusan_478_pid.sus_2026_pn_dps_20261105165735,28,Nadin,Bima,verified
+P009,barangBukti,"7 (tujuh) plastik klip berisi kristal bening mengandung sediaan narkotika masing-masing: dengan berat netto 0,14 gram atau brutto 0,24 gram (kode A); dengan berat netto 0,17 gram atau brutto 0,27 gram (kode B); dengan berat netto 0,16 gram atau brutto 0,26 gram (kode C); dengan berat netto 0,16 gram atau brutto 0,26 gram (kode D); dengan berat netto 0,15 gram atau brutto 0,25 gram (kode E); dengan berat netto 0,37 gram atau brutto 0,47 gram (kode F); dengan berat netto 0,83 gram atau brutto 0,93 gram (kode G) (barang bukti yang disita setelah disisihkan 0,14 gram untuk kepentingan pemeriksaan laboratories tersisa dengan berat bersih 1,84 gram untuk kepentingan pembuktian di persidangan); 7 (tujuh) PCR tube; 1 (satu) potongan lakban merah agar dirampas untuk dimusnahkan; 1 (satu) unit sepeda motor Scoopy No. Pol. DK 6179 KAX pemilik atas nama Saksi N.L.P.E.W. dikembalikan kepada Saksi N.L.P.E.W.; 1 (satu) buah HP merek Oppo warna hitam IMEI 865349074781456 agar dirampas untuk negara.",putusan_478_pid.sus_2026_pn_dps_20261105165735,"27, 28",Nadin,Bima,verified
+P009,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; Perbuatan Terdakwa bertentangan dengan program pemerintah memberantas peredaran narkotika; Terdakwa sudah pernah dipidana,putusan_478_pid.sus_2026_pn_dps_20261105165735,27,Nadin,Bima,verified
+P009,keadaanMeringankan,Terdakwa tidak mempersulit proses pemeriksaan di persidangan; Terdakwa bersikap sopan di persidangan,putusan_478_pid.sus_2026_pn_dps_20261105165735,27,Nadin,Bima,verified
+P010,nomorPerkara,543/Pid.Sus/2026/PN Dps,putusan_543_pid.sus_2026_pn_dps_20261105165245,1,Nadin,Bima,verified
+P010,pengadilan,Pengadilan Negeri Denpasar,putusan_543_pid.sus_2026_pn_dps_20261105165245,1,Nadin,Bima,verified
+P010,tanggalPutusan,2026-07-28,putusan_543_pid.sus_2026_pn_dps_20261105165245,26,Nadin,Bima,verified
+P010,T1.terdakwaKode,P010,putusan_543_pid.sus_2026_pn_dps_20261105165245,1,Nadin,Bima,verified
+P010,jenisNarkotika,Sabu (Metamfetamina),putusan_543_pid.sus_2026_pn_dps_20261105165245,"2, 5, 17",Nadin,Bima,verified
+P010,beratBarangBuktiGram,0.92,putusan_543_pid.sus_2026_pn_dps_20261105165245,"2, 5, 2008",Nadin,Bima,verified
+P010,pasalDakwaan,Kesatu: Pasal 114 ayat (1) Undang-Undang RI Nomor 35 Tahun 2009 tentang Narkotika Jo. UU RI Nomor 1 Tahun 2023 tentang KUHP Jo. UU RI Nomor 1 Tahun 2026 tentang Penyesuaian Pidana; Atau Kedua: Pasal 609 ayat (1) huruf a Undang-Undang Nomor 1 Tahun 2023 tentang KUHP Jo. Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_543_pid.sus_2026_pn_dps_20261105165245,"2, 5, 2007",Nadin,Bima,verified
+P010,pasalTerbukti,Pasal 114 ayat (1) Undang-Undang Republik Indonesia No. 35 Tahun 2009 tentang Narkotika (dalam dakwaan alternatif pertama),putusan_543_pid.sus_2026_pn_dps_20261105165245,25,Nadin,Bima,verified
+P010,T1.tuntutanBulan,66,putusan_543_pid.sus_2026_pn_dps_20261105165245,2,Nadin,Bima,verified
+P010,T1.vonisBulan,48,putusan_543_pid.sus_2026_pn_dps_20261105165245,25,Nadin,Bima,verified
+P010,dendaRupiah,500000000,putusan_543_pid.sus_2026_pn_dps_20261105165245,25,Nadin,Bima,verified
+P010,barangBukti,"1 (satu) paket diduga shabu berat bersih 0,08 gram/berat kotor 0,17 gram (kode A1); 1 (satu) paket diduga shabu berat bersih 0,09 gram/berat kotor 0,18 gram (kode A2); 1 (satu) paket diduga shabu berat bersih 0,09 gram/berat kotor 0,18 gram (kode A3); 1 (satu) paket diduga shabu berat bersih 0,09 gram/berat kotor 0,20 gram (kode A4); 1 (satu) paket diduga shabu berat bersih 0,11 gram/berat kotor 0,23 gram (kode A5); 1 (satu) paket diduga shabu berat bersih 0,18 gram/berat kotor 0,30 gram (kode B); 1 (satu) paket diduga shabu berat bersih 0,28 gram/berat kotor 0,40 gram (kode C); 5 (lima) potongan pipet kuning; 1 (satu) plastik klip dilakban hitam; 2 (dua) lembar tisu putih; 1 (satu) celana dalam warna hitam; 1 (satu) bong agar dirampas untuk dimusnahkan; 1 (satu) Hp Vivo tipe Y19s warna putih No. Simcard 087842015317 No. Imei 861631073205536 agar dirampas untuk negara.",putusan_543_pid.sus_2026_pn_dps_20261105165245,"25, 26",Nadin,Bima,verified
+P010,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; Terdakwa tidak mendukung program pemerintah yang lagi giat-giatnya memberantas narkotika,putusan_543_pid.sus_2026_pn_dps_20261105165245,24,Nadin,Bima,verified
+P010,keadaanMeringankan,Terdakwa sopan dan berterus terang di persidangan sehingga memperlancar jalannya persidangan; Terdakwa merasa bersalah dan menyesali perbuatannya; Terdakwa belum pernah dihukum,putusan_543_pid.sus_2026_pn_dps_20261105165245,"24, 25",Nadin,Bima,verified
+P011,nomorPerkara,546/Pid.Sus/2021/PN Dps,putusan_546_pid.sus_2021_pn_dps_20261105170548,1,Nadin,Bima,verified
+P011,pengadilan,Pengadilan Negeri Denpasar,putusan_546_pid.sus_2021_pn_dps_20261105170548,1,Nadin,Bima,verified
+P011,tanggalPutusan,2021-09-21,putusan_546_pid.sus_2021_pn_dps_20261105170548,24,Nadin,Bima,verified
+P011,T1.terdakwaKode,P011,putusan_546_pid.sus_2021_pn_dps_20261105170548,1,Nadin,Bima,verified
+P011,jenisNarkotika,Sabu (Metamfetamina),putusan_546_pid.sus_2021_pn_dps_20261105170548,"2, 4, 2006",Nadin,Bima,verified
+P011,beratBarangBuktiGram,0.29,putusan_546_pid.sus_2021_pn_dps_20261105170548,"2, 4, 2007",Nadin,Bima,verified
+P011,pasalDakwaan,Kesatu: Pasal 112 ayat (1) UU RI No. 35 Tahun 2009 tentang Narkotika Jo. Pasal 132 ayat (1) UU RI No. 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 127 ayat (1) huruf a UU RI No. 35 Tahun 2009 tentang Narkotika Jo. Pasal 55 ayat (1) ke-1 KUHP,putusan_546_pid.sus_2021_pn_dps_20261105170548,"2, 4, 2006",Nadin,Bima,verified
+P011,pasalTerbukti,Pasal 112 ayat (1) UU RI No. 35 Tahun 2009 tentang Narkotika Jo. Pasal 132 ayat (1) UU RI No. 35 Tahun 2009 tentang Narkotika (dalam dakwaan alternatif pertama),putusan_546_pid.sus_2021_pn_dps_20261105170548,24,Nadin,Bima,verified
+P011,T1.tuntutanBulan,60,putusan_546_pid.sus_2021_pn_dps_20261105170548,2,Nadin,Bima,verified
+P011,T1.vonisBulan,54,putusan_546_pid.sus_2021_pn_dps_20261105170548,24,Nadin,Bima,verified
+P011,dendaRupiah,800000000,putusan_546_pid.sus_2021_pn_dps_20261105170548,24,Nadin,Bima,verified
+P011,barangBukti,"1 (satu) plastik klip berisi kristal bening narkotika jenis sabu berat bersih 0,29 gram; 1 (satu) potong pipet warna orange; 1 (satu) buah HP merk Nokia warna putih agar dirampas untuk dimusnahkan; 1 (satu) unit sepeda motor Scoopy DK 5940 DT warna hitam/merah dikembalikan kepada pemiliknya P011.",putusan_546_pid.sus_2021_pn_dps_20261105170548,24,Nadin,Bima,verified
+P011,keadaanMemberatkan,Perbuatan terdakwa bertentangan dengan usaha pemerintah yang sedang gencar-gencarnya melakukan pemberantasan terhadap segala jenis peredaran gelap dan penyalahgunaan narkotika,putusan_546_pid.sus_2021_pn_dps_20261105170548,23,Nadin,Bima,verified
+P011,keadaanMeringankan,Terdakwa bersikap sopan di persidangan; Terdakwa mengakui dan menyesali perbuatannya; Terdakwa belum pernah dihukum,putusan_546_pid.sus_2021_pn_dps_20261105170548,23,Nadin,Bima,verified
+P012,nomorPerkara,549/Pid.Sus/2021/PN Dps,putusan_549_pid.sus_2021_pn_dps_20261105170603,1,Nadin,Bima,verified
+P012,pengadilan,Pengadilan Negeri Denpasar,putusan_549_pid.sus_2021_pn_dps_20261105170603,1,Nadin,Bima,verified
+P012,tanggalPutusan,2021-09-21,putusan_549_pid.sus_2021_pn_dps_20261105170603,18,Nadin,Bima,verified
+P012,T1.terdakwaKode,P012,putusan_549_pid.sus_2021_pn_dps_20261105170603,1,Nadin,Bima,verified
+P012,jenisNarkotika,Sabu (Metamfetamina),putusan_549_pid.sus_2021_pn_dps_20261105170603,"2, 4, 11",Nadin,Bima,verified
+P012,beratBarangBuktiGram,0.33,putusan_549_pid.sus_2021_pn_dps_20261105170603,"3, 5, 11",Nadin,Bima,verified
+P012,pasalDakwaan,Kesatu: Pasal 112 Ayat (1) Undang-Undang RI. No. 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 115 Ayat (1) Undang-Undang RI. No. 35 Tahun 2009 tentang Narkotika,putusan_549_pid.sus_2021_pn_dps_20261105170603,"4, 5, 6, 7",Nadin,Bima,verified
+P012,pasalTerbukti,Pasal 112 ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika (dalam dakwaan alternatif pertama),putusan_549_pid.sus_2021_pn_dps_20261105170603,17,Nadin,Bima,verified
+P012,T1.tuntutanBulan,72,putusan_549_pid.sus_2021_pn_dps_20261105170603,2,Nadin,Bima,verified
+P012,T1.vonisBulan,66,putusan_549_pid.sus_2021_pn_dps_20261105170603,17,Nadin,Bima,verified
+P012,dendaRupiah,1000000000,putusan_549_pid.sus_2021_pn_dps_20261105170603,17,Nadin,Bima,verified
+P012,barangBukti,"Potongan pipet bening garis merah putih di dalamnya terdapat 1 (satu) plastik klip yang di dalamnya berisi kristal bening diduga narkotika jenis shabu dengan berat 0,5 gram brutto atau 0,33 gram netto; 1 (satu) lembar bukti transfer Bank BCA dengan nominal Rp700.000,00 (tujuh ratus ribu rupiah); 1 (satu) pipet plastik warna putih; 1 (satu) buah handphone merk Oppo warna hitam agar dimusnahkan; 1 (satu) unit sepeda motor Yamaha Jupiter MX warna merah hitam No. Pol. DK 4035 ET dikembalikan kepada yang berhak yakni Terdakwa P012.",putusan_549_pid.sus_2021_pn_dps_20261105170603,"17, 18",Nadin,Bima,verified
+P012,keadaanMemberatkan,Perbuatan Terdakwa telah bertentangan dengan Program Pemerintah dalam memerangi Penyalahgunaan Narkotika dan Psikotropika,putusan_549_pid.sus_2021_pn_dps_20261105170603,17,Nadin,Bima,verified
+P012,keadaanMeringankan,Terdakwa bersikap sopan di persidangan; Terdakwa mengakui dan menyesali perbuatannya; Terdakwa belum pernah dihukum,putusan_549_pid.sus_2021_pn_dps_20261105170603,17,Nadin,Bima,verified
+P013,nomorPerkara,641/Pid.Sus/2021/PN Dps,putusan_641_pid.sus_2021_pn_dps_20261105170208,1,Nadin,Bima,verified
+P013,pengadilan,Pengadilan Negeri Denpasar,putusan_641_pid.sus_2021_pn_dps_20261105170208,1,Nadin,Bima,verified
+P013,tanggalPutusan,2021-09-09,putusan_641_pid.sus_2021_pn_dps_20261105170208,18,Nadin,Bima,verified
+P013,T1.terdakwaKode,P013,putusan_641_pid.sus_2021_pn_dps_20261105170208,1,Nadin,Bima,verified
+P013,jenisNarkotika,Sabu (Metamfetamina),putusan_641_pid.sus_2021_pn_dps_20261105170208,"3, 5, 15",Nadin,Bima,verified
+P013,beratBarangBuktiGram,0.30,putusan_641_pid.sus_2021_pn_dps_20261105170208,"2, 3, 11",Nadin,Bima,verified
+P013,pasalDakwaan,Kesatu: Pasal 112 Ayat (1) Undang-Undang No. 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 115 Ayat (1) Undang-Undang No. 35 Tahun 2009 tentang Narkotika; Atau Ketiga: Pasal 127 Ayat (1) huruf a Undang-Undang Republik Indonesia No. 35 tahun 2009 tentang Narkotika,putusan_641_pid.sus_2021_pn_dps_20261105170208,"2, 6, 12",Nadin,Bima,verified
+P013,pasalTerbukti,Pasal 112 ayat (1) Undang-Undang RI Nomor 35 tahun 2009 tentang Narkotika (dalam dakwaan alternatif kesatu),putusan_641_pid.sus_2021_pn_dps_20261105170208,17,Nadin,Bima,verified
+P013,T1.tuntutanBulan,63,putusan_641_pid.sus_2021_pn_dps_20261105170208,2,Nadin,Bima,verified
+P013,T1.vonisBulan,54,putusan_641_pid.sus_2021_pn_dps_20261105170208,17,Nadin,Bima,verified
+P013,dendaRupiah,800000000,putusan_641_pid.sus_2021_pn_dps_20261105170208,17,Nadin,Bima,verified
+P013,barangBukti,"1 (satu) buah plastik klip berisi kristal bening mengandung sediaan narkotika jenis shabu dengan berat netto 0,30 gram dan berat brutto 0,54 gram; 1 (satu) lembar kertas putih yang di dalamnya berisi 3 (tiga) tutup bong atau alat hisap; 1 (satu) botol kaca; 3 (tiga) korek api gas agar dirampas dan dimusnahkan.",putusan_641_pid.sus_2021_pn_dps_20261105170208,"17, 18",Nadin,Bima,verified
+P013,keadaanMemberatkan,Perbuatan terdakwa bertentangan dengan program pemerintah dalam memberantas narkoba di masyarakat,putusan_641_pid.sus_2021_pn_dps_20261105170208,16,Nadin,Bima,verified
+P013,keadaanMeringankan,"Terdakwa bersikap sopan di persidangan dan mengakui terus terang perbuatannya sehingga tidak menyulitkan jalannya persidangan; Terdakwa menyatakan rasa penyesalannya, mengaku bersalah serta berjanji tidak akan mengulangi lagi perbuatannya; Terdakwa belum pernah dihukum",putusan_641_pid.sus_2021_pn_dps_20261105170208,16,Nadin,Bima,verified
+P014,nomorPerkara,673/Pid.Sus/2026/PN Dps,putusan_673_pid.sus_2026_pn_dps_20261105165622,1,Nadin,Bima,verified
+P014,pengadilan,Pengadilan Negeri Denpasar,putusan_673_pid.sus_2026_pn_dps_20261105165622,1,Nadin,Bima,verified
+P014,tanggalPutusan,2026-08-27,putusan_673_pid.sus_2026_pn_dps_20261105165622,57,Nadin,Bima,verified
+P014,T1.terdakwaKode,P014_1,putusan_673_pid.sus_2026_pn_dps_20261105165622,1,Nadin,Bima,verified
+P014,T2.terdakwaKode,P014_2,putusan_673_pid.sus_2026_pn_dps_20261105165622,2,Nadin,Bima,verified
+P014,jenisNarkotika,"Ekstasi (mengandung sediaan narkotika 2C-B, Golongan I nomor urut 61)",putusan_673_pid.sus_2026_pn_dps_20261105165622,"3, 9, 10",Nadin,Bima,verified
+P014,beratBarangBuktiGram,12.94,putusan_673_pid.sus_2026_pn_dps_20261105165622,"3, 4, 35",Nadin,Bima,verified
+P014,pasalDakwaan,Kesatu: Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 Tentang Narkotika Jo. Pasal 132 ayat (1) Undang-Undang RI No. 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 Tentang Penyesuaian Pidana; Atau Kedua: Pasal 609 ayat (2) huruf a Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Pasal 132 ayat (1) Undang-Undang RI No. 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_673_pid.sus_2026_pn_dps_20261105165622,"2, 10, 15",Nadin,Bima,verified
+P014,pasalTerbukti,Pasal 609 ayat (2) huruf a Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Pasal 132 ayat (1) Undang-Undang Republik Indonesia Nomor 35 tahun 2009 tentang Narkotika Jo. Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (dalam dakwaan alternatif kedua),putusan_673_pid.sus_2026_pn_dps_20261105165622,55,Nadin,Bima,verified
+P014,T1.tuntutanBulan,78,putusan_673_pid.sus_2026_pn_dps_20261105165622,3,Nadin,Bima,verified
+P014,T1.vonisBulan,60,putusan_673_pid.sus_2026_pn_dps_20261105165622,55,Nadin,Bima,verified
+P014,T2.tuntutanBulan,54,putusan_673_pid.sus_2026_pn_dps_20261105165622,3,Nadin,Bima,verified
+P014,T2.vonisBulan,36,putusan_673_pid.sus_2026_pn_dps_20261105165622,55,Nadin,Bima,verified
+P014,dendaRupiah,100000000,putusan_673_pid.sus_2026_pn_dps_20261105165622,55,Nadin,Bima,verified
+P014,barangBukti,"1 (satu) buah tas gendong warna hitam bertuliskan “XEON GT 125” didalamnya terdapat 5 (lima) paket plastik klip bening masing-masing berisi butir tablet berbentuk Hellokitty warna hijau yang diduga mengandung sediaan Narkotika jenis Ekstasi dengan rincian sebagai berikut: 5 (lima) butir dengan berat 1,92 gram brutto atau 1,72 gram netto (KODE A1); 5 (lima) butir dengan berat 1,92 gram brutto atau 1,72 gram netto (KODE A2); 5 (lima) butir dengan berat 1,92 gram brutto atau 1,72 gram netto (KODE A1); 5 (lima) butir dengan berat 1,92 gram brutto atau 1,72 gram netto (KODE A2); 5 (lima) butir dengan berat 1,92 gram brutto atau 1,72 gram netto (KODE A1) dengan jumlah 5 (lima) paket plastik klip bening berisi 25 (dua puluh lima) butir tablet berbentuk Hellokitty warna hijau yang diduga mengandung sediaan Narkotika jenis Ekstasi dengan berat 9,60 gram brutto atau 8,60 gram netto (KODE A1 s/d KODE A5); 1 (satu) buah bekas bungkus rokok warna biru bertuliskan “Malboro” yang didalamnya terdapat 3 (tiga) paket plastik klip bening masing masing berisi butir tablet berbentuk Hellokitty warna hijau dan serpihan butir tablet warna hijau yang diduga mengandung sediaan Narkotika jenis Ekstasi dengan rincian berat sebagai berikut: 5 (lima) butir dengan berat 1,92 gram brutto atau 1,72 gram netto (KODE B1); 5 (lima) butir dengan berat 1,92 gram brutto atau 1,72 gram netto (KODE B2); Pecahan serpihan butir tablet warna hijau dengan berat 1,30 gram brutto atau 0,90 gram netto (KODE B3) dengan jumlah 3 (tiga) paket plastik klip bening berisi 10 (sepuluh) butir tablet berbentuk Hellokitty warna hijau dan serpihan butir tablet warna hijau yang diduga mengandung sediaan Narkotika jenis Ekstasi dengan berat 5,14 gram brutto atau 4,34 gram netto (KODE B1 s/d KODE B3); Sehingga jumlah keseluruhan barang bukti yang ditemukan di TKP 1 dan TKP 2 adalah sebanyak 8 (delapan) paket plastik klip bening yang didalamnya masing-masing berisi butir tablet berbentuk Hellokitty warna hijau dan serpihan tablet warna hijau sebanyak 35 (tiga puluh lima) butir dengan berat 14,74 gram brutto atau 12,94 gram netto (KODE A1 s/d KODE A5 dan KODE B1 s/d KODE B3); 1 (satu) buah bendel plastik klip bening; 1 (satu) buah alat hisap bong; Potongan pipet plastik warna putih dan hitam; 1 (satu) buah gunting warna biru; 1 (satu) bungkus kertas linting merek RAJA MAS agar dimusnahkan; 1 (satu) Handphone merk “Vivo” warna biru dengan IMEI 865386067610276, IMEI 2 865386067610268, dan kartu SIM XL dengan nomor 087736631855; 1 (satu) Handphone merk “Iphone 12” warna hitam dengan IMEI 356681119053103, IMEI 2 356681118145504, dan kartu SIM Smartfren dengan nomor 082111155099 agar dirampas untuk negara.",putusan_673_pid.sus_2026_pn_dps_20261105165622,"55, 56, 57, 58, 59",Nadin,Bima,verified
+P014,keadaanMemberatkan,Perbuatan Para Terdakwa bertentangan dengan program pemerintah dalam pemberantasan narkotika,putusan_673_pid.sus_2026_pn_dps_20261105165622,52,Nadin,Bima,verified
+P014,keadaanMeringankan,Para Terdakwa bersikap sopan dalam persidangan; Para Terdakwa menyesali perbuatannya dan berjanji tidak akan mengulanginya; Para Terdakwa belum pernah dihukum,putusan_673_pid.sus_2026_pn_dps_20261105165622,52,Nadin,Bima,verified
+P015,nomorPerkara,829/Pid.Sus/2019/PN Dps,putusan_829_pid.sus_2019_pn_dps_20261105170720,1,Nadin,Bima,verified
+P015,pengadilan,Pengadilan Negeri Denpasar,putusan_829_pid.sus_2019_pn_dps_20261105170720,1,Nadin,Bima,verified
+P015,tanggalPutusan,2019-11-28,putusan_829_pid.sus_2019_pn_dps_20261105170720,30,Nadin,Bima,verified
+P015,T1.terdakwaKode,P015,putusan_829_pid.sus_2019_pn_dps_20261105170720,1,Nadin,Bima,verified
+P015,jenisNarkotika,"Shabu (Metamfetamina, Narkotika Golongan I nomor urut 61) dan Psikotropika (Dumolid/Klonazepam dan Erimin 5)",putusan_829_pid.sus_2019_pn_dps_20261105170720,"2, 9, 22",Nadin,Bima,verified
+P015,beratBarangBuktiGram,16.91,putusan_829_pid.sus_2019_pn_dps_20261105170720,"7, 23",Nadin,Bima,verified
+P015,pasalDakwaan,Kesatu: Pasal 112 ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika dan Pasal 62 Undang-Undang Republik Indonesia No. 5 Tahun 1997 tentang Psikotropika; Atau Kedua: Pasal 127 ayat (1) Undang-Undang Republik Indonesia No. 35 Tahun 2009 tentang Narkotika dan Pasal 62 Undang-Undang Republik Indonesia No. 5 Tahun 1997 tentang Psikotropika,putusan_829_pid.sus_2019_pn_dps_20261105170720,"8, 9, 11, 13",Nadin,Bima,verified
+P015,pasalTerbukti,Pasal 112 ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika dan Pasal 62 Undang-Undang Republik Indonesia No. 5 Tahun 1997 tentang Psikotropika (dalam dakwaan alternatif kesatu),putusan_829_pid.sus_2019_pn_dps_20261105170720,"27, 28",Nadin,Bima,verified
+P015,T1.tuntutanBulan,126,putusan_829_pid.sus_2019_pn_dps_20261105170720,2,Nadin,Bima,verified
+P015,T1.vonisBulan,72,putusan_829_pid.sus_2019_pn_dps_20261105170720,28,Nadin,Bima,verified
+P015,dendaRupiah,1000000000,putusan_829_pid.sus_2019_pn_dps_20261105170720,28,Nadin,Bima,verified
+P015,barangBukti,"1 (satu) buah dompet kecil berbentuk bulat berwarna biru yang di dalamnya terdapat: 1 (satu) buah plastik klip besar yang di dalamnya berisi: 1 (satu) buah plastik klip bening yang berisikan benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 2,08 gram brutto atau 1,83 gram netto dengan kode (A1); 1 (satu) buah plastik klip bening yang berisikan benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 3,16 gram brutto atau 2,91 gram netto dengan kode (A2); 1 (satu) buah plastik klip bening yang berisikan benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 1,56 gram brutto atau 1,31 gram netto dengan kode (A3); 1 (satu) buah plastik klip bening yang berisikan benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 2,35 gram brutto atau 2,02 gram netto dengan kode (A4); 1 (satu) buah plastik klip bening yang berisikan benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 1,63 gram brutto atau 1,40 gram netto dengan kode (A5); 1 (satu) strip yang di dalamnya berisi 2 (dua) buah tablet warna orange yang bertuliskan Erimin 5 yang diduga mengandung sediaan psikotropika dengan kode (A6); serta 1 (satu) buah plastik klip besar yang di dalamnya berisi: 1 (satu) buah plastik klip bening yang berisikan benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 2,07 gram brutto atau 1,84 gram netto dengan kode (B1); 1 (satu) buah plastik klip bening yang berisikan benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 2,98 gram brutto atau 2,58 gram netto dengan kode (B2); 1 (satu) buah plastik klip bening yang berisikan benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 1,98 gram brutto atau 1,75 gram netto dengan kode (B3); 1 (satu) buah plastik klip bening yang berisikan benda kristal bening yang diduga mengandung sediaan narkotika jenis sabu dengan berat 1,50 gram brutto atau 1,27 gram netto dengan kode (B4); 1 (satu) pepel yang bertuliskan Dumolid 5 mg Nitrazepam yang berisikan 10 (sepuluh) tablet yang diduga mengandung sediaan psikotropika dengan kode (C); 1 (satu) buah tas pinggang warna cokelat kombinasi putih dengan merk Sch; 1 (satu) buah alat hisap sabu (bong); 1 (satu) bendel plastik klip bening; 1 (satu) buah korek api gas; 1 (satu) buah kartu paspor BCA warna Gold dengan Nomor 6019008502554685; 1 (satu) buah HP merk Xiaomi warna putih dengan Nomor SIM Card 085739635333; 1 (satu) buah HP merk Oppo A7 warna biru metalic dengan No SIM Card 085858899977. (Dirampas untuk dimusnahkan)",putusan_829_pid.sus_2019_pn_dps_20261105170720,"28, 29, 30",Nadin,Bima,verified
+P015,keadaanMemberatkan,Perbuatan terdakwa bertentangan dengan program pemerintah dalam pemberantasan Narkotika,putusan_829_pid.sus_2019_pn_dps_20261105170720,27,Nadin,Bima,verified
+P015,keadaanMeringankan,Terdakwa bersikap sopan di persidangan dan mengakui terus terang perbuatannya; Terdakwa  menyatakan   tidaak  akan  mengulangi  lagi  perbuatannya; Terdakwa tidak berbelit-belit dalam memberikan keterangan di persidangan,putusan_829_pid.sus_2019_pn_dps_20261105170720,"27, 28",Nadin,Bima,verified
+P016,nomorPerkara,859/Pid.Sus/2020/PN Dps,putusan_859_pid.sus_2020_pn_dps_20261105165900,1,Nadin,Bima,verified
+P016,pengadilan,Pengadilan Negeri Denpasar,putusan_859_pid.sus_2020_pn_dps_20261105165900,1,Nadin,Bima,verified
+P016,tanggalPutusan,2020-10-27,putusan_859_pid.sus_2020_pn_dps_20261105165900,32,Nadin,Bima,verified
+P016,T1.terdakwaKode,P016,putusan_859_pid.sus_2020_pn_dps_20261105165900,1,Nadin,Bima,verified
+P016,jenisNarkotika,"Shabu (Metamfetamina, terdaftar dalam Golongan I nomor urut 61 Lampiran I Undang-Undang R.I. Nomor 35 tahun 2009 tentang Narkotika)",putusan_859_pid.sus_2020_pn_dps_20261105165900,11,Nadin,Bima,verified
+P016,beratBarangBuktiGram,42.83,putusan_859_pid.sus_2020_pn_dps_20261105165900,12,Nadin,Bima,verified
+P016,pasalDakwaan,Kesatu: Pasal 114 ayat (2) UU RI Nomor 35 tahun 2009 tentang Narkotika; Atau Kedua: Pasal 112 ayat (2) UU RI Nomor 35 tahun 2009 tentang Narkotika; Atau Ketiga: Pasal 115 ayat (1) UU RI Nomor 35 tahun 2009 tentang Narkotika,putusan_859_pid.sus_2020_pn_dps_20261105165900,"5, 6",Nadin,Bima,verified
+P016,pasalTerbukti,Pasal 112 ayat (2) UU RI Nomor 35 tahun 2009 tentang Narkotika,putusan_859_pid.sus_2020_pn_dps_20261105165900,31,Nadin,Bima,verified
+P016,T1.tuntutanBulan,144,putusan_859_pid.sus_2020_pn_dps_20261105165900,2,Nadin,Bima,verified
+P016,T1.vonisBulan,120,putusan_859_pid.sus_2020_pn_dps_20261105165900,2,Nadin,Bima,verified
+P016,dendaRupiah,800000000,putusan_859_pid.sus_2020_pn_dps_20261105165900,31,Nadin,Bima,verified
+P016,barangBukti,"23 (dua puluh tiga) paket plastik klip berisi kristal bening sabu berat bersih seluruhnya 42,83 gram; 1 (satu) buah tas kompek kulit warna coklat; 9 (sembilan) potongan pipet bening strip merah dan 4 (empat) potongan pipet hijau; 1 (satu) buah HP merk Oppo warna hitam; 1 (satu) kotak bekas HP; 1 (satu) buah timbangan elektrik; 1 (satu) bendel pipet bening strip merah; 2 (dua) bendel plastik klip kosong agar dirampas untuk dimusnahkan.",putusan_859_pid.sus_2020_pn_dps_20261105165900,31,Nadin,Bima,verified
+P016,keadaanMemberatkan,Perbuatan terdakwa dapat merusak kesehatan diri sendiri dan orang lain; Perbuatan terdakwa dilakukan pada saat pemerintah sedang giat-giatnya memberantas peredaran obat terlarang,putusan_859_pid.sus_2020_pn_dps_20261105165900,30,Nadin,Bima,verified
+P016,keadaanMeringankan,Terdakwa sopan dalam persidangan; Terdakwa menyesali dan mengakui terus terang perbuatannya,putusan_859_pid.sus_2020_pn_dps_20261105165900,30,Nadin,Bima,verified
+P017,nomorPerkara,896/Pid.Sus/2021/PN Dps,putusan_896_pid.sus_2021_pn_dps_20261105170130,1,Nadin,Bima,verified
+P017,pengadilan,Pengadilan Negeri Denpasar,putusan_896_pid.sus_2021_pn_dps_20261105170130,1,Nadin,Bima,verified
+P017,tanggalPutusan,2021-11-02,putusan_896_pid.sus_2021_pn_dps_20261105170130,1,Nadin,Bima,verified
+P017,T1.terdakwaKode,P017,putusan_896_pid.sus_2021_pn_dps_20261105170130,1,Nadin,Bima,verified
+P017,jenisNarkotika,"Ganja (daun, batang, dan biji kering, terdaftar dalam Golongan I nomor urut 8 Lampiran 1 Undang-Undang No. 35 Tahun 2009 tentang Narkotika)",putusan_896_pid.sus_2021_pn_dps_20261105170130,2,Nadin,Bima,verified
+P017,beratBarangBuktiGram,81.33,putusan_896_pid.sus_2021_pn_dps_20261105170130,23,Nadin,Bima,verified
+P017,pasalDakwaan,Kesatu: Pasal 111 ayat (1) Undang-undang RI No. 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 115 ayat (1) UU RI No. 35 Tahun 2009 tentang Narkotika; Atau Ketiga: Pasal 127 ayat (1) huruf a UU RI No. 35 Tahun 2009 tentang Narkotika,putusan_896_pid.sus_2021_pn_dps_20261105170130,18,Nadin,Bima,verified
+P017,pasalTerbukti,Pasal 111 ayat (1) Undang-Undang RI No. 35 Tahun 2009 tentang Narkotika (dalam dakwaan alternatif kesatu),putusan_896_pid.sus_2021_pn_dps_20261105170130,23,Nadin,Bima,verified
+P017,T1.tuntutanBulan,54,putusan_896_pid.sus_2021_pn_dps_20261105170130,23,Nadin,Bima,verified
+P017,T1.vonisBulan,48,putusan_896_pid.sus_2021_pn_dps_20261105170130,23,Nadin,Bima,verified
+P017,dendaRupiah,800000000,putusan_896_pid.sus_2021_pn_dps_20261105170130,23,Nadin,Bima,verified
+P017,barangBukti,"7 (tujuh) buah plastik yang didalamnya berisikan daun, batang, biji kering narkotika jenis ganja dengan berat total 84,22 gram brutto atau 81,33 gram netto; 1 (satu) buah tas kantong warna hitam; 1 (satu) buah handphone; 1 (satu) unit timbangan elektrik; 2 (dua) bendel plastic klip agar dimusnahkan; 1 (satu) unit kendaraan R 4 TOYOTA RUSH warna putih dengan plat nomor DK 1408 QV dikembalikan kepada Terdakwa P017",putusan_896_pid.sus_2021_pn_dps_20261105170130,23,Nadin,Bima,verified
+P017,keadaanMemberatkan,Perbuatan Terdakwa telah bertentangan dengan Program Pemerintah dalam memerangi dan memberantas Penyalahgunaan Narkotika dan Psikotropika,putusan_896_pid.sus_2021_pn_dps_20261105170130,22,Nadin,Bima,verified
+P017,keadaanMeringankan,Terdakwa bersikap sopan di persidangan; Terdakwa mengakui dan menyesali perbuatannya; Terdakwa belum pernah dihukum,putusan_896_pid.sus_2021_pn_dps_20261105170130,"22, 23",Nadin,Bima,verified
+P018,nomorPerkara,977/Pid.Sus/2019/PN Dps,putusan_977_pid.sus_2019_pn_dps_20261105170349,1,Nadin,Bima,verified
+P018,pengadilan,Pengadilan Negeri Denpasar,putusan_977_pid.sus_2019_pn_dps_20261105170349,1,Nadin,Bima,verified
+P018,tanggalPutusan,2019-10-23,putusan_977_pid.sus_2019_pn_dps_20261105170349,27,Nadin,Bima,verified
+P018,T1.terdakwaKode,P018,putusan_977_pid.sus_2019_pn_dps_20261105170349,1,Nadin,Bima,verified
+P018,jenisNarkotika,"N, N-Dimethyltryptamine (DMT) dalam bentuk tanaman (serat kayu Mimosa Hostilis Hidden Valley) dan Banisteriopsis caapi",putusan_977_pid.sus_2019_pn_dps_20261105170349,3,Nadin,Bima,verified
+P018,beratBarangBuktiGram,400,putusan_977_pid.sus_2019_pn_dps_20261105170349,3,Nadin,Bima,verified
+P018,pasalDakwaan,Kesatu: Pasal 111 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 127 ayat (1) huruf a UU Nomor 35 Tahun 2009 tentang Narkotika,putusan_977_pid.sus_2019_pn_dps_20261105170349,21,Nadin,Bima,verified
+P018,pasalTerbukti,Pasal 111 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika (dalam dakwaan alternatif pertama),putusan_977_pid.sus_2019_pn_dps_20261105170349,26,Nadin,Bima,verified
+P018,T1.tuntutanBulan,120,putusan_977_pid.sus_2019_pn_dps_20261105170349,26,Nadin,Bima,verified
+P018,T1.vonisBulan,84,putusan_977_pid.sus_2019_pn_dps_20261105170349,26,Nadin,Bima,verified
+P018,dendaRupiah,800000000,putusan_977_pid.sus_2019_pn_dps_20261105170349,26,Nadin,Bima,verified
+P018,barangBukti,"1 (satu) buah plastik tertempel tulisan Mimosa Hostilis Hidden Valley 200 gr berisi potongan batang tanaman berwarna coklat kemerahan; 1 (satu) buah kaleng tertempel tulisan Banisteriopsis caapi 30x Yello Ecuador 100gr, berisi pasta berwarna hitam; 1 (satu) buah kaleng tertempel tulisan Banisteriopsis Caapi 30x Yellow Ecuador 100gr, berisi pasta berwarna hitam; 1 (satu) buah form pembayaran dari Kantor Pos agar dirampas untuk dimusnahkan.",putusan_977_pid.sus_2019_pn_dps_20261105170349,26,Nadin,Bima,verified
+P018,keadaanMemberatkan,Perbuatan terdakwa bertentangan dengan program pemerintah dalam pemberantasan penyalahgunaan narkotika dan psikotropika,putusan_977_pid.sus_2019_pn_dps_20261105170349,25,Nadin,Bima,verified
+P018,keadaanMeringankan,Terdakwa belum pernah dihukum ; Terdakwa mengakui terus terang perbuatannya dan berjanji tidak akan mengulanginya lagi; Terdakwa menyesali perbuatannya,putusan_977_pid.sus_2019_pn_dps_20261105170349,"25, 26",Nadin,Bima,verified
+P019,nomorPerkara,989/Pid.Sus/2019/PN Dps,putusan_989_pid.sus_2019_pn_dps_20261105170408,1,Nadin,Bima,verified
+P019,pengadilan,Pengadilan Negeri Denpasar,putusan_989_pid.sus_2019_pn_dps_20261105170408,1,Nadin,Bima,verified
+P019,tanggalPutusan,2019-10-21,putusan_989_pid.sus_2019_pn_dps_20261105170408,46,Nadin,Bima,verified
+P019,T1.terdakwaKode,P019,putusan_989_pid.sus_2019_pn_dps_20261105170408,1,Nadin,Bima,verified
+P019,jenisNarkotika,Narkotika Golongan I bukan tanaman (Sabu / Metamfetamina dan Ekstasi),putusan_989_pid.sus_2019_pn_dps_20261105170408,"2, 6, 30",Nadin,Bima,verified
+P019,beratBarangBuktiGram,8.99,putusan_989_pid.sus_2019_pn_dps_20261105170408,"13, 14, 16",Nadin,Bima,verified
+P019,pasalDakwaan,Kesatu: Pasal 112 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 132 ayat (1) Jo. Pasal 114 ayat (2) UU Nomor 35 Tahun 2009 tentang Narkotika,putusan_989_pid.sus_2019_pn_dps_20261105170408,"9, 11",Nadin,Bima,verified
+P019,pasalTerbukti,Pasal 112 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika,putusan_989_pid.sus_2019_pn_dps_20261105170408,42,Nadin,Bima,verified
+P019,T1.tuntutanBulan,108,putusan_989_pid.sus_2019_pn_dps_20261105170408,2,Nadin,Bima,verified
+P019,T1.vonisBulan,78,putusan_989_pid.sus_2019_pn_dps_20261105170408,2,Nadin,Bima,verified
+P019,dendaRupiah,800000000,putusan_989_pid.sus_2019_pn_dps_20261105170408,2,Nadin,Bima,verified
+P019,barangBukti,"Paket 1 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,53 gram brutto atau 0,20 gram netto; Paket 2 berupa 1 (satu) plastik klip yang berisi 1 (satu) butir tablet warna orange diduga narkotika jenis ekstasi dengan berat 0,40 gram netto, 1 (satu) butir tablet warna biru diduga narkotika jenis ekstasi dengan berat 0,23 gram netto dan 1 (satu) butir tablet warna hijau diduga narkotika jenis ekstasi dengan berat 0,38 gram netto; Paket 3 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 1,92 gram brutto atau 1,59 gram netto; Paket 4 berupa 1 (satu) plastik klip yang berisi 1 (satu) butir tablet warna biru diduga narkotika jenis ekstasi dengan berat 0,31 gram netto; Paket 5 berupa 1 (satu) plastik klip yang berisi 2 (dua) butir tablet warna hijau diduga narkotika jenis ekstasi dengan berat total 0,80 gram netto; Paket 6 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 3,90 gram brutto atau 3,57 gram netto; Paket 7 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,45 gram brutto atau 0,12 gram netto; Paket 8 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,45 gram brutto atau 0,12 gram netto; Paket 9 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,45 gram brutto atau 0,12 gram netto; Paket 10 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,45 gram brutto atau 0,12 gram netto; Paket 11 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,39 gram brutto atau 0,06 gram netto; Paket 12 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,41 gram brutto atau 0,08 gram netto; Paket 13 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,41 gram brutto atau 0,08 gram netto; Paket 14 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,41 gram brutto atau 0,08 gram netto; Paket 15 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,39 gram brutto atau 0,06 gram netto; Paket 16 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,40 gram brutto atau 0,07 gram netto; Paket 17 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,39 gram brutto atau 0,06 gram netto; Paket 18 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,38 gram brutto atau 0,05 gram netto; Paket 19 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,38 gram brutto atau 0,05 gram netto; Paket 20 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,37 gram brutto atau 0,04 gram netto; Paket 21 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,37 gram brutto atau 0,04 gram netto; Paket 22 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,38 gram brutto atau 0,05 gram netto; Paket 23 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,36 gram brutto atau 0,03 gram netto; Paket 24 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,36 gram brutto atau 0,03 gram netto; Paket 25 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,36 gram brutto atau 0,03 gram netto; Paket 26 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,36 gram brutto atau 0,03 gram netto; Paket 27 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,36 gram brutto atau 0,03 gram netto; Paket 28 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,36 gram brutto atau 0,03 gram netto; Paket 29 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,37 gram brutto atau 0,04 gram netto; Paket 30 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,36 gram brutto atau 0,03 gram netto; Paket 31 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,36 gram brutto atau 0,03 gram netto; Paket 32 berupa 1 (satu) plastik klip yang berisi kristal bening diduga narkotika jenis shabu dengan berat 0,36 gram brutto atau 0,03 gram netto; 1 (satu) buah botol bekas deodorant merek rexona; 1 (satu) rangkaian alat isap shabu (bong); 1 (satu) botol bekas parfum ruangan merek Stella; 1 (satu) baju blazer warna hitam; 4 (empat) bendel plastik klip kosong; 1 (satu) buah timbangan digital; 1 (satu) unit handphone merek oppo warna merah agar dirampas untuk dimusnahkan.",putusan_989_pid.sus_2019_pn_dps_20261105170408,"30, 31, 32, 33, 34",Nadin,Bima,verified
+P019,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan program pemerintah yang sedang giat-giatnya memberantas tindak pidana narkotika,putusan_989_pid.sus_2019_pn_dps_20261105170408,42,Nadin,Bima,verified
+P019,keadaanMeringankan,Terdakwa menyesali perbuatannya; Terdakwa mengaku dan berterus terang akan perbuatannya; Terdakwa bersikap sopan di persidangan,putusan_989_pid.sus_2019_pn_dps_20261105170408,42,Nadin,Bima,verified
+P020,nomorPerkara,1122/Pid.Sus/2019/PN Dps,putusan_1122_pid.sus_2019_pn_dps_20261105170740,1,Nadin,Bima,verified
+P020,pengadilan,Pengadilan Negeri Denpasar,putusan_1122_pid.sus_2019_pn_dps_20261105170740,1,Nadin,Bima,verified
+P020,tanggalPutusan,2019-11-18,putusan_1122_pid.sus_2019_pn_dps_20261105170740,22,Nadin,Bima,verified
+P020,T1.terdakwaKode,P020,putusan_1122_pid.sus_2019_pn_dps_20261105170740,1,Nadin,Bima,verified
+P020,jenisNarkotika,Narkotika Golongan I bukan tanaman (jenis shabu / Metamfetamina),putusan_1122_pid.sus_2019_pn_dps_20261105170740,"2, 4, 16",Nadin,Bima,verified
+P020,beratBarangBuktiGram,0.08,putusan_1122_pid.sus_2019_pn_dps_20261105170740,"2, 4, 12",Nadin,Bima,verified
+P020,pasalDakwaan,Primair: Pasal 114 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika; Subsidiair: Pasal 112 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika,putusan_1122_pid.sus_2019_pn_dps_20261105170740,"3, 4, 2005",Nadin,Bima,verified
+P020,pasalTerbukti,Pasal 112 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika (dalam dakwaan subsidiair),putusan_1122_pid.sus_2019_pn_dps_20261105170740,"21, 22",Nadin,Bima,verified
+P020,T1.tuntutanBulan,60,putusan_1122_pid.sus_2019_pn_dps_20261105170740,2,Nadin,Bima,verified
+P020,T1.vonisBulan,48,putusan_1122_pid.sus_2019_pn_dps_20261105170740,22,Nadin,Bima,verified
+P020,dendaRupiah,800000000,putusan_1122_pid.sus_2019_pn_dps_20261105170740,22,Nadin,Bima,verified
+P020,barangBukti,"1 (satu) paket plastik klip berisi Narkotika jenis shabu berat netto 0,06 (nol
+koma nol delapan) gram, dengan keterangan sebagai berikut : pada saat
+diamankan berat netto 0,08 gram, disisihkan untuk kepentingan pengujian
+laboratorium berat netto 0,02 gram, dan sisanya untuk kepentingan
+persidangan berat netto 0,35 gram; 1 (satu) buah korek api gas; 1 (satu) buah bong; 1 (satu) buah Samsung warna gold beserta kartu simpati. asing-masing barang bukti tersebut dirampas untuk dimusnahkan.",putusan_1122_pid.sus_2019_pn_dps_20261105170740,22,Nadin,Bima,verified
+P020,keadaanMemberatkan,Perbuatan terdakwa telah menentang program pemerintah dalam memerangi penyalahgunaan narkotika dan psikotropika,putusan_1122_pid.sus_2019_pn_dps_20261105170740,21,Nadin,Bima,verified
+P020,keadaanMeringankan,Terdakwa menyesali perbuatannya; Terdakwa tidak berbelit-belit dalam memberikan keterangan serta bersikap sopan di persidangan; Terdakwa mengakui terus terang perbuatannya,putusan_1122_pid.sus_2019_pn_dps_20261105170740,21,Nadin,Bima,verified
+P021,nomorPerkara,1129/Pid.Sus/2019/PN Dps,putusan_1129_pid.sus_2019_pn_dps_20261105170756,1,Nadin,Bima,verified
+P021,pengadilan,Pengadilan Negeri Denpasar,putusan_1129_pid.sus_2019_pn_dps_20261105170756,1,Nadin,Bima,verified
+P021,tanggalPutusan,2019-11-18,putusan_1129_pid.sus_2019_pn_dps_20261105170756,17,Nadin,Bima,verified
+P021,T1.terdakwaKode,P021,putusan_1129_pid.sus_2019_pn_dps_20261105170756,1,Nadin,Bima,verified
+P021,jenisNarkotika,Narkotika Golongan I bukan tanaman (jenis shabu / Metamfetamina),putusan_1129_pid.sus_2019_pn_dps_20261105170756,"3, 4, 15",Nadin,Bima,verified
+P021,beratBarangBuktiGram,0.21,putusan_1129_pid.sus_2019_pn_dps_20261105170756,"2, 4 , 11",Nadin,Bima,verified
+P021,pasalDakwaan,Kesatu: Pasal 112 ayat (2) UU Nomor 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 115 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika,putusan_1129_pid.sus_2019_pn_dps_20261105170756,"2, 4, 2006",Nadin,Bima,verified
+P021,pasalTerbukti,Pasal 112 ayat (2) UU Nomor 35 Tahun 2009 tentang Narkotika (dalam dakwaan kesatu),putusan_1129_pid.sus_2019_pn_dps_20261105170756,16,Nadin,Bima,verified
+P021,T1.tuntutanBulan,60,putusan_1129_pid.sus_2019_pn_dps_20261105170756,2,Nadin,Bima,verified
+P021,T1.vonisBulan,54,putusan_1129_pid.sus_2019_pn_dps_20261105170756,16,Nadin,Bima,verified
+P021,dendaRupiah,800000000,putusan_1129_pid.sus_2019_pn_dps_20261105170756,16,Nadin,Bima,verified
+P021,barangBukti,"1 (satu) paket plastik klip berisi kristal bening narkotika jenis shabu berat bersih 0,21 gram; 1 (satu) potong pipet warna biru; 1 (satu) buah pembungkus bekas permen ment; 1 (satu) buah HP merk Samsung warna gold beserta simcardnya (dirampas untuk dimusnahkan); serta 1 (satu) unit sepeda motor Yamaha Nmax DK 6692 QI (dikembalikan kepada pemiliknya Jaya Antara)",putusan_1129_pid.sus_2019_pn_dps_20261105170756,"16, 17",Nadin,Bima,verified
+P021,keadaanMemberatkan,Perbuatan terdakwa bertentangan dengan program pemerintah untuk memberantas peredaran Narkotika,putusan_1129_pid.sus_2019_pn_dps_20261105170756,16,Nadin,Bima,verified
+P021,keadaanMeringankan,Terdakwa mengakui terus terang; Terdakwa menyesali perbuatannya; Terdakwa berjanji tidak akan mengulangi perbuatannya,putusan_1129_pid.sus_2019_pn_dps_20261105170756,16,Nadin,Bima,verified
+P022,nomorPerkara,1312/Pid.Sus/2018/PN Dps,putusan_1312_pid.sus_2018_pn_dps_20261105170517,1,Nadin,Bima,verified
+P022,pengadilan,Pengadilan Negeri Denpasar,putusan_1312_pid.sus_2018_pn_dps_20261105170517,1,Nadin,Bima,verified
+P022,tanggalPutusan,2019-02-14,putusan_1312_pid.sus_2018_pn_dps_20261105170517,17,Nadin,Bima,verified
+P022,T1.terdakwaKode,P022,putusan_1312_pid.sus_2018_pn_dps_20261105170517,1,Nadin,Bima,verified
+P022,jenisNarkotika,Narkotika Golongan I (jenis shabu / Metamfetamina),putusan_1312_pid.sus_2018_pn_dps_20261105170517,"4, 8, 15",Nadin,Bima,verified
+P022,beratBarangBuktiGram,0.11,putusan_1312_pid.sus_2018_pn_dps_20261105170517,"2, 4, 11",Nadin,Bima,verified
+P022,pasalDakwaan,Kesatu: Pasal 112 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 115 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika; Atau Ketiga: Pasal 127 ayat (1) huruf a UU Nomor 35 Tahun 2009 tentang Narkotika,putusan_1312_pid.sus_2018_pn_dps_20261105170517,"2, 6, 2008",Nadin,Bima,verified
+P022,pasalTerbukti,Pasal 127 ayat (1) huruf a UU Nomor 35 Tahun 2009 tentang Narkotika (dalam dakwaan alternatif ketiga),putusan_1312_pid.sus_2018_pn_dps_20261105170517,16,Nadin,Bima,verified
+P022,T1.tuntutanBulan,24,putusan_1312_pid.sus_2018_pn_dps_20261105170517,2,Nadin,Bima,verified
+P022,T1.vonisBulan,16,putusan_1312_pid.sus_2018_pn_dps_20261105170517,18,Nadin,Bima,verified
+P022,dendaRupiah,0,putusan_1312_pid.sus_2018_pn_dps_20261105170517,18,Nadin,Bima,verified
+P022,barangBukti,"Satu plastic klip didalamnya berisi Kristal bening diduga narkotika
+berat kotor 0,26 gram berat bersih 0,03 gram ( kode A );  Satu plastic klip didalamnya berisi Kristal bening diduga narkotika berat kotor 0,29 gram berat bersih 0,08 gram ( kode B ); Disisihkan berat bersih 0,01 gram (kode A) dan 0,03 gram  (kode B)
+untuk pemeriksaan Lab sedangkan sisanya di rampas untuk di
+musnahkan ; Satu kotak bekas vave warna hitam;  Satu buah bong; Satu potongan pipet warna putih; Satu buah pipa kaca; Satu kotak bekas rokok Marlboro gold lights (Di rampas untuk di musnahkan)",putusan_1312_pid.sus_2018_pn_dps_20261105170517,"16, 17, 18",Nadin,Bima,verified
+P022,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; Perbuatan Terdakwa tidak mendukung program pemerintah dalam pemberantasan narkotika dan dapat merusak moral generasi muda,putusan_1312_pid.sus_2018_pn_dps_20261105170517,16,Nadin,Bima,verified
+P022,keadaanMeringankan,Terdakwa mengakui terus terang perbuatannya sehingga memperlancar persidangan; Terdakwa belum pernah dihukum,putusan_1312_pid.sus_2018_pn_dps_20261105170517,16,Nadin,Bima,verified
+P023,nomorPerkara,551/Pid.Sus/2026/PN Dps,putusan_551_pid.sus_2026_pn_dps_20261105165148,1,Nadin,Bima,verified
+P023,pengadilan,Pengadilan Negeri Denpasar,putusan_551_pid.sus_2026_pn_dps_20261105165148,1,Nadin,Bima,verified
+P023,tanggalPutusan,2026-07-09,putusan_551_pid.sus_2026_pn_dps_20261105165148,32,Nadin,Bima,verified
+P023,T1.terdakwaKode,P023_1,putusan_551_pid.sus_2026_pn_dps_20261105165148,1,Nadin,Bima,verified
+P023,T2.terdakwaKode,P023_2,putusan_551_pid.sus_2026_pn_dps_20261105165148,"1, 2",Nadin,Bima,verified
+P023,jenisNarkotika,Narkotika Golongan I bukan tanaman (jenis shabu / Metamfetamina),putusan_551_pid.sus_2026_pn_dps_20261105165148,"3, 5, 20",Nadin,Bima,verified
+P023,beratBarangBuktiGram,6.24,putusan_551_pid.sus_2026_pn_dps_20261105165148,"3, 5, 2019",Nadin,Bima,verified
+P023,pasalDakwaan,Dakwaan Tunggal: Pasal 609 ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang KUHP Jo. Pasal 132 ayat (1) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_551_pid.sus_2026_pn_dps_20261105165148,"2, 3, 2004",Nadin,Bima,verified
+P023,pasalTerbukti,Pasal 609 ayat (2) huruf a Undang-Undang RI Nomor 1 Tahun 2023 tentang KUHP Jo. Pasal 132 ayat (1) Undang-Undang RI Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang RI Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (dalam dakwaan tunggal),putusan_551_pid.sus_2026_pn_dps_20261105165148,31,Nadin,Bima,verified
+P023,T1.tuntutanBulan,54,putusan_551_pid.sus_2026_pn_dps_20261105165148,3,Nadin,Bima,verified
+P023,T1.vonisBulan,48,putusan_551_pid.sus_2026_pn_dps_20261105165148,3,Nadin,Bima,verified
+P023,T2.tuntutanBulan,36,putusan_551_pid.sus_2026_pn_dps_20261105165148,31,Nadin,Bima,verified
+P023,T2.vonisBulan,30,putusan_551_pid.sus_2026_pn_dps_20261105165148,31,Nadin,Bima,verified
+P023,dendaRupiah,500000000,putusan_551_pid.sus_2026_pn_dps_20261105165148,31,Nadin,Bima,verified
+P023,barangBukti,"1 (satu) plastik klip yang didalamnya berisi kristal bening narkotika
+jenis shabu dengan berat brutto 0,41 gram atau netto 0,07 gram
+(KODE 1); 11 (sebelas) plastik klip yang masing-masing didalamnya berisi kristal
+bening narkotika jenis shabu dengan total berat brutto 8,04 gram atau
+netto 6,17 gram ( KODE 2 s/d KODE 12); 1 (satu) buah rangkaian alat isap (BONG); 1 (satu) buah plastik warna kuning; 1 (satu) buah koper (Dirampas untuk dimusnahkan); 1 (satu) unit handphone merk infinik (Dirampas untuk Negara)",putusan_551_pid.sus_2026_pn_dps_20261105165148,"31, 32",Nadin,Bima,verified
+P023,keadaanMemberatkan,Perbuatan para Terdakwa meresahkan masyarakat; Perbuatan para Terdakwa bertentangan dengan program pemerintah dalam upaya pemberantasan peredaran dan penyalahgunaan Narkotika; Terdakwa II dihukum dalam perkara lain dengan jenis perkara pidana yang sama,putusan_551_pid.sus_2026_pn_dps_20261105165148,29,Nadin,Bima,verified
+P023,keadaanMeringankan,Terdakwa I belum pernah dihukum; Para Terdakwa mengakui terus terang perbuatannya,putusan_551_pid.sus_2026_pn_dps_20261105165148,29,Nadin,Bima,verified
+P024,nomorPerkara,566/Pid.Sus/2026/PN Dps,putusan_566_pid.sus_2026_pn_dps_20261105165453,1,Nadin,Bima,verified
+P024,pengadilan,Pengadilan Negeri Denpasar,putusan_566_pid.sus_2026_pn_dps_20261105165453,1,Nadin,Bima,verified
+P024,tanggalPutusan,2026-08-06,putusan_566_pid.sus_2026_pn_dps_20261105165453,19,Nadin,Bima,verified
+P024,T1.terdakwaKode,P024,putusan_566_pid.sus_2026_pn_dps_20261105165453,1,Nadin,Bima,verified
+P024,jenisNarkotika,Narkotika Golongan I bukan tanaman (jenis shabu / Metamfetamina),putusan_566_pid.sus_2026_pn_dps_20261105165453,"2, 4, 2008",Nadin,Bima,verified
+P024,beratBarangBuktiGram,49.58,putusan_566_pid.sus_2026_pn_dps_20261105165453,"2, 8, 10",Nadin,Bima,verified
+P024,pasalDakwaan,Dakwaan Alternatif: Kesatu Pasal 114 ayat (2) UU RI No. 35 Tahun 2009 tentang Narkotika Jo. UU No. 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana; Atau Kedua Pasal 609 ayat (2) huruf a UU No. 1 Tahun 2023 tentang KUHP Jo. UU No. 1 Tahun 2026 tentang Penyesuaian Pidana; Atau Kedua: Pasal 609 Ayat (2) huruf a Undang-Undang Nomor 1 Tahun 2023 tentang KUHP Jo. Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Pidana,putusan_566_pid.sus_2026_pn_dps_20261105165453,"2, 4, 2006",Nadin,Bima,verified
+P024,pasalTerbukti,Pasal 114 ayat (2) Undang-Undang RI Nomor 35 Tahun 2009 tentang Narkotika Jo. Lampiran II Undang-Undang RI Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (dalam dakwaan alternatif kesatu),putusan_566_pid.sus_2026_pn_dps_20261105165453,18,Nadin,Bima,verified
+P024,T1.tuntutanBulan,96,putusan_566_pid.sus_2026_pn_dps_20261105165453,2,Nadin,Bima,verified
+P024,T1.vonisBulan,72,putusan_566_pid.sus_2026_pn_dps_20261105165453,18,Nadin,Bima,verified
+P024,dendaRupiah,500000000,putusan_566_pid.sus_2026_pn_dps_20261105165453,18,Nadin,Bima,verified
+P024,barangBukti,"1 (satu) buah plastik bekas pembungkus roti bertuliskan Sari Roti,
+yang didalamnya terdapat 1 (satu) buah plastik klip bening dibungkus 1
+(satu) buah plastik klip bening didalamnya berisi benda kristal bening yang
+diduga mengandung sediaan narkotika jenis sabu netto 49,56 (empat
+puluh sembilan koma lima puluh enam) gram; 1 (satu) bungkus plastik klip bening berukuran kecil (Dirampas untuk dimusnahkan);  1 (satu) buah Handphone merk VIVO V2027 warna silver dengan No. sim card 087712889635 imei 864043054099937;
+(Dirampas untuk negara)",putusan_566_pid.sus_2026_pn_dps_20261105165453,"17, 18",Nadin,Bima,verified
+P024,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; Perbuatan Terdakwa bertentangan dengan program pemerintah memberantas peredaran narkotika,putusan_566_pid.sus_2026_pn_dps_20261105165453,18,Nadin,Bima,verified
+P024,keadaanMeringankan,Terdakwa tidak mempersulit proses pemeriksaan di persidangan; Terdakwa bersikap sopan di persidangan; Terdakwa mempunyai tanggungan keluarga dan merupakan orang tua tunggal; Terdakwa belum pernah dihukum,putusan_566_pid.sus_2026_pn_dps_20261105165453,18,Nadin,Bima,verified
+P025,nomorPerkara,594/Pid.Sus/2021/PN Dps,putusan_594_pid.sus_2021_pn_dps_20261105170150,1,Nadin,Bima,verified
+P025,pengadilan,Pengadilan Negeri Denpasar,putusan_594_pid.sus_2021_pn_dps_20261105170150,1,Nadin,Bima,verified
+P025,tanggalPutusan,2021-09-23,putusan_594_pid.sus_2021_pn_dps_20261105170150,31,Nadin,Bima,verified
+P025,T1.terdakwaKode,P025,putusan_594_pid.sus_2021_pn_dps_20261105170150,1,Nadin,Bima,verified
+P025,jenisNarkotika,Narkotika Golongan I dalam bentuk bukan tanaman (tablet warna hijau jenis ekstasi / MDMA),putusan_594_pid.sus_2021_pn_dps_20261105170150,"2, 5, 10",Nadin,Bima,verified
+P025,beratBarangBuktiGram,68.90,putusan_594_pid.sus_2021_pn_dps_20261105170150,"3, 5, 10",Nadin,Bima,verified
+P025,pasalDakwaan,Alternatif Kesatu: Pasal 114 ayat (2) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika Jo. Pasal 132 ayat (1) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika; Atau Kedua: Pasal 112 ayat (2) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika Jo. Pasal 132 ayat (1) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika,putusan_594_pid.sus_2021_pn_dps_20261105170150,"2, 3, 6, 8",Nadin,Bima,verified
+P025,pasalTerbukti,Pasal 114 ayat (2) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika Jo. Pasal 132 ayat (1) Undang-Undang Nomor 35 Tahun 2009 tentang Narkotika (dalam dakwaan alternatif kesatu),putusan_594_pid.sus_2021_pn_dps_20261105170150,30,Nadin,Bima,verified
+P025,T1.tuntutanBulan,120,putusan_594_pid.sus_2021_pn_dps_20261105170150,3,Nadin,Bima,verified
+P025,T1.vonisBulan,96,putusan_594_pid.sus_2021_pn_dps_20261105170150,30,Nadin,Bima,verified
+P025,dendaRupiah,1000000000,putusan_594_pid.sus_2021_pn_dps_20261105170150,30,Nadin,Bima,verified
+P025,barangBukti,"1 (satu) tas kresek warna hitam di dalamnya terdapat 1 (satu) 
+plastik klip berisi 221 butir tablet warna hijau narkotika jenis extacy
+dengan berat bersih keseluruhan 68,90 gram, kemudian disisihkan
+sebagaimana berita acara penyisihan barang bukti tanggal 23 Pebruari
+2021 sebanyak berat bersih 3,15 gram guna kepentingan pengujian
+laboratorium dan sisanya sebanyak netto 65,75 gram digunakan untuk
+kepentingan pembuktian dipersidangan; 1 (satu) buah HP merk Samsung warna hitam; 1 (satu) buah HP merek Samsung cashing kulit warna hitam; 1 (satu) buah HP merek Samsung cashing kulit warna coklat; Keseluruhan barang bukti tersebut dirampas untuk dimusnahkan",putusan_594_pid.sus_2021_pn_dps_20261105170150,30,Nadin,Bima,verified
+P025,keadaanMemberatkan,Perbuatan Terdakwa tidak mendukung program Pemerintah dalam rangka pemberantasan penyalahgunaan Narkotika,putusan_594_pid.sus_2021_pn_dps_20261105170150,29,Nadin,Bima,verified
+P025,keadaanMeringankan,"Terdakwa mengakui terus terang perbuatannya, menyesali dan berjanji tidak akan mengulanginya lagi; Terdakwa merupakan tulang punggung keluarga; Terdakwa belum pernah dihukum",putusan_594_pid.sus_2021_pn_dps_20261105170150,29,Nadin,Bima,verified
+P026,nomorPerkara,397/Pid.Sus/2026/PN Dps,putusan_397_pid.sus_2026_pn_dps_20261106113830,1,Bima,Nadin,verified
+P026,pengadilan,Pengadilan Negeri Denpasar,putusan_397_pid.sus_2026_pn_dps_20261106113830,1,Bima,Nadin,verified
+P026,tanggalPutusan,2026-07-16,putusan_397_pid.sus_2026_pn_dps_20261106113830,51,Bima,Nadin,verified
+P026,T1.terdakwaKode,P026,putusan_397_pid.sus_2026_pn_dps_20261106113830,1,Bima,Nadin,verified
+P026,jenisNarkotika,Narkotika Golongan I jenis Ganja (berupa tanaman kering berwarna hijau kecoklatan; terdaftar dalam Golongan I Nomor Urut 8 Lampiran I UU Nomor 35 Tahun 2009 tentang Narkotika).,putusan_397_pid.sus_2026_pn_dps_20261106113830,"3, 7, 10",Bima,Nadin,verified
+P026,beratBarangBuktiGram,1213.18,putusan_397_pid.sus_2026_pn_dps_20261106113830,"3, 7, 10",Bima,Nadin,verified
+P026,pasalDakwaan,"Dakwaan alternatif pertama: Pasal 114 ayat (2) UU Nomor 35 Tahun 2009 tentang Narkotika jo. UU Nomor 1 Tahun 2023 tentang KUHP jo. UU Nomor 1 Tahun 2026 tentang Penyesuaian Pidana jo. Pasal 132 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika.
+
+Dakwaan alternatif kedua: Pasal 111 ayat (2) UU Nomor 35 Tahun 2009 tentang Narkotika jo. UU Nomor 1 Tahun 2023 tentang KUHP jo. UU Nomor 1 Tahun 2026 tentang Penyesuaian Pidana jo. Pasal 132 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika.",putusan_397_pid.sus_2026_pn_dps_20261106113830,"2, 8",Bima,Nadin,verified
+P026,pasalTerbukti,Pasal 114 ayat (2) UU Nomor 35 Tahun 2009 tentang Narkotika jo. UU Nomor 1 Tahun 2023 tentang KUHP jo. UU Nomor 1 Tahun 2026 tentang Penyesuaian Pidana jo. Pasal 132 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika.,putusan_397_pid.sus_2026_pn_dps_20261106113830,50,Bima,Nadin,verified
+P026,T1.tuntutanBulan,84,putusan_397_pid.sus_2026_pn_dps_20261106113830,2,Bima,Nadin,verified
+P026,T1.vonisBulan,72,putusan_397_pid.sus_2026_pn_dps_20261106113830,50,Bima,Nadin,verified
+P026,dendaRupiah,5000000,putusan_397_pid.sus_2026_pn_dps_20261106113830,50,Bima,Nadin,verified
+P026,barangBukti,"1. 5 botol plastik bening berisi tanaman kering diduga ganja:
+   - Kode A1: 310,35 gram bruto / 237,94 gram netto.
+   - Kode A2: 307,67 gram bruto / 236,95 gram netto.
+   - Kode A3: 303,71 gram bruto / 229,01 gram netto.
+   - Kode A4: 313,80 gram bruto / 237,34 gram netto.
+   - Kode A5: 302,49 gram bruto / 225,40 gram netto.
+
+2. 1 plastik klip berisi ganja:
+   - Kode B: 52,79 gram bruto / 46,54 gram netto.
+
+Total berat seluruh ganja: 1.590,81 gram bruto / 1.213,18 gram netto.
+
+3. 1 tas kain warna krem.
+4. 1 bendel plastik klip kosong.
+5. 1 rol isolasi warna coklat.
+6. 1 timbangan elektrik merek Thome warna silver.
+7. 1 HP iPhone 13 mini warna pink.
+8. 1 HP Infinix warna silver.
+9. Uang tunai Rp2.500.000 dalam 25 lembar pecahan Rp100.000.
+
+Status barang bukti:
+- Ganja dan perlengkapan terkait dirampas untuk dimusnahkan.
+- Kedua HP dan uang tunai dirampas untuk negara.",putusan_397_pid.sus_2026_pn_dps_20261106113830,"3, 34",Bima,Nadin,verified
+P026,keadaanMemberatkan,Perbuatan terdakwa bertentangan dengan program pemerintah yang memberantas peredaran gelap narkotika.,putusan_397_pid.sus_2026_pn_dps_20261106113830,50,Bima,Nadin,verified
+P026,keadaanMeringankan,Terdakwa menyesali perbuatannya dan bersikap terus terang dalam persidangan sehingga memperlancar persidangan; terdakwa belum pernah dipidana.,putusan_397_pid.sus_2026_pn_dps_20261106113830,50,Bima,Nadin,verified
+P027,nomorPerkara,498/Pid.Sus/2026/PN Dps,putusan_498_pid.sus_2026_pn_dps_20261106113750,1,Bima,Nadin,verified
+P027,pengadilan,Pengadilan Negeri Denpasar,putusan_498_pid.sus_2026_pn_dps_20261106113750,1,Bima,Nadin,verified
+P027,tanggalPutusan,2026-08-06,putusan_498_pid.sus_2026_pn_dps_20261106113750,52,Bima,Nadin,verified
+P027,T1.terdakwaKode,P027,putusan_498_pid.sus_2026_pn_dps_20261106113750,1,Bima,Nadin,verified
+P027,jenisNarkotika,Narkotika Golongan I jenis Kokain (serbuk putih; terdaftar dalam Golongan I Nomor Urut 7 Lampiran I UU Nomor 35 Tahun 2009 tentang Narkotika) dan MDMA/Ekstasi (kristal berwarna kecoklatan; terdaftar dalam Golongan I Nomor Urut 37 Lampiran I UU Nomor 35 Tahun 2009 tentang Narkotika).,putusan_498_pid.sus_2026_pn_dps_20261106113750,"9, 10, 16",Bima,Nadin,verified
+P027,beratBarangBuktiGram,8.74,putusan_498_pid.sus_2026_pn_dps_20261106113750,"9, 10, 16, 38",Bima,Nadin,verified
+P027,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 ayat (2) UU Nomor 35 Tahun 2009 tentang Narkotika jo. Pasal 132 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika jo. UU Nomor 1 Tahun 2023 tentang KUHP jo. UU Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 ayat (2) huruf a UU Nomor 1 Tahun 2023 tentang KUHP jo. Pasal 132 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika.",putusan_498_pid.sus_2026_pn_dps_20261106113750,"2, 11, 17",Bima,Nadin,verified
+P027,pasalTerbukti,Pasal 609 ayat (2) huruf a UU Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Pasal 132 ayat (1) UU Nomor 35 Tahun 2009 tentang Narkotika.,putusan_498_pid.sus_2026_pn_dps_20261106113750,50,Bima,Nadin,verified
+P027,T1.tuntutanBulan,60,putusan_498_pid.sus_2026_pn_dps_20261106113750,2,Bima,Nadin,verified
+P027,T1.vonisBulan,60,putusan_498_pid.sus_2026_pn_dps_20261106113750,50,Bima,Nadin,verified
+P027,dendaRupiah,1000000,putusan_498_pid.sus_2026_pn_dps_20261106113750,50,Bima,Nadin,verified
+P027,barangBukti,"1. 1 buah amplop warna putih dengan kode A.
+2. 1 plastik klip bening berisi serbuk putih diduga Kokain kode A1, berat 3,02 gram bruto / 2,82 gram netto.
+3. 1 plastik klip bening berisi kristal kecoklatan diduga MDMA kode A2, berat 0,83 gram bruto / 0,63 gram netto.
+4. 1 plastik klip bening berisi kristal kecoklatan diduga MDMA kode A3, berat 0,82 gram bruto / 0,62 gram netto.
+5. 1 plastik klip bening berisi kristal kecoklatan diduga MDMA kode A4, berat 0,78 gram bruto / 0,58 gram netto.
+6. 1 plastik klip bening berisi kristal kecoklatan diduga MDMA kode A5, berat 0,84 gram bruto / 0,64 gram netto.
+7. 1 unit mobil merek Wuling warna putih nomor polisi DK 1931 ACZ kode B.
+8. 1 handphone iPhone 15 Pro Max warna abu-abu kode C.
+9. 1 tas kecil warna putih bertuliskan SMALL.
+10. 1 plastik klip bening berisi serbuk putih diduga Kokain kode 2, berat 0,66 gram bruto / 0,46 gram netto.
+11. 1 piring kecil warna putih.
+12. 2 bekas plastik klip bening ukuran kecil.
+13. 1 bekas plastik klip bening ukuran sedang.
+14. 2 potongan sedotan warna merah.
+15. 1 potongan sedotan warna putih.
+16. 1 sedotan besi.
+17. 1 kartu Flazz BCA.
+18. 1 kartu Time Zone.
+19. 1 plastik klip bening berisi Kokain kode I, berat 1,19 gram bruto / 0,90 gram netto.
+20. 1 plastik klip bening berisi Kokain kode II, berat 1,32 gram bruto / 1,02 gram netto.
+21. 1 plastik klip bening berisi Kokain kode III, berat 1,27 gram bruto / 1,07 gram netto.
+22. Uang tunai Rp12.000.000 hasil penjualan 3 klip Kokain.
+23. Uang tunai pecahan Rp100.000 sebanyak Rp26.000.000 kode D.
+24. 1 handphone Redmi Note 14 Pro+ 5G warna hitam.
+25. 1 handphone Redmi Note 11 Pro 5G warna hitam.
+26. 1 handphone iPhone 14 Pro Max warna putih.
+
+Rincian berat keseluruhan menurut putusan: Kokain 7,48 gram bruto / 6,27 gram netto dan MDMA 3,27 gram bruto / 2,47 gram netto.
+
+Status barang bukti:
+- Barang bukti nomor 1–21 dirampas untuk dimusnahkan.
+- Uang tunai nomor 22–23 dirampas untuk negara.
+- Handphone nomor 24–25 dikembalikan kepada pemiliknya.
+- Handphone nomor 26 dikembalikan kepada pemiliknya.",putusan_498_pid.sus_2026_pn_dps_20261106113750,"3, 4, 34, 35",Bima,Nadin,verified
+P027,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan program pemerintah untuk memberantas peredaran gelap/ilegal Narkotika.,putusan_498_pid.sus_2026_pn_dps_20261106113750,49,Bima,Nadin,verified
+P027,keadaanMeringankan,Terdakwa masih berusia muda dan perlu diberikan kesempatan untuk memperbaiki diri; Terdakwa tidak berbelit-belit dan mengakui perbuatannya; Terdakwa belum pernah dihukum.,putusan_498_pid.sus_2026_pn_dps_20261106113750,49,Bima,Nadin,verified
+P028,nomorPerkara,582/Pid.Sus/2026/PN Dps,putusan_582_pid.sus_2026_pn_dps_20261106113551,1,Bima,Nadin,verified
+P028,pengadilan,Pengadilan Negeri Denpasar,putusan_582_pid.sus_2026_pn_dps_20261106113551,1,Bima,Nadin,verified
+P028,tanggalPutusan,2026-08-11,putusan_582_pid.sus_2026_pn_dps_20261106113551,52,Bima,Nadin,verified
+P028,T1.terdakwaKode,P028,putusan_582_pid.sus_2026_pn_dps_20261106113551,1,Bima,Nadin,verified
+P028,jenisNarkotika,"Narkotika Golongan I bukan tanaman jenis Ekstasi (tablet warna merah muda; sebagian berbentuk pecahan tablet dan sebagian tablet berlogo TMT). Berdasarkan hasil pemeriksaan Laboratorium Kriminalistik, barang bukti mengandung sediaan MDMA dan terdaftar dalam Narkotika Golongan I Nomor Urut 37 Lampiran UU Nomor 35 Tahun 2009 tentang Narkotika.",putusan_582_pid.sus_2026_pn_dps_20261106113551,"3, 7, 10",Bima,Nadin,verified
+P028,beratBarangBuktiGram,634.11,putusan_582_pid.sus_2026_pn_dps_20261106113551,"3, 9, 14, 36",Bima,Nadin,verified
+P028,pasalDakwaan,"Dakwaan Alternatif Pertama: Pasal 114 ayat (2) UU Nomor 35 Tahun 2009 tentang Narkotika jo. UU Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Alternatif Kedua: Pasal 609 ayat (2) huruf a UU Nomor 1 Tahun 2023 tentang KUHP jo. UU Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_582_pid.sus_2026_pn_dps_20261106113551,"2, 7, 11",Bima,Nadin,verified
+P028,pasalTerbukti,Pasal 114 ayat (2) UU Nomor 35 Tahun 2009 tentang Narkotika jo. UU Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (Dakwaan Alternatif Pertama).,putusan_582_pid.sus_2026_pn_dps_20261106113551,50,Bima,Nadin,verified
+P028,T1.tuntutanBulan,120,putusan_582_pid.sus_2026_pn_dps_20261106113551,2,Bima,Nadin,verified
+P028,T1.vonisBulan,96,putusan_582_pid.sus_2026_pn_dps_20261106113551,50,Bima,Nadin,verified
+P028,dendaRupiah,3000000,putusan_582_pid.sus_2026_pn_dps_20261106113551,50,Bima,Nadin,verified
+P028,barangBukti,"1. 1 buah plastik klip bening berisi pecahan tablet warna merah muda yang mengandung sediaan narkotika jenis ekstasi, berat 0,53 gram brutto atau 0,33 gram netto (kode A).
+2. 1 buah celana panjang jeans warna biru merek WARPATH.
+3. 1 buah kotak box kamera CCTV bertuliskan OTHENTICA yang dibungkus tas kresek warna hitam, berisi 5 plastik press bening yang masing-masing berisi tablet warna merah muda berlogo TMT, dengan rincian:
+   - Kode B1: 255 butir, berat 131,70 gram brutto atau 127,15 gram netto.
+   - Kode B2: 257 butir, berat 131,20 gram brutto atau 126,65 gram netto.
+   - Kode B3: 256 butir, berat 131,30 gram brutto atau 126,75 gram netto.
+   - Kode B4: 260 butir, berat 131,99 gram brutto atau 127,44 gram netto.
+   - Kode B5: 256 butir, berat 130,34 gram brutto atau 125,79 gram netto.
+   Jumlah kode B1–B5: 1.284 butir, berat 656,53 gram brutto atau 633,78 gram netto. Jumlah keseluruhan kode A dan B1–B5: 657,06 gram brutto atau 634,11 gram netto.
+4. 1 buah tas kresek warna hitam yang berisi:
+   - 1 bendel plastik klip bening.
+   - 1 buah timbangan digital warna hitam merek CAMRY.
+   - 1 buah sendok pipet warna hitam.
+   - 1 buah sendok kecil warna bening.
+   - 2 buah lakban kertas warna kuning.
+   - 1 buah pisau cutter warna merah.
+   - Seperangkat alat hisap sabu/bong.
+5. 1 buah handphone merek Samsung A32 warna abu-abu.
+
+Barang bukti nomor 1 sampai 4 ditetapkan untuk dimusnahkan. Handphone Samsung A32 dirampas untuk negara.",putusan_582_pid.sus_2026_pn_dps_20261106113551,"3, 11, 34, 35, 47",Bima,Nadin,verified
+P028,keadaanMemberatkan,Perbuatan Terdakwa tidak mendukung upaya pemerintah Republik Indonesia untuk memberantas peredaran Narkotika; perbuatan Terdakwa dapat menyebabkan rusaknya fisik dan mental generasi muda bangsa; perbuatan Terdakwa meresahkan masyarakat.,putusan_582_pid.sus_2026_pn_dps_20261106113551,48,Bima,Nadin,verified
+P028,keadaanMeringankan,Terdakwa mengaku bersalah; Terdakwa menyesali perbuatannya; Terdakwa berjanji tidak akan mengulangi perbuatan yang melanggar hukum.,putusan_582_pid.sus_2026_pn_dps_20261106113551,48,Bima,Nadin,verified
+P029,nomorPerkara,631/Pid.Sus/2026/PN Dps,putusan_631_pid.sus_2026_pn_dps_20261106113440,1,Bima,Nadin,verified
+P029,pengadilan,Pengadilan Negeri Denpasar,putusan_631_pid.sus_2026_pn_dps_20261106113440,1,Bima,Nadin,verified
+P029,tanggalPutusan,2026-08-20,putusan_631_pid.sus_2026_pn_dps_20261106113440,26,Bima,Nadin,verified
+P029,T1.terdakwaKode,P029,putusan_631_pid.sus_2026_pn_dps_20261106113440,1,Bima,Nadin,verified
+P029,jenisNarkotika,"Narkotika Golongan I bukan tanaman jenis sabu (mengandung Metamfetamina, Nomor Urut 61 Lampiran UU Nomor 35 Tahun 2009 tentang Narkotika); serta 2 linting berisi daun dan biji kering yang disebut mengandung narkotika jenis ganja. Dalam uraian hasil pemeriksaan laboratorium pada halaman 6 dan 8 juga disebut barang bukti nomor 1985/2026/NF berupa tablet warna pink yang mengandung MDMA dan terdaftar dalam Narkotika Golongan I Nomor Urut 37 Lampiran I UU Nomor 35 Tahun 2009 tentang Narkotika. Namun, tablet MDMA tersebut tidak tercantum dalam daftar barang bukti yang diuraikan pada amar putusan.",putusan_631_pid.sus_2026_pn_dps_20261106113440,"2, 6, 18",Bima,Nadin,verified
+P029,beratBarangBuktiGram,372.69,putusan_631_pid.sus_2026_pn_dps_20261106113440,"2, 6, 10, 18",Bima,Nadin,verified
+P029,pasalDakwaan,"Dakwaan Alternatif Pertama: Pasal 114 ayat (2) UU RI Nomor 35 Tahun 2009 tentang Narkotika jo. UU RI Nomor 1 Tahun 2023 tentang KUHP jo. UU RI Nomor 1 Tahun 2026 tentang Penyesuaian Pidana jo. Pasal 132 ayat (1) UU RI Nomor 35 Tahun 2009 tentang Narkotika.
+
+Dakwaan Alternatif Kedua: Pasal 609 ayat (2) huruf a UU RI Nomor 1 Tahun 2023 tentang KUHP jo. UU RI Nomor 1 Tahun 2026 tentang Penyesuaian Pidana jo. Pasal 132 ayat (1) UU RI Nomor 35 Tahun 2009 tentang Narkotika.",putusan_631_pid.sus_2026_pn_dps_20261106113440,"2, 6, 18",Bima,Nadin,verified
+P029,pasalTerbukti,Pasal 609 ayat (2) huruf a UU RI Nomor 1 Tahun 2023 tentang KUHP jo. UU RI Nomor 1 Tahun 2026 tentang Penyesuaian Pidana jo. Pasal 132 ayat (1) UU RI Nomor 35 Tahun 2009 tentang Narkotika (Dakwaan Alternatif Kedua).,putusan_631_pid.sus_2026_pn_dps_20261106113440,25,Bima,Nadin,verified
+P029,T1.tuntutanBulan,114,putusan_631_pid.sus_2026_pn_dps_20261106113440,2,Bima,Nadin,verified
+P029,T1.vonisBulan,102,putusan_631_pid.sus_2026_pn_dps_20261106113440,25,Bima,Nadin,verified
+P029,dendaRupiah,5000000,putusan_631_pid.sus_2026_pn_dps_20261106113440,25,Bima,Nadin,verified
+P029,barangBukti,"1. 137 paket kristal bening narkotika jenis sabu dengan berat bersih keseluruhan 371,29 gram dan berat kotor keseluruhan 388,8 gram (kode A1 sampai A132, kode B1 dan B2, serta kode C1 sampai C3).
+2. 2 linting berisi daun dan biji kering mengandung narkotika dengan berat keseluruhan 1,4 gram dan berat kotor keseluruhan 1,8 gram (kode D1 dan D2).
+3. 1 tas selempang kain warna merah maroon.
+4. 23 potongan pipet dililit lakban ungu.
+5. 1 timbangan elektrik.
+6. 1 kotak plastik warna putih.
+7. 1 sendok stainless.
+8. 1 casing HP warna hitam.
+9. 1 alat hisap bong.
+10. 1 tas kain warna kuning berisi plastik klip kosong.
+11. 1 tas kecil Indomaret warna putih berisi plastik klip kosong.
+12. 1 kotak plastik berisi plastik klip kosong.
+13. 1 tas kain Samsung warna hitam.
+14. 1 bungkus pipet bening.
+15. 1 tas kain warna merah Circle K.
+16. 1 gunting.
+17. 1 lakban warna merah.
+18. 1 lakban warna coklat.
+19. 1 lakban warna ungu.
+20. 1 HP Infinix warna hitam.
+21. 1 HP Samsung warna hitam.
+22. 1 unit sepeda motor Honda Genio warna hitam.
+
+Penetapan barang bukti: barang bukti nomor 1–19 dimusnahkan; HP Infinix dan HP Samsung dirampas untuk negara; sepeda motor Honda Genio dikembalikan kepada Terdakwa.",putusan_631_pid.sus_2026_pn_dps_20261106113440,"2, 3, 9, 10, 15, 23",Bima,Nadin,verified
+P029,keadaanMemberatkan,Terdakwa tidak mendukung program pemerintah dalam memberantas peredaran dan penyalahgunaan narkotika.,putusan_631_pid.sus_2026_pn_dps_20261106113440,24,Bima,Nadin,verified
+P029,keadaanMeringankan,Terdakwa berjanji tidak akan mengulangi lagi perbuatannya; Terdakwa masih muda dan perlu diberikan kesempatan untuk memperbaiki diri.,putusan_631_pid.sus_2026_pn_dps_20261106113440,24,Bima,Nadin,verified
+P030,nomorPerkara,583/Pid.Sus/2026/PN Dps,putusan_583_pid.sus_2026_pn_dps_20261106112744,1,Bima,Nadin,verified
+P030,pengadilan,Pengadilan Negeri Denpasar,putusan_583_pid.sus_2026_pn_dps_20261106112744,1,Bima,Nadin,verified
+P030,tanggalPutusan,2026-09-10,putusan_583_pid.sus_2026_pn_dps_20261106112744,46,Bima,Nadin,verified
+P030,T1.terdakwaKode,P030,putusan_583_pid.sus_2026_pn_dps_20261106112744,1,Bima,Nadin,verified
+P030,jenisNarkotika,"Narkotika Golongan I bukan tanaman, jenis sabu (Metamfetamina), Nomor Urut 61 Lampiran I UU RI No. 35 Tahun 2009 tentang Narkotika.",putusan_583_pid.sus_2026_pn_dps_20261106112744,"2, 5, 36",Bima,Nadin,verified
+P030,beratBarangBuktiGram,20.00,putusan_583_pid.sus_2026_pn_dps_20261106112744,"2, 5, 36",Bima,Nadin,verified
+P030,pasalDakwaan,"Dakwaan alternatif: Pertama, Pasal 114 ayat (2) UU RI No. 35 Tahun 2009 tentang Narkotika jo. UU RI No. 1 Tahun 2023 tentang KUHP jo. UU RI No. 1 Tahun 2026 tentang Penyesuaian Pidana. Kedua, Pasal 609 ayat (2) huruf a UU RI No. 1 Tahun 2023 tentang KUHP jo. UU RI No. 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_583_pid.sus_2026_pn_dps_20261106112744,"2, 5, 36",Bima,Nadin,verified
+P030,pasalTerbukti,Pasal 114 ayat (2) UU RI No. 35 Tahun 2009 tentang Narkotika jo. UU RI No. 1 Tahun 2023 tentang KUHP jo. UU RI No. 1 Tahun 2026 tentang Penyesuaian Pidana (Dakwaan Alternatif Pertama).,putusan_583_pid.sus_2026_pn_dps_20261106112744,46,Bima,Nadin,verified
+P030,T1.tuntutanBulan,102,putusan_583_pid.sus_2026_pn_dps_20261106112744,2,Bima,Nadin,verified
+P030,T1.vonisBulan,84,putusan_583_pid.sus_2026_pn_dps_20261106112744,46,Bima,Nadin,verified
+P030,dendaRupiah,2000000,putusan_583_pid.sus_2026_pn_dps_20261106112744,46,Bima,Nadin,verified
+P030,barangBukti,"1) 1 bungkus rokok DUNHILL warna hitam berisi 1 plastik klip bening dibalut tisu dan selotip bening berisi kristal bening diduga sabu, berat 20,84 gram brutto atau 20,00 gram netto (Kode A).
+2) 1 celana panjang warna hitam.
+3) 1 tas selempang warna hitam merek EIGER.
+4) 1 timbangan digital warna hitam merek CAMRY.
+5) 1 bendel sedotan warna biru, kuning, dan merah.
+6) 2 bendel plastik klip bening.
+7) 1 handphone merek Oppo warna hitam.
+
+Barang bukti nomor 1–6 dirampas untuk dimusnahkan. Barang bukti nomor 7 dirampas untuk negara.",putusan_583_pid.sus_2026_pn_dps_20261106112744,"2, 3, 9, 33, 46",Bima,Nadin,verified
+P030,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan usaha pemerintah untuk memberantas peredaran narkotika secara ilegal.,putusan_583_pid.sus_2026_pn_dps_20261106112744,45,Bima,Nadin,verified
+P030,keadaanMeringankan,Terdakwa bersikap sopan di persidangan; Terdakwa mengakui dan menyesali perbuatannya; Terdakwa tulang punggung keluarga; Terdakwa belum pernah dihukum.,putusan_583_pid.sus_2026_pn_dps_20261106112744,46,Bima,Nadin,verified
+P031,nomorPerkara,605/Pid.Sus/2026/PN Dps,putusan_605_pid.sus_2026_pn_dps_20261106111828,1,Bima,Nadin,verified
+P031,pengadilan,Pengadilan Negeri Denpasar,putusan_605_pid.sus_2026_pn_dps_20261106111828,1,Bima,Nadin,verified
+P031,tanggalPutusan,2026-09-22,putusan_605_pid.sus_2026_pn_dps_20261106111828,63,Bima,Nadin,verified
+P031,T1.terdakwaKode,P031,putusan_605_pid.sus_2026_pn_dps_20261106111828,1,Bima,Nadin,verified
+P031,jenisNarkotika,Narkotika Golongan I jenis Ganja (gumpalan tanaman kering berwarna hijau kecoklatan yang mengandung Delta 9 Tetrahydrocannabinol; terdaftar dalam Golongan I Nomor Urut 8 Lampiran I UU Nomor 35 Tahun 2009 tentang Narkotika).,putusan_605_pid.sus_2026_pn_dps_20261106111828,"1, 6, 9, 46",Bima,Nadin,verified
+P031,beratBarangBuktiGram,36.71,putusan_605_pid.sus_2026_pn_dps_20261106111828,"5, 46",Bima,Nadin,verified
+P031,pasalDakwaan,"Dakwaan alternatif pertama: Pasal 610 ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan alternatif kedua: Pasal 111 ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan alternatif ketiga: Pasal 127 ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.",putusan_605_pid.sus_2026_pn_dps_20261106111828,"3, 6, 9",Bima,Nadin,verified
+P031,pasalTerbukti,Pasal 127 ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika (dakwaan alternatif ketiga).,putusan_605_pid.sus_2026_pn_dps_20261106111828,56,Bima,Nadin,verified
+P031,T1.tuntutanBulan,18,putusan_605_pid.sus_2026_pn_dps_20261106111828,18,Bima,Nadin,verified
+P031,T1.vonisBulan,12,putusan_605_pid.sus_2026_pn_dps_20261106111828,12,Bima,Nadin,verified
+P031,dendaRupiah,0,putusan_605_pid.sus_2026_pn_dps_20261106111828,63,Bima,Nadin,verified
+P031,barangBukti,"1. 1 (satu) koper warna hitam bertuliskan Eddie Baurer.
+2. 1 (satu) buah kemasan botol plastik berwarna bening bertuliskan Peach Crecendo yang berisi gumpalan tanaman kering berwarna hijau kecoklatan (Kode A) dengan berat 33,30 gram brutto atau 13,88 gram netto.
+3. 1 (satu) buah plastik klip bening berisi gumpalan tanaman kering berwarna hijau kecoklatan (Kode B) dengan berat 24,00 gram brutto atau 22,83 gram netto.
+4. Total berat keseluruhan narkotika jenis ganja Kode A dan Kode B adalah 57,30 gram brutto atau 36,71 gram netto.
+5. 1 (satu) buah grinder berbahan logam berwarna-warni.
+6. 5 (lima) buah kemasan kertas papir berisi tulisan Da Boss Leaf.
+7. 1 (satu) lembar boarding pass Korea Airlines dengan nomor penerbangan KE431 rute Seoul Korea–Denpasar–Bali atas nama Tyeisha Kieonne Parks.
+8. 1 (satu) lembar hasil cetak elektronik Custom Declaration atas nama Joshua Anania Murphy.
+
+Seluruh barang bukti tersebut dimusnahkan.",putusan_605_pid.sus_2026_pn_dps_20261106111828,"2, 61, 62",Bima,Nadin,verified
+P031,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; Perbuatan Terdakwa tidak mendukung program pemerintah dalam memberantas tindak pidana penyalahgunaan narkotika.,putusan_605_pid.sus_2026_pn_dps_20261106111828,62,Bima,Nadin,verified
+P031,keadaanMeringankan,Terdakwa belum pernah dihukum; Terdakwa mengakui perbuatannya dan merasa menyesal serta berjanji tidak akan mengulangi lagi; Terdakwa memiliki tanggung jawab terhadap keluarga yang ditinggalkannya,putusan_605_pid.sus_2026_pn_dps_20261106111828,62,Bima,Nadin,verified
+P032,nomorPerkara,627/Pid.Sus/2026/PN Dps,putusan_627_pid.sus_2026_pn_dps_20261106113312,1,Bima,Nadin,verified
+P032,pengadilan,Pengadilan Negeri Denpasar,putusan_627_pid.sus_2026_pn_dps_20261106113312,1,Bima,Nadin,verified
+P032,tanggalPutusan,2026-09-08,putusan_627_pid.sus_2026_pn_dps_20261106113312,36,Bima,Nadin,verified
+P032,T1.terdakwaKode,P032,putusan_627_pid.sus_2026_pn_dps_20261106113312,1,Bima,Nadin,verified
+P032,jenisNarkotika,"Narkotika Golongan I jenis Ganja berupa daun, batang, dan biji kering (terdaftar dalam Golongan I Nomor Urut 8 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).",putusan_627_pid.sus_2026_pn_dps_20261106113312,"2, 6, 24",Bima,Nadin,verified
+P032,beratBarangBuktiGram,18.78,putusan_627_pid.sus_2026_pn_dps_20261106113312,"2, 25",Bima,Nadin,verified
+P032,pasalDakwaan,"Dakwaan alternatif pertama: Pasal 111 ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan alternatif kedua: Pasal 127 ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_627_pid.sus_2026_pn_dps_20261106113312,"3, 6, 27",Bima,Nadin,verified
+P032,pasalTerbukti,Pasal 127 ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (dakwaan alternatif kedua).,putusan_627_pid.sus_2026_pn_dps_20261106113312,35,Bima,Nadin,verified
+P032,T1.tuntutanBulan,6,putusan_627_pid.sus_2026_pn_dps_20261106113312,2,Bima,Nadin,verified
+P032,T1.vonisBulan,6,putusan_627_pid.sus_2026_pn_dps_20261106113312,35,Bima,Nadin,verified
+P032,dendaRupiah,0,putusan_627_pid.sus_2026_pn_dps_20261106113312,35,Bima,Nadin,verified
+P032,barangBukti,"1. 1 (satu) buah plastik klip bening yang didalamnya berisi daun, batang dan biji kering diduga narkotika jenis ganja yang dibungkus plastik warna emas bertuliskan Samwal Life dengan berat 9,79 gram brutto atau 9,35 gram netto;
+2. 1 (satu) buah plastik warna merah bertuliskan Samwal Life yang didalamnya berisi daun dan biji kering diduga narkotika jenis ganja dengan berat 13,87 gram brutto atau 5,2 gram netto;
+3. 1 (satu) buah plastik warna emas bertuliskan Samwal Life yang didalamnya berisi daun dan biji kering diduga narkotika jenis ganja dengan berat 11,02 gram brutto atau 4,23 gram netto;
+4. 4 (empat) buah kertas pavier Radja Mas;
+5. 1 (satu) buah korek api gas;
+6. 1 (satu) buah tas kulit warna hijau;
+7. 1 (satu) buah tabung grinder;
+8. 1 (satu) unit Handphone Merk Iphone warna Hitam No. Imei: 351095814188814;
+9. 1 (satu) unit sepeda motor Merk Honda PCX warna hitam No. Pol: DK-4373-KBN, dalam STNK tertera a.n. I M*** M***.
+
+Status barang bukti:
+- Barang bukti nomor 1 sampai 7 dirampas untuk dimusnahkan.
+- Handphone nomor 8 dirampas untuk negara.
+- Sepeda motor nomor 9 dikembalikan kepada pemilik",putusan_627_pid.sus_2026_pn_dps_20261106113312,"2, 34, 35",Bima,Nadin,verified
+P032,keadaanMemberatkan,Perbuatan Terdakwa tidak mendukung program pemerintah dalam pemberantasan peredaran gelap narkotika.,putusan_627_pid.sus_2026_pn_dps_20261106113312,34,Bima,Nadin,verified
+P032,keadaanMeringankan,Terdakwa belum pernah dihukum; Terdakwa mengakui terus terang perbuatannya; Terdakwa merasa bersalah dan menyesali perbuatannya; Terdakwa sebelumnya telah menjalani rehabilitasi yang menunjukan adanya keinginan untuk memulihkan dan melepaskan diri dari ketergantungan narkotika.,putusan_627_pid.sus_2026_pn_dps_20261106113312,34,Bima,Nadin,verified
+P033,nomorPerkara,640/Pid.Sus/2026/PN Dps,putusan_640_pid.sus_2026_pn_dps_20261105155915,1,Bima,Nadin,verified
+P033,pengadilan,Pengadilan Negeri Denpasar,putusan_640_pid.sus_2026_pn_dps_20261105155915,1,Bima,Nadin,verified
+P033,tanggalPutusan,2026-08-06,putusan_640_pid.sus_2026_pn_dps_20261105155915,59,Bima,Nadin,verified
+P033,T1.terdakwaKode,P033,putusan_640_pid.sus_2026_pn_dps_20261105155915,1,Bima,Nadin,verified
+P033,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabu (kristal bening; terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).,putusan_640_pid.sus_2026_pn_dps_20261105155915,"2, 7, 11",Bima,Nadin,verified
+P033,beratBarangBuktiGram,08.06,putusan_640_pid.sus_2026_pn_dps_20261105155915,"2, 7, 43",Bima,Nadin,verified
+P033,pasalDakwaan,"Dakwaan alternatif pertama: Pasal 114 ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan alternatif kedua: Pasal 609 ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_640_pid.sus_2026_pn_dps_20261105155915,"2, 8, 11, 47",Bima,Nadin,verified
+P033,pasalTerbukti,Pasal 609 ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (dakwaan alternatif kedua).,putusan_640_pid.sus_2026_pn_dps_20261105155915,57,Bima,Nadin,verified
+P033,T1.tuntutanBulan,78,putusan_640_pid.sus_2026_pn_dps_20261105155915,78,Bima,Nadin,verified
+P033,T1.vonisBulan,60,putusan_640_pid.sus_2026_pn_dps_20261105155915,60,Bima,Nadin,verified
+P033,dendaRupiah,1000000,putusan_640_pid.sus_2026_pn_dps_20261105155915,57,Bima,Nadin,verified
+P033,barangBukti,"1. 14 (empat belas) plastik klip masing-masing berisi kristal bening diduga mengandung sediaan narkotika jenis sabu terbungkus potongan pipet bening tertempel potongan asbes berat brutto 3,50 gram dan berat netto 2,10 gram (kode A1 s/d A14).
+2. 1 (satu) plastik klip berisi kristal bening diduga mengandung sediaan narkotika jenis sabu berat brutto 0,18 gram dan berat netto 0,07 gram (kode B1).
+3. 1 (satu) plastik klip berisi kristal bening diduga mengandung sediaan narkotika jenis sabu berat brutto 0,30 gram dan berat netto 0,19 gram (kode B2).
+4. 12 (dua belas) plastik klip masing-masing berisi kristal bening diduga mengandung sediaan narkotika jenis sabu terbungkus potongan pipet bening berat brutto 3,00 gram dan berat netto 1,80 gram (kode B3 s/d B14).
+5. 5 (lima) plastik klip masing-masing berisi kristal bening diduga mengandung sediaan narkotika jenis sabu terbungkus potongan pipet bening berat brutto 2,00 gram dan berat netto 1,50 gram (kode B15 s/d B19).
+6. 3 (tiga) plastik klip masing-masing berisi kristal bening diduga mengandung sediaan narkotika jenis sabu berat brutto 2,70 gram dan berat netto 2,40 gram (kode B20 s/d B22). (Total berat bersih keseluruhan 8,06 gram).
+7. 1 (satu) buah jaket warna hitam.
+8. 2 (dua) buah plastik klip sedang.
+9. 1 (satu) plastik klip kosong.
+10. 1 (satu) bendel pipet bening.
+11. 1 (satu) bendel plastik klip kosong.
+12. 1 (satu) buah timbangan elektrik.
+13. 1 (satu) buah gunting.
+14. 1 (satu) buah tas kain warna hitam berisikan potongan asbes.
+15. 1 (satu) botol lem.
+16. 1 (satu) buah Handphone merk Infinix Zero 30 warna putih dengan nomor imei 35103121805880.
+
+Status barang bukti:
+- Barang bukti nomor 1 sampai dengan 15 dirampas untuk dimusnahkan.
+- Handphone nomor 16 dirampas untuk negara.",putusan_640_pid.sus_2026_pn_dps_20261105155915,"2, 3, 56, 57",Bima,Nadin,verified
+P033,keadaanMemberatkan,Terdakwa tidak mendukung pemerintah dalam pemberantasan narkotika dan obat terlarang lainnya (narkoba).,putusan_640_pid.sus_2026_pn_dps_20261105155915,56,Bima,Nadin,verified
+P033,keadaanMeringankan,Terdakwa bersikap sopan di persidangan dan mengakui perbuatannya; Terdakwa belum pernah dihukum.,putusan_640_pid.sus_2026_pn_dps_20261105155915,56,Bima,Nadin,verified
+P034,nomorPerkara,650/Pid.Sus/2026/PN Dps,putusan_650_pid.sus_2026_pn_dps_20261106113017,1,Bima,Nadin,verified
+P034,pengadilan,Pengadilan Negeri Denpasar,putusan_650_pid.sus_2026_pn_dps_20261106113017,1,Bima,Nadin,verified
+P034,tanggalPutusan,2026-09-10,putusan_650_pid.sus_2026_pn_dps_20261106113017,35,Bima,Nadin,verified
+P034,T1.terdakwaKode,P034,putusan_650_pid.sus_2026_pn_dps_20261106113017,1,Bima,Nadin,verified
+P034,jenisNarkotika,"1. Narkotika Golongan I dalam bentuk tanaman jenis Ganja (biji, batang, dan daun kering; terdaftar dalam Golongan I Nomor Urut 8 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).
+2. Narkotika Golongan I bukan tanaman jenis Kokaina (serbuk putih; terdaftar dalam Golongan I Nomor Urut 7 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).",putusan_650_pid.sus_2026_pn_dps_20261106113017,"2, 4, 7, 8, 11",Bima,Nadin,verified
+P034,beratBarangBuktiGram,2486.10,putusan_650_pid.sus_2026_pn_dps_20261106113017,"2, 4, 7, 8, 11",Bima,Nadin,verified
+P034,pasalDakwaan,"Dakwaan Kesatu / Alternatif Pertama: Pasal 114 Ayat (2) Jo. Pasal 132 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua Pertama: Pasal 111 Ayat (2) Jo. Pasal 132 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua Kedua: Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_650_pid.sus_2026_pn_dps_20261106113017,"2, 6, 9, 21",Bima,Nadin,verified
+P034,pasalTerbukti,Pasal 111 Ayat (2) Jo. Pasal 132 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana dan Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan alternatif Kedua Pertama dan Kedua).,putusan_650_pid.sus_2026_pn_dps_20261106113017,34,Bima,Nadin,verified
+P034,T1.tuntutanBulan,72,putusan_650_pid.sus_2026_pn_dps_20261106113017,72,Bima,Nadin,verified
+P034,T1.vonisBulan,48,putusan_650_pid.sus_2026_pn_dps_20261106113017,48,Bima,Nadin,verified
+P034,dendaRupiah,2000000,putusan_650_pid.sus_2026_pn_dps_20261106113017,34,Bima,Nadin,verified
+P034,barangBukti,"1. 16 (enam belas) paket biji, batang dan daun kering diduga mengandung narkotika berat bersih 2485,24 gram atau berat kotor 2666,43 gram (kode A1 s.d. A2, B1 s.d. B5 dan C1 s.d. C9).
+2. 1 (satu) paket serbuk putih mengandung narkotika berat bersih 0,86 gram atau berat kotor 1,13 gram (kode D).
+3. 2 (dua) buah timbangan elektrik.
+4. 2 (dua) buah kertas papir.
+5. 1 (satu) bendel kertas minyak.
+6. 1 (satu) bendel plastik klip besar.
+7. 1 (satu) buah dompet rajut.
+8. 1 (satu) buah korek api gas.
+9. 1 (satu) buah tas kresek warna hitam.
+10. 2 (dua) buah tas warna merah.
+11. 1 (satu) buah tas warna biru.
+12. 1 (satu) buah tas warna kuning.
+13. 5 (lima) buah sobekan lakban warna coklat.
+14. 1 (satu) buah HP merk Iphone 11 warna hitam nomor Imei 351088544680127.
+
+Status barang bukti:
+- Barang bukti nomor 1 sampai dengan 13 dikembalikan kepada Penuntut Umum untuk dijadikan barang bukti dalam perkara Rangga Gladyant Putranta H.
+- Handphone nomor 14 (HP iPhone 11 warna hitam) dirampas untuk dimusnahkan.",putusan_650_pid.sus_2026_pn_dps_20261106113017,"2, 3, 5, 33, 34",Bima,Nadin,verified
+P034,keadaanMemberatkan,Perbuatan Terdakwa tidak mendukung program pemerintah terhadap pemberantasan penyalahgunaan Narkotika dan peredaran gelap narkotika.,putusan_650_pid.sus_2026_pn_dps_20261106113017,34,Bima,Nadin,verified
+P034,keadaanMeringankan,Terdakwa bersikap sopan dalam persidangan; Terdakwa berterus terang dan mengakui perbuatannya; Terdakwa belum pernah dihukum.,putusan_650_pid.sus_2026_pn_dps_20261106113017,36,Bima,Nadin,verified
+P035,nomorPerkara,683/Pid.Sus/2026/PN Dps,putusan_683_pid.sus_2026_pn_dps_20261106113119,1,Bima,Nadin,verified
+P035,pengadilan,Pengadilan Negeri Denpasar,putusan_683_pid.sus_2026_pn_dps_20261106113119,1,Bima,Nadin,verified
+P035,tanggalPutusan,2026-09-10,putusan_683_pid.sus_2026_pn_dps_20261106113119,26,Bima,Nadin,verified
+P035,T1.terdakwaKode,P035,putusan_683_pid.sus_2026_pn_dps_20261106113119,1,Bima,Nadin,verified
+P035,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabu (kristal bening; terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).,putusan_683_pid.sus_2026_pn_dps_20261106113119,"2, 3, 5, 7, 15",Bima,Nadin,verified
+P035,beratBarangBuktiGram,3.14,putusan_683_pid.sus_2026_pn_dps_20261106113119,"2, 3, 5, 7, 15",Bima,Nadin,verified
+P035,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua (Alternatif Kedua): Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_683_pid.sus_2026_pn_dps_20261106113119,"2, 6, 17, 26",Bima,Nadin,verified
+P035,pasalTerbukti,Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan alternatif kedua Penuntut Umum).,putusan_683_pid.sus_2026_pn_dps_20261106113119,26,Bima,Nadin,verified
+P035,T1.tuntutanBulan,72,putusan_683_pid.sus_2026_pn_dps_20261106113119,2,Bima,Nadin,verified
+P035,T1.vonisBulan,48,putusan_683_pid.sus_2026_pn_dps_20261106113119,26,Bima,Nadin,verified
+P035,dendaRupiah,2000000,putusan_683_pid.sus_2026_pn_dps_20261106113119,"2, 3, 13, 26",Bima,Nadin,verified
+P035,barangBukti,"1. 2 (dua) plastik klip masing-masing berisi kristal bening diduga Narkotika jenis sabu dengan berat total keseluruhan 3,14 gram netto atau 3,46 gram brutto.
+2. 1 (satu) celana pendek hitam.
+3. 1 (satu) baju kaos warna coklat.
+4. 1 (satu) pembungkus rokok Gudang Garam.
+5. 1 (satu) tutup bong.
+6. 1 (satu) timbangan elektrik.
+7. 1 (satu) Handphone Redmi warna biru IMEI: 860418046705482 beserta simcardnya.
+
+Status barang bukti:
+- Barang bukti nomor 1 sampai dengan nomor 6 (sabu, celana, baju, pembungkus rokok, tutup bong, dan timbangan elektrik) dimusnahkan.
+- Barang bukti nomor 7 (Handphone Redmi warna biru beserta simcardnya) dirampas untuk Negara.",putusan_683_pid.sus_2026_pn_dps_20261106113119,25,Bima,Nadin,verified
+P035,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; Terdakwa tidak mendukung program pemerintah yang lagi giat-giatnya memberantas tindak pidana Narkotika.,putusan_683_pid.sus_2026_pn_dps_20261106113119,25,Bima,Nadin,verified
+P035,keadaanMeringankan,Terdakwa berterus terang di persidangan sehingga memperlancar jalannya persidangan; Terdakwa merasa bersalah dan menyesali perbuatannya; Terdakwa belum pernah dihukum.,putusan_683_pid.sus_2026_pn_dps_20261106113119,27,Bima,Nadin,verified
+P036,nomorPerkara,689/Pid.Sus/2026/PN Dps,putusan_689_pid.sus_2026_pn_dps_20261106112927,1,Bima,Nadin,verified
+P036,pengadilan,Pengadilan Negeri Denpasar,putusan_689_pid.sus_2026_pn_dps_20261106112927,1,Bima,Nadin,verified
+P036,tanggalPutusan,2026-09-10,putusan_689_pid.sus_2026_pn_dps_20261106112927,31,Bima,Nadin,verified
+P036,T1.terdakwaKode,P036,putusan_689_pid.sus_2026_pn_dps_20261106112927,1,Bima,Nadin,verified
+P036,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabu (15 plastik klip berisi kristal bening; terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).,putusan_689_pid.sus_2026_pn_dps_20261106112927,"3, 7, 10, 21",Bima,Nadin,verified
+P036,beratBarangBuktiGram,13.20,putusan_689_pid.sus_2026_pn_dps_20261106112927,"3, 6, 11, 21",Bima,Nadin,verified
+P036,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua (Alternatif Kedua): Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_689_pid.sus_2026_pn_dps_20261106112927,"2, 7, 10, 22",Bima,Nadin,verified
+P036,pasalTerbukti,Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan kedua Penuntut Umum).,putusan_689_pid.sus_2026_pn_dps_20261106112927,32,Bima,Nadin,verified
+P036,T1.tuntutanBulan,84,putusan_689_pid.sus_2026_pn_dps_20261106112927,2,Bima,Nadin,verified
+P036,T1.vonisBulan,72,putusan_689_pid.sus_2026_pn_dps_20261106112927,33,Bima,Nadin,verified
+P036,dendaRupiah,5000000,putusan_689_pid.sus_2026_pn_dps_20261106112927,"2, 33",Bima,Nadin,verified
+P036,barangBukti,"1. 15 (lima belas) Plastik klip masing-masing berisi kristal bening diduga Narkotika jenis Sabu dengan berat total keseluruhan 13,2 gram netto atau 17,7 gram brutto (dengan penyisihan uji lab masing-masing 0,02 gram total 0,3 gram, sisa untuk persidangan 12,9 gram).
+2. 1 (satu) buah kotak plastik kecil berwarna putih.
+3. 1 (satu) buah kotak paket ekspedisi JNT dengan no resi JD0539434251.
+4. 1 (satu) buah HP Infinix warna Gold IMEI: 357925496064541 beserta simcardnya.
+
+Status barang bukti:
+- Barang bukti nomor 1 sampai dengan nomor 3 (15 plastik klip sabu, kotak plastik kecil putih, dan kotak paket JNT) dirampas untuk dimusnahkan.
+- Barang bukti nomor 4 (HP Infinix warna Gold beserta simcardnya) dirampas untuk Negara.",putusan_689_pid.sus_2026_pn_dps_20261106112927,"3, 11, 33",Bima,Nadin,verified
+P036,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan program pemerintah untuk memberantas peredaran gelap/ilegal Narkotika; Terdakwa sudah pernah dihukum.,putusan_689_pid.sus_2026_pn_dps_20261106112927,32,Bima,Nadin,verified
+P036,keadaanMeringankan,"Terdakwa masih berusia muda, perlu diberikan kesempatan untuk memperbaiki diri.",putusan_689_pid.sus_2026_pn_dps_20261106112927,32,Bima,Nadin,verified
+P037,nomorPerkara,726/Pid.Sus/2026/PN Dps,putusan_726_pid.sus_2026_pn_dps_20261106112431,1,Bima,Nadin,verified
+P037,pengadilan,Pengadilan Negeri Denpasar,putusan_726_pid.sus_2026_pn_dps_20261106112431,1,Bima,Nadin,verified
+P037,tanggalPutusan,2026-09-15,putusan_726_pid.sus_2026_pn_dps_20261106112431,22,Bima,Nadin,verified
+P037,T1.terdakwaKode,P037,putusan_726_pid.sus_2026_pn_dps_20261106112431,1,Bima,Nadin,verified
+P037,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabu (8 plastik klip berisi kristal bening; terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).,putusan_726_pid.sus_2026_pn_dps_20261106112431,"4, 6, 13, 18",Bima,Nadin,verified
+P037,beratBarangBuktiGram,01.09,putusan_726_pid.sus_2026_pn_dps_20261106112431,"2, 5, 6, 14, 18",Bima,Nadin,verified
+P037,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_726_pid.sus_2026_pn_dps_20261106112431,"2, 6, 15",Bima,Nadin,verified
+P037,pasalTerbukti,Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan kedua Penuntut Umum).,putusan_726_pid.sus_2026_pn_dps_20261106112431,21,Bima,Nadin,verified
+P037,T1.tuntutanBulan,60,putusan_726_pid.sus_2026_pn_dps_20261106112431,5,Bima,Nadin,verified
+P037,T1.vonisBulan,36,putusan_726_pid.sus_2026_pn_dps_20261106112431,21,Bima,Nadin,verified
+P037,dendaRupiah,1000000,putusan_726_pid.sus_2026_pn_dps_20261106112431,"2, 21",Bima,Nadin,verified
+P037,barangBukti,"1. 8 (delapan) plastik klip masing-masing berisi kristal bening Narkotika jenis Shabu dengan berat bersih keseluruhan 1,09 gram atau berat kotor keseluruhan 1,9 gram (kode A1 sampai B5, dengan penyisihan total 0,16 gram untuk labfor, sisa netto 0,93 gram).
+2. 1 (satu) Buah Dompet Warna Hitam.
+3. 1 (satu) HP IPHONE 11 warna Putih dengan Nomor IMEI 35396810066956.
+4. 1 (satu) Buah Timbangan digital berwarna abu-abu.
+5. 1 (satu) Bendel Plastik klip kosong.
+6. 1 (satu) Bendel Pipet warna hijau.
+7. 2 (dua) Buah Selotip warna hitam.
+8. 2 (dua) Buah Korek api gas.
+9. 1 (satu) Buah Kotak plastik warna putih.
+10. 2 (dua) Buah Sendok pipet.
+11. 1 (satu) Buah Bong.
+
+Status barang bukti:
+- Seluruh barang bukti (nomor 1 sampai dengan 11) dirampas untuk dimusnahkan.",putusan_726_pid.sus_2026_pn_dps_20261106112431,"2, 13, 21",Bima,Nadin,verified
+P037,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan program pemerintah yang sedang melakukan pemberantasan peredaran gelap narkotika.,putusan_726_pid.sus_2026_pn_dps_20261106112431,20,Bima,Nadin,verified
+P037,keadaanMeringankan,Terdakwa mengakui dan menyesali perbuatannya; Terdakwa belum pernah dihukum.,putusan_726_pid.sus_2026_pn_dps_20261106112431,20,Bima,Nadin,verified
+P038,nomorPerkara,745/Pid.Sus/2026/PN Dps,putusan_745_pid.sus_2026_pn_dps_20261106112358,1,Bima,Nadin,verified
+P038,pengadilan,Pengadilan Negeri Denpasar,putusan_745_pid.sus_2026_pn_dps_20261106112358,1,Bima,Nadin,verified
+P038,tanggalPutusan,2026-09-15,putusan_745_pid.sus_2026_pn_dps_20261106112358,28,Bima,Nadin,verified
+P038,T1.terdakwaKode,P038,putusan_745_pid.sus_2026_pn_dps_20261106112358,1,Bima,Nadin,verified
+P038,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabu (10 plastik klip berisi kristal bening; terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).,putusan_745_pid.sus_2026_pn_dps_20261106112358,"4, 6, 10, 19",Bima,Nadin,verified
+P038,beratBarangBuktiGram,1.66,putusan_745_pid.sus_2026_pn_dps_20261106112358,"6, 10, 14, 19",Bima,Nadin,verified
+P038,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_745_pid.sus_2026_pn_dps_20261106112358,"4, 7, 10, 20",Bima,Nadin,verified
+P038,pasalTerbukti,Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan kedua Penuntut Umum).,putusan_745_pid.sus_2026_pn_dps_20261106112358,27,Bima,Nadin,verified
+P038,T1.tuntutanBulan,60,putusan_745_pid.sus_2026_pn_dps_20261106112358,2,Bima,Nadin,verified
+P038,T1.vonisBulan,48,putusan_745_pid.sus_2026_pn_dps_20261106112358,27,Bima,Nadin,verified
+P038,dendaRupiah,2000000,putusan_745_pid.sus_2026_pn_dps_20261106112358,"2, 27",Bima,Nadin,verified
+P038,barangBukti,"1. 10 (sepuluh) plastik klip berisi kristal bening Narkotika jenis shabu dengan rincian: kode A (berat netto 0,14 gram / brutto 0,28 gram), kode B1 s.d. B7 masing-masing berat netto 0,14 gram / brutto 0,28 gram, serta kode B8 dan B9 masing-masing berat netto 0,27 gram / brutto 0,41 gram (total berat bersih keseluruhan 1,66 gram / berat kotor 3,06 gram, disisihkan 0,20 gram untuk labfor, sisa netto untuk persidangan 1,46 gram).
+2. 1 (satu) kotak plastik warna hijau.
+3. 1 (satu) bekas pembungkus rokok warna hitam.
+4. 1 (satu) kotak plastik warna biru.
+5. 1 (satu) buah lakban warna pink.
+6. 1 (satu) buah timbangan elektrik.
+7. 2 (dua) buah bong.
+8. 1 (satu) bendel plastik klip kosong.
+9. 1 (satu) buah gunting.
+10. 1 (satu) buah korek api gas.
+11. 1 (satu) buah potongan pipet (sendok).
+12. 1 (satu) buah kotak kardus warna putih.
+13. 10 (sepuluh) potongan pipet bening.
+14. 1 (satu) unit handphone merk VIVO Y19s warna biru dengan nomor IMEI 861631079954996.
+
+Status barang bukti:
+- Barang bukti nomor 1 sampai dengan 13 (paket sabu beserta wadah, timbangan, bong, alat hisap/pipet, gunting, korek, lakban, kotak) dirampas untuk dimusnahkan.
+- Barang bukti nomor 14 (1 unit handphone merk VIVO Y19s warna biru beserta nomor IMEI) dirampas untuk negara.",putusan_745_pid.sus_2026_pn_dps_20261106112358,"2, 17, 26",Bima,Nadin,verified
+P038,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; perbuatan Terdakwa bertentangan dengan program pemerintah memberantas peredaran narkotika.,putusan_745_pid.sus_2026_pn_dps_20261106112358,26,Bima,Nadin,verified
+P038,keadaanMeringankan,Terdakwa tidak mempersulit proses pemeriksaan di persidangan; Terdakwa bersikap sopan di persidangan; Terdakwa belum pernah dipidana.,putusan_745_pid.sus_2026_pn_dps_20261106112358,26,Bima,Nadin,verified
+P039,nomorPerkara,747/Pid.Sus/2026/PN Dps,putusan_747_pid.sus_2026_pn_dps_20261106112313,1,Bima,Nadin,verified
+P039,pengadilan,Pengadilan Negeri Denpasar,putusan_747_pid.sus_2026_pn_dps_20261106112313,1,Bima,Nadin,verified
+P039,tanggalPutusan,2026-09-15,putusan_747_pid.sus_2026_pn_dps_20261106112313,21,Bima,Nadin,verified
+P039,T1.terdakwaKode,P039,putusan_747_pid.sus_2026_pn_dps_20261106112313,1,Bima,Nadin,verified
+P039,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabu (1 plastik klip berisi kristal bening; terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).,putusan_747_pid.sus_2026_pn_dps_20261106112313,"3, 4, 7, 15",Bima,Nadin,verified
+P039,beratBarangBuktiGram,4.75,putusan_747_pid.sus_2026_pn_dps_20261106112313,"2, 4, 7, 12",Bima,Nadin,verified
+P039,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_747_pid.sus_2026_pn_dps_20261106112313,"3, 5, 16, 17",Bima,Nadin,verified
+P039,pasalTerbukti,Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan kedua Penuntut Umum).,putusan_747_pid.sus_2026_pn_dps_20261106112313,20,Bima,Nadin,verified
+P039,T1.tuntutanBulan,72,putusan_747_pid.sus_2026_pn_dps_20261106112313,2,Bima,Nadin,verified
+P039,T1.vonisBulan,54,putusan_747_pid.sus_2026_pn_dps_20261106112313,20,Bima,Nadin,verified
+P039,dendaRupiah,5000000,putusan_747_pid.sus_2026_pn_dps_20261106112313,"2, 20",Bima,Nadin,verified
+P039,barangBukti,"1. 1 (satu) plastik klip berisi kristal bening Narkotika jenis sabu dengan berat bersih 4,75 gram atau berat kotor 5,15 gram (disisihkan sebesar 0,20 gram untuk labfor, sisa untuk persidangan).
+2. 1 (satu) pembungkus Adem Sari.
+3. 1 (satu) potongan tisu.
+4. 1 (satu) alat hisap Bong.
+5. 1 (satu) selang kecil.
+6. 1 (satu) celana panjang hitam.
+7. 1 (satu) kotak bertuliskan Fragile.
+8. 1 (satu) buah HP merk Samsung warna hitam IMEI No. 352160553255916.
+
+Status barang bukti:
+- Barang bukti nomor 1 sampai dengan nomor 7 (plastik klip sabu, pembungkus Adem Sari, potongan tisu, bong, selang kecil, celana panjang hitam, kotak bertuliskan Fragile) dirampas untuk dimusnahkan.
+- Barang bukti nomor 8 (1 buah HP merk Samsung warna hitam beserta nomor IMEI) dirampas untuk Negara.",putusan_747_pid.sus_2026_pn_dps_20261106112313,"2, 7, 20",Bima,Nadin,verified
+P039,keadaanMemberatkan,Terdakwa tidak mendukung program pemerintah yang lagi giat-giatnya memberantas narkotika; Terdakwa sudah pernah dihukum untuk tindak pidana narkotika.,putusan_747_pid.sus_2026_pn_dps_20261106112313,20,Bima,Nadin,verified
+P039,keadaanMeringankan,Terdakwa sopan dan berterus terang di persidangan sehingga memperlancar jalannya persidangan; Terdakwa merasa bersalah dan menyesali perbuatannya.,putusan_747_pid.sus_2026_pn_dps_20261106112313,20,Bima,Nadin,verified
+P040,nomorPerkara,760/Pid.Sus/2026/PN Dps,putusan_760_pid.sus_2026_pn_dps_20261106113154,1,Bima,Nadin,verified
+P040,pengadilan,Pengadilan Negeri Denpasar,putusan_760_pid.sus_2026_pn_dps_20261106113154,1,Bima,Nadin,verified
+P040,tanggalPutusan,2026-09-10,putusan_760_pid.sus_2026_pn_dps_20261106113154,27,Bima,Nadin,verified
+P040,T1.terdakwaKode,P040,putusan_760_pid.sus_2026_pn_dps_20261106113154,1,Bima,Nadin,verified
+P040,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabu (8 paket berisi kristal bening; terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika).,putusan_760_pid.sus_2026_pn_dps_20261106113154,"4, 5, 9, 16",Bima,Nadin,verified
+P040,beratBarangBuktiGram,13.29,putusan_760_pid.sus_2026_pn_dps_20261106113154,"3, 5, 9, 13",Bima,Nadin,verified
+P040,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_760_pid.sus_2026_pn_dps_20261106113154,"4, 6, 18, 20",Bima,Nadin,verified
+P040,pasalTerbukti,Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan kedua Penuntut Umum).,putusan_760_pid.sus_2026_pn_dps_20261106113154,25,Bima,Nadin,verified
+P040,T1.tuntutanBulan,72,putusan_760_pid.sus_2026_pn_dps_20261106113154,2,Bima,Nadin,verified
+P040,T1.vonisBulan,66,putusan_760_pid.sus_2026_pn_dps_20261106113154,25,Bima,Nadin,verified
+P040,dendaRupiah,1000000,putusan_760_pid.sus_2026_pn_dps_20261106113154,"2, 25",Bima,Nadin,verified
+P040,barangBukti,"1. 8 (delapan) paket masing-masing berisi kristal bening Narkotika jenis Shabu dengan rincian: kode A1 (berat bersih 7,52 gram / brutto 8,04 gram), kode A2 (berat bersih 0,30 gram / brutto 0,47 gram), kode A3 (berat bersih 0,13 gram / brutto 0,30 gram), kode A4 (berat bersih 0,13 gram / brutto 0,30 gram), kode A5 (berat bersih 0,12 gram / brutto 0,29 gram), kode A6 (berat bersih 0,16 gram / brutto 0,33 gram), kode A7 (berat bersih 0,19 gram / brutto 0,36 gram), dan kode A8 (berat bersih 4,74 gram / brutto 4,92 gram) dengan total berat bersih keseluruhan 13,29 gram (disisihkan 0,52 gram netto untuk pengujian laboratorium, sisa 12,77 gram netto untuk persidangan).
+2. 1 (satu) potongan tisu putih.
+3. 1 (satu) celana pendek kain warna hijau.
+4. 1 (satu) pipa kaca.
+5. 1 (satu) tutup botol.
+6. 2 (dua) potongan pipet putih.
+7. 1 (satu) sendok dari pipet.
+8. 1 (satu) korek api gas.
+9. 1 (satu) kotak rokok Sampoerna Mild.
+10. 1 (satu) kotak rokok Esse Berry Pop.
+11. 1 (satu) kantong kain abu-abu.
+12. 1 (satu) timbangan elektrik.
+13. 2 (dua) bendel plastik klip kosong.
+14. 1 (satu) kotak plastik warna biru putih.
+15. Pecahan-pecahan cor semen.
+16. 1 (satu) Hp Redmi Note 13 warna putih, No. Simcard 082221633282, No. Imei 8625560747734300.
+
+Status barang bukti:
+- Barang bukti nomor 1 sampai dengan 15 dirampas untuk dimusnahkan.
+- Barang bukti nomor 16 (1 buah Hp Redmi Note 13 warna putih beserta nomor simcard dan IMEI) dirampas untuk Negara.",putusan_760_pid.sus_2026_pn_dps_20261106113154,"2, 9, 25",Bima,Nadin,verified
+P040,keadaanMemberatkan,Terdakwa sudah pernah dihukum; perbuatan Terdakwa bertentangan dengan program pemerintah untuk mencegah dan memberantas penyalahgunaan dan peredaran gelap narkotika.,putusan_760_pid.sus_2026_pn_dps_20261106113154,25,Bima,Nadin,verified
+P040,keadaanMeringankan,"Terdakwa mengakui terus terang perbuatannya, merasa bersalah dan menyesali perbuatannya serta berjanji tidak akan mengulangi lagi; Terdakwa sebagai tulang punggung keluarga.",putusan_760_pid.sus_2026_pn_dps_20261106113154,25,Bima,Nadin,verified
+P041,nomorPerkara,515/Pid.Sus/2026/PN Dps,putusan_515_pid.sus_2026_pn_dps_20261107014623,1,Bima,Nadin,verified
+P041,pengadilan,Pengadilan Negeri Denpasar,putusan_515_pid.sus_2026_pn_dps_20261107014623,1,Bima,Nadin,verified
+P041,tanggalPutusan,2026-06-30,putusan_515_pid.sus_2026_pn_dps_20261107014623,45,Bima,Nadin,verified
+P041,T1.terdakwaKode,P041,putusan_515_pid.sus_2026_pn_dps_20261107014623,1,Bima,Nadin,verified
+P041,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabu dan MDMA/Ekstasi (berdasarkan pemeriksaan laboratorium positif mengandung sediaan metamfetamina dan MDMA); terdaftar dalam Golongan I Nomor Urut 61 (sabu) dan Nomor Urut 37 (MDMA) Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.,putusan_515_pid.sus_2026_pn_dps_20261107014623,"4, 6, 12, 29",Bima,Nadin,verified
+P041,beratBarangBuktiGram,57.79,putusan_515_pid.sus_2026_pn_dps_20261107014623,"3, 6, 12, 29",Bima,Nadin,verified
+P041,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_515_pid.sus_2026_pn_dps_20261107014623,"4, 8, 14, 21",Bima,Nadin,verified
+P041,pasalTerbukti,Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan kesatu Penuntut Umum).,putusan_515_pid.sus_2026_pn_dps_20261107014623,44,Bima,Nadin,verified
+P041,T1.tuntutanBulan,90,putusan_515_pid.sus_2026_pn_dps_20261107014623,2,Bima,Nadin,verified
+P041,T1.vonisBulan,84,putusan_515_pid.sus_2026_pn_dps_20261107014623,44,Bima,Nadin,verified
+P041,dendaRupiah,5000000,putusan_515_pid.sus_2026_pn_dps_20261107014623,"2, 44",Bima,Nadin,verified
+P041,barangBukti,"1. 1 (satu) buah kotak plastik bening merk AMEERA OPTIK.
+2. 4 (empat) buah plastik klip bening didalamnya masing-masing berisi benda kristal bening narkotika jenis sabu dengan rincian: kode A1 (brutto 5,72 gram / netto 5,39 gram), kode A2 (brutto 10,11 gram / netto 9,75 gram), kode A3 (brutto 5,29 gram / netto 4,99 gram), dan kode A4 (brutto 1,01 gram / netto 0,89 gram) dengan total berat keseluruhan 22,13 gram brutto atau 21,02 gram netto.
+3. 6 (enam) buah plastik klip bening didalamnya masing-masing berisi tablet berwarna kuning dengan logo singa narkotika jenis ekstasi dengan rincian: kode B1 (20 butir, brutto 8,12 gram / netto 7,76 gram), kode B2 (20 butir, brutto 8,11 gram / netto 7,75 gram), kode B3 (20 butir, brutto 8,11 gram / netto 7,75 gram), kode B4 (20 butir, brutto 8,04 gram / netto 7,68 gram), kode B5 (10 butir, brutto 4,14 gram / netto 3,88 gram), dan kode B6 (5 butir, brutto 2,24 gram / netto 1,95 gram) dengan total keseluruhan 95 butir, berat brutto 38,76 gram atau netto 36,77 gram.
+4. 2 (dua) buah Buku catatan.
+5. 2 (dua) bendel plastik klip bening.
+6. 1 (satu) bendel pipet warna pink.
+7. 1 (satu) buah gunting warna hitam.
+8. 1 (satu) buah timbangan digital merk ACIS.
+9. 1 (satu) buah spidol warna hitam.
+10. 1 (satu) Hp Samsung Galaxy A36 5G no sim 085720354702, IMEI: 353151973179132.
+
+Status barang bukti:
+- Barang bukti nomor 1 sampai dengan nomor 9 dirampas untuk dimusnahkan.
+- Barang bukti nomor 10 (1 unit Hp Samsung Galaxy A36 5G beserta nomor sim dan IMEI) dirampas untuk Negara.",putusan_515_pid.sus_2026_pn_dps_20261107014623,"2, 12, 43",Bima,Nadin,verified
+P041,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; perbuatan Terdakwa bertentangan dengan program pemerintah dalam upaya pemberantasan peredaran dan penyalahgunaan Narkotika.,putusan_515_pid.sus_2026_pn_dps_20261107014623,44,Bima,Nadin,verified
+P041,keadaanMeringankan,Terdakwa belum pernah dihukum; Terdakwa mengakui terus terang perbuatannya.,putusan_515_pid.sus_2026_pn_dps_20261107014623,44,Bima,Nadin,verified
+P042,nomorPerkara,766/Pid.Sus/2026/PN Dps,putusan_766_pid.sus_2026_pn_dps_20261106112658,1,Bima,Nadin,verified
+P042,pengadilan,Pengadilan Negeri Denpasar,putusan_766_pid.sus_2026_pn_dps_20261106112658,1,Bima,Nadin,verified
+P042,tanggalPutusan,2026-09-17,putusan_766_pid.sus_2026_pn_dps_20261106112658,42,Bima,Nadin,verified
+P042,T1.terdakwaKode,P042,putusan_766_pid.sus_2026_pn_dps_20261106112658,1,Bima,Nadin,verified
+P042,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabu (berdasarkan uji Labfor No. LAB: 505/NNF/2026 tanggal 29 Maret 2026 positif mengandung sediaan metamfetamina dan urine Terdakwa positif mengandung metamfetamina); terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.,putusan_766_pid.sus_2026_pn_dps_20261106112658,"4, 6, 11, 27",Bima,Nadin,verified
+P042,beratBarangBuktiGram,95.06,putusan_766_pid.sus_2026_pn_dps_20261106112658,"3, 6, 11, 21",Bima,Nadin,verified
+P042,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 ayat (2) jo. Pasal 132 ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Nomor 1 Tahun 2023 jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 ayat (2) huruf a Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Pasal 132 ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.",putusan_766_pid.sus_2026_pn_dps_20261106112658,"4, 8, 13, 20",Bima,Nadin,verified
+P042,pasalTerbukti,Pasal 114 ayat (1) jo. Pasal 132 ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Nomor 1 Tahun 2023 jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan kesatu Penuntut Umum).,putusan_766_pid.sus_2026_pn_dps_20261106112658,41,Bima,Nadin,verified
+P042,T1.tuntutanBulan,96,putusan_766_pid.sus_2026_pn_dps_20261106112658,2,Bima,Nadin,verified
+P042,T1.vonisBulan,72,putusan_766_pid.sus_2026_pn_dps_20261106112658,42,Bima,Nadin,verified
+P042,dendaRupiah,5000000,putusan_766_pid.sus_2026_pn_dps_20261106112658,"2, 42",Bima,Nadin,verified
+P042,barangBukti,"1 (satu) buah handphone merk Infinix Smart 20 warna oranye dengan nomor WhatsApp +66963546037 dan nomor IMEI 3509912746800201.
+
+Status barang bukti:
+-Dirampas untuk Negara.",putusan_766_pid.sus_2026_pn_dps_20261106112658,"2, 11, 42",Bima,Nadin,verified
+P042,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan program pemerintah untuk memberantas peredaran gelap/ilegal Narkotika; Terdakwa sudah pernah dihukum.,putusan_766_pid.sus_2026_pn_dps_20261106112658,42,Bima,Nadin,verified
+P042,keadaanMeringankan,Terdakwa menyesali perbuatannya; Terdakwa mengakui terus terang perbuatannya.,putusan_766_pid.sus_2026_pn_dps_20261106112658,42,Bima,Nadin,verified
+P043,nomorPerkara,787/Pid.Sus/2026/PN Dps,putusan_787_pid.sus_2026_pn_dps_20261105113913,1,Bima,Nadin,verified
+P043,pengadilan,Pengadilan Negeri Denpasar,putusan_787_pid.sus_2026_pn_dps_20261105113913,1,Bima,Nadin,verified
+P043,tanggalPutusan,2026-09-17,putusan_787_pid.sus_2026_pn_dps_20261105113913,42,Bima,Nadin,verified
+P043,T1.terdakwaKode,P043,putusan_787_pid.sus_2026_pn_dps_20261105113913,1,Bima,Nadin,verified
+P043,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/shabu (berdasarkan uji Labfor No. LAB: 600/NNF/2026 tanggal 13 April 2026 positif mengandung sediaan metamfetamina dan urine Terdakwa negatif mengandung narkotika/psikotropika); terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.,putusan_787_pid.sus_2026_pn_dps_20261105113913,"2, 6, 11, 27",Bima,Nadin,verified
+P043,beratBarangBuktiGram,31.75,putusan_787_pid.sus_2026_pn_dps_20261105113913,"2, 6, 11, 27",Bima,Nadin,verified
+P043,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_787_pid.sus_2026_pn_dps_20261105113913,"4, 8, 13, 20",Bima,Nadin,verified
+P043,pasalTerbukti,Pasal 114 ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan alternatif Pertama Penuntut Umum).,putusan_787_pid.sus_2026_pn_dps_20261105113913,41,Bima,Nadin,verified
+P043,T1.tuntutanBulan,90,putusan_787_pid.sus_2026_pn_dps_20261105113913,2,Bima,Nadin,verified
+P043,T1.vonisBulan,78,putusan_787_pid.sus_2026_pn_dps_20261105113913,59,Bima,Nadin,verified
+P043,dendaRupiah,2000000,putusan_787_pid.sus_2026_pn_dps_20261105113913,"2, 42",Bima,Nadin,verified
+P043,barangBukti,"1. 18 (delapan belas) plastik klip masing-masing berisi kristal bening Narkotika jenis Shabu dengan berat bersih keseluruhan 4,36 gram atau berat kotor keseluruhan 6,78 gram dengan kode A1 sampai B12.
+2. 1 (satu) buah tas slempang warna merah.
+3. 14 (empat belas) potongan pipet biru.
+4. 18 (delapan belas) potongan plaster warna hijau.
+5. 1 (satu) buah plastik klip kosong.
+6. 1 (satu) buah HP OPPO A58 warna hitam dengan Nomor IMEI 865813060453693.
+7. 15 (lima belas) plastik klip berisi kristal bening Narkotika jenis Shabu dengan berat bersih 27,39 gram atau berat kotor 30,39 gram dengan kode B.
+8. 1 (satu) buah tas jinjing warna pink.
+9. 1 (satu) buah tas jinjing warna abu-abu.
+10. 1 (satu) ball pipet.
+11. 1 (satu) buah double tape warna hijau.
+12. 1 (satu) buah timbangan elektrik.
+13. 1 (satu) buah kotak kaleng rokok Dji Sam Soe.
+14. 1 (satu) lembar potongan tissue.
+15. 1 (satu) buah tutup lampu (Gelas bening).
+
+Status barang bukti:
+-Dirampas untuk dimusnahkan.",putusan_787_pid.sus_2026_pn_dps_20261105113913,"2, 11, 42",Bima,Nadin,verified
+P043,keadaanMemberatkan,Terdakwa berperan aktif sebagai pengedar narkotika yang dapat berdampak merusak generasi bangsa khususnya masyarakat di Bali.,putusan_787_pid.sus_2026_pn_dps_20261105113913,42,Bima,Nadin,verified
+P043,keadaanMeringankan,"Terdakwa belum pernah dihukum; Terdakwa mengakui perbuatannya, merasa menyesal dan berjanji tidak mengulangi lagi; Terdakwa bersikap sopan dipersidangan; Terdakwa sebagai keluarga tidak mampu sesuai Surat Keterangan Nomor: 471.1/417/429.519.03/2026 tanggal 8 Mei 2026, sehingga keadaan tersebut lebih mudah dieksploitasi oleh jaringan pengedar atau bandar narkotika yang lebih besar.",putusan_787_pid.sus_2026_pn_dps_20261105113913,42,Bima,Nadin,verified
+P044,nomorPerkara,797/Pid.Sus/2026/PN Dps,putusan_797_pid.sus_2026_pn_dps_20261106111941,1,Bima,Nadin,verified
+P044,pengadilan,Pengadilan Negeri Denpasar,putusan_797_pid.sus_2026_pn_dps_20261106111941,1,Bima,Nadin,verified
+P044,tanggalPutusan,2026-09-22,putusan_797_pid.sus_2026_pn_dps_20261106111941,35,Bima,Nadin,verified
+P044,T1.terdakwaKode,P044,putusan_797_pid.sus_2026_pn_dps_20261106111941,1,Bima,Nadin,verified
+P044,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/shabu (berdasarkan uji Labfor No. LAB: 711/NNF/2026 tanggal 4 Mei 2026 positif mengandung sediaan metamfetamina dan urine Terdakwa negatif mengandung narkotika/psikotropika); terdaftar dalam Narkotika Golongan I nomor urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.,putusan_797_pid.sus_2026_pn_dps_20261106111941,"2, 6, 12, 30",Bima,Nadin,verified
+P044,beratBarangBuktiGram,38.32,putusan_797_pid.sus_2026_pn_dps_20261106111941,"2, 6, 12, 30",Bima,Nadin,verified
+P044,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_797_pid.sus_2026_pn_dps_20261106111941,"4, 8, 13, 24",Bima,Nadin,verified
+P044,pasalTerbukti,Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika (sebagaimana dakwaan alternatif kesatu Penuntut Umum).,putusan_797_pid.sus_2026_pn_dps_20261106111941,45,Bima,Nadin,verified
+P044,T1.tuntutanBulan,96,putusan_797_pid.sus_2026_pn_dps_20261106111941,2,Bima,Nadin,verified
+P044,T1.vonisBulan,96,putusan_797_pid.sus_2026_pn_dps_20261106111941,51,Bima,Nadin,verified
+P044,dendaRupiah,5000000,putusan_797_pid.sus_2026_pn_dps_20261106111941,"2, 46",Bima,Nadin,verified
+P044,barangBukti,"1. 1 (satu) buah tas pinggang merk ALTO warna hitam biru yang didalamnya terdapat 16 (enam belas) paket plastik klip bening masing-masing berisi kristal bening mengandung sediaan narkotika jenis sabu (Kode A1 s/d A16) dengan berat keseluruhan 8,58 gram brutto atau 4,47 gram netto.
+2. 1 (satu) buah gunting warna hitam orange.
+3. 1 (satu) buah kartu ATM Paspor Blue BCA dengan nomor kartu 6019 0076 2411 4089.
+4. 1 (satu) buah handphone merk VIVO Y22 warna biru dengan nomor 089602162886 dan nomor IMEI 865386064025999.
+5. 1 (satu) buah tas kresek warna biru yang didalamnya terdapat gumpalan tissu warna putih berisi 5 (lima) plastik klip bening masing-masing berisi kristal bening mengandung sediaan narkotika jenis sabu (Kode B1 s/d B5) dengan berat keseluruhan 35,58 gram brutto atau 33,85 gram netto.
+6. 1 (satu) buah timbangan digital warna silver merk ACIS.
+7. 1 (satu) bendel plastik klip bening.
+8. 1 (satu) buah sendok pipet warna bening garis putih hijau.
+9. 1 (satu) buah sendok pipet warna bening garis putih biru.
+10. 1 (satu) buah sendok pipet warna hitam.
+11. 1 (satu) bendel pipet warna bening garis putih hijau.
+12. 1 (satu) bendel pipet warna bening garis putih merah muda.
+13. 1 (satu) buah lakban warna hitam.
+14. Seperangkat alat hisap sabu / Bong.
+
+Status barang bukti:
+-Dirampas untuk dimusnahkan.",putusan_797_pid.sus_2026_pn_dps_20261106111941,"2, 12, 46",Bima,Nadin,verified
+P044,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; Perbuatan Terdakwa tidak mendukung program pemerintah yang lagi giat-giatnya memberantas narkotika.,putusan_797_pid.sus_2026_pn_dps_20261106111941,46,Bima,Nadin,verified
+P044,keadaanMeringankan,Terdakwa sopan dan berterus terang di persidangan sehingga memperlancar jalannya persidangan; Terdakwa merasa bersalah dan menyesali perbuatannya.,putusan_797_pid.sus_2026_pn_dps_20261106111941,46,Bima,Nadin,verified
+P045,nomorPerkara,806/Pid.Sus/2026/PN Dps,putusan_806_pid.sus_2026_pn_dps_20261106112111,1,Bima,Nadin,verified
+P045,pengadilan,Pengadilan Negeri Denpasar,putusan_806_pid.sus_2026_pn_dps_20261106112111,1,Bima,Nadin,verified
+P045,tanggalPutusan,2026-09-22,putusan_806_pid.sus_2026_pn_dps_20261106112111,37,Bima,Nadin,verified
+P045,T1.terdakwaKode,P045,putusan_806_pid.sus_2026_pn_dps_20261106112111,1,Bima,Nadin,verified
+P045,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis MDMA (Ekstasi) dan Metamfetamina (Shabu) (berdasarkan Berita Acara Pemeriksaan Laboratoris Kriminalistik No. Lab. 850/NNF/2026 tanggal 19 Mei 2026 positif mengandung sediaan MDMA dan Metamfetamina); terdaftar dalam Golongan I Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.,putusan_806_pid.sus_2026_pn_dps_20261106112111,"2, 6, 16, 33",Bima,Nadin,verified
+P045,beratBarangBuktiGram,123.37,putusan_806_pid.sus_2026_pn_dps_20261106112111,"2, 6, 16, 33",Bima,Nadin,verified
+P045,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_806_pid.sus_2026_pn_dps_20261106112111,"5, 9, 20, 39",Bima,Nadin,verified
+P045,pasalTerbukti,Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan alternatif pertama Penuntut Umum).,putusan_806_pid.sus_2026_pn_dps_20261106112111,58,Bima,Nadin,verified
+P045,T1.tuntutanBulan,144,putusan_806_pid.sus_2026_pn_dps_20261106112111,2,Bima,Nadin,verified
+P045,T1.vonisBulan,120,putusan_806_pid.sus_2026_pn_dps_20261106112111,58,Bima,Nadin,verified
+P045,dendaRupiah,3000000,putusan_806_pid.sus_2026_pn_dps_20261106112111,"2, 53",Bima,Nadin,verified
+P045,barangBukti,"1. 1 (satu) buah bungkusan permen warna orange bertuliskan TING-TING yang didalamnya berisi 1 (satu) buah plastik klip bening berisi 5 butir tablet warna kuning mengandung sediaan narkotika jenis ekstasi dengan berat keseluruhan 2,08 gram bruto atau 1,90 gram netto (KODE A).
+2. 1 (satu) buah kantong kain warna hitam bertuliskan HYUNDAI yang didalamnya berisi 3 plastik klip berisi tablet warna kuning ekstasi: 8 butir (3,27/3,07 gram, KODE B1), 5 butir (2,04/1,86 gram, KODE B2), dan 1½ butir (0,39/0,21 gram, KODE B3).
+3. 1 (satu) buah kantong charger warna hitam berisi 10 paket plastik klip masing-masing berisi 5 butir tablet warna kuning ekstasi (KODE C1 s/d C10, total 50 butir dengan berat total ekstasi keseluruhan 68 ½ butir / 28,43 gram bruto atau 25,69 gram netto).
+4. 1 (satu) buah kantong dompet warna krem berisi 1 plastik klip bening berisi tissue yang berisi 12 plastik klip shabu (KODE D1 s/d D12) dan 12 paket dibalut lakban kuning berisi shabu (KODE E1 s/d E12), total 24 paket shabu dengan berat keseluruhan 103,06 gram bruto atau 97,68 gram netto.
+5. 1 (satu) buah kantong kain warna hitam berisi 1 timbangan hitam IDEALIFE dan 1 sendok pipet hitam.
+6. 1 (satu) buah tas hitam bertuliskan tulisan jepang berisi beberapa bendel plastik klip pelbagai ukuran dan 1 sendok plastik putih.
+7. 1 (satu) buah celana pendek warna merah.
+8. 1 (satu) buah lakban warna kuning.
+9. 1 (satu) buah Handphone warna silver jenis REDMI 15 dengan nomor IMEI1 866391078451768, IMEI2 866391078451776, dan nomor Simcard 085126944463 (dirampas untuk Negara).
+
+Status barang bukti:
+-Barang bukti nomor 1 sampai 8 dirampas untuk dimusnahkan.",putusan_806_pid.sus_2026_pn_dps_20261106112111,"2, 16, 53",Bima,Nadin,verified
+P045,keadaanMemberatkan,Perbuatan Terdakwa tidak mendukung upaya pemerintah dalam memberantas peredaran Narkotika; Barang bukti yang diperoleh dari diri Terdakwa cukup signifikan.,putusan_806_pid.sus_2026_pn_dps_20261106112111,53,Bima,Nadin,verified
+P045,keadaanMeringankan,Terdakwa berlaku sopan di persidangan; Terdakwa mengakui dan berterus terang atas perbuatannya.,putusan_806_pid.sus_2026_pn_dps_20261106112111,53,Bima,Nadin,verified
+P046,nomorPerkara,840/Pid.Sus/2026/PN Dps,putusan_840_pid.sus_2026_pn_dps_20261106112234,1,Bima,Nadin,verified
+P046,pengadilan,Pengadilan Negeri Denpasar,putusan_840_pid.sus_2026_pn_dps_20261106112234,1,Bima,Nadin,verified
+P046,tanggalPutusan,2026-09-22,putusan_840_pid.sus_2026_pn_dps_20261106112234,28,Bima,Nadin,verified
+P046,T1.terdakwaKode,P046,putusan_840_pid.sus_2026_pn_dps_20261106112234,1,Bima,Nadin,verified
+P046,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina (Shabu) (berdasarkan Berita Acara Pemeriksaan Laboratoris Kriminalistik No. Lab: 584/NNF/2026 tanggal 11 April 2026 adalah benar positif mengandung sediaan Metamfetamina); terdaftar dalam Golongan I Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.,putusan_840_pid.sus_2026_pn_dps_20261106112234,"2, 6, 16, 26",Bima,Nadin,verified
+P046,beratBarangBuktiGram,0.8,putusan_840_pid.sus_2026_pn_dps_20261106112234,"2, 6, 16, 26",Bima,Nadin,verified
+P046,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_840_pid.sus_2026_pn_dps_20261106112234,"5, 8, 18, 22",Bima,Nadin,verified
+P046,pasalTerbukti,Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan alternatif kedua Penuntut Umum).,putusan_840_pid.sus_2026_pn_dps_20261106112234,26,Bima,Nadin,verified
+P046,T1.tuntutanBulan,36,putusan_840_pid.sus_2026_pn_dps_20261106112234,2,Bima,Nadin,verified
+P046,T1.vonisBulan,30,putusan_840_pid.sus_2026_pn_dps_20261106112234,60,Bima,Nadin,verified
+P046,dendaRupiah,1000000,putusan_840_pid.sus_2026_pn_dps_20261106112234,"2, 25",Bima,Nadin,verified
+P046,barangBukti,"1. 6 (enam) plastik klip berisi kristal bening diduga mengandung sediaan narkotika masing-masing: Kode A1 (0,1/0,2 gram), Kode A2 (0,1/0,2 gram), Kode A3 (0,1/0,2 gram), Kode A4 (0,1/0,2 gram), Kode A5 (0,2/0,3 gram), dan Kode A6 (0,2/0,3 gram) dengan berat keseluruhan 0,8 gram netto dan 1,4 gram brutto.
+2. 4 (empat) potongan pipet bening.
+3. 2 (dua) potongan pipet hitam.
+4. 1 (satu) buah celana pendek coklat.
+5. 1 (satu) buah HP VIVO warna hitam IMEI: 866660055619310 (dirampas untuk negara).
+
+Status barang bukti:
+-Barang bukti nomor 1 s/d 4 dirampas untuk dimusnahkan.",putusan_840_pid.sus_2026_pn_dps_20261106112234,"2, 16, 25",Bima,Nadin,verified
+P046,keadaanMemberatkan,Perbuatan Terdakwa tidak mendukung program pemerintah terhadap pemberantasan penyalahgunaan Narkotika dan peredaran gelap narkotika.,putusan_840_pid.sus_2026_pn_dps_20261106112234,25,Bima,Nadin,verified
+P046,keadaanMeringankan,Terdakwa bersikap sopan dalam persidangan; Terdakwa berterus terang dan mengakui perbuatannya; Terdakwa belum pernah dihukum.,putusan_840_pid.sus_2026_pn_dps_20261106112234,25,Bima,Nadin,verified
+P047,nomorPerkara,857/Pid.Sus/2026/PN Dps,putusan_857_pid.sus_2026_pn_dps_20261106112824,1,Bima,Nadin,verified
+P047,pengadilan,Pengadilan Negeri Denpasar,putusan_857_pid.sus_2026_pn_dps_20261106112824,1,Bima,Nadin,verified
+P047,tanggalPutusan,2026-09-10,putusan_857_pid.sus_2026_pn_dps_20261106112824,31,Bima,Nadin,verified
+P047,T1.terdakwaKode,P047,putusan_857_pid.sus_2026_pn_dps_20261106112824,1,Bima,Nadin,verified
+P047,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/shabu (berdasarkan uji Labfor No. LAB: 970/NNF/2026 tanggal 02 Juni 2026 positif mengandung sediaan metamfetamina dan urine Terdakwa negatif mengandung narkotika/psikotropika); terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.,putusan_857_pid.sus_2026_pn_dps_20261106112824,"1, 8, 13, 19",Bima,Nadin,verified
+P047,beratBarangBuktiGram,29.74,putusan_857_pid.sus_2026_pn_dps_20261106112824,"1, 8, 13, 19",Bima,Nadin,verified
+P047,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (2) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_857_pid.sus_2026_pn_dps_20261106112824,"5, 9, 14, 18",Bima,Nadin,verified
+P047,pasalTerbukti,Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan alternatif kedua Penuntut Umum).,putusan_857_pid.sus_2026_pn_dps_20261106112824,19,Bima,Nadin,verified
+P047,T1.tuntutanBulan,84,putusan_857_pid.sus_2026_pn_dps_20261106112824,6,Bima,Nadin,verified
+P047,T1.vonisBulan,78,putusan_857_pid.sus_2026_pn_dps_20261106112824,60,Bima,Nadin,verified
+P047,dendaRupiah,1000000,putusan_857_pid.sus_2026_pn_dps_20261106112824,"1, 18",Bima,Nadin,verified
+P047,barangBukti,"1. 84 (delapan puluh empat) plastik klip masing-masing berisi kristal bening Narkotika jenis Shabu dengan berat bersih keseluruhan 29,74 gram atau berat kotor keseluruhan 51,39 gram (dengan rincian: 47 plastik klip @0,11/0,35 gram dengan kode A1 s.d. A47; 26 plastik klip @0,28/0,52 gram dengan kode B1 s.d. B26; 10 plastik klip @0,85/1,09 gram dengan kode C1 s.d. C10; dan 1 plastik klip berat bersih 8,79 gram / berat kotor 10,52 gram dengan kode D).
+2. 46 (empat puluh enam) potongan pipet warna merah.
+3. 1 (satu) potongan pipet warna hijau.
+4. 36 (tiga puluh enam) potongan pipet bening.
+5. 1 (satu) buah kantong plastik warna biru.
+6. 1 (satu) buah timbangan digital.
+7. 1 (satu) bendel plastik klip kosong.
+8. 2 (dua) ball pipet plastic.
+9. 1 (satu) buah bong dengan pipa kaca.
+10. 1 (satu) buah korek api gas.
+11. 1 (satu) buah HP merek Infinix, warna hitam, type Note 40, No. IMEI1: 354147841440648 (dirampas untuk Negara).
+
+Status barang bukti:
+-Barang bukti nomor 1 sampai 10 dirampas untuk dimusnahkan",putusan_857_pid.sus_2026_pn_dps_20261106112824,"1, 3, 18",Bima,Nadin,verified
+P047,keadaanMemberatkan,Perbuatan Terdakwa meresahkan masyarakat; Terdakwa tidak mendukung program pemerintah yang lagi giat-giatnya memberantas narkotika; Terdakwa pernah dihukum perkara sejenis.,putusan_857_pid.sus_2026_pn_dps_20261106112824,18,Bima,Nadin,verified
+P047,keadaanMeringankan,Terdakwa sopan dan berterus terang di persidangan sehingga memperlancar jalannya persidangan; Terdakwa merasa bersalah dan menyesali perbuatannya.,putusan_857_pid.sus_2026_pn_dps_20261106112824,18,Bima,Nadin,verified
+P048,nomorPerkara,879/Pid.Sus/2026/PN Dps,putusan_879_pid.sus_2026_pn_dps_20261106112616,1,Bima,Nadin,verified
+P048,pengadilan,Pengadilan Negeri Denpasar,putusan_879_pid.sus_2026_pn_dps_20261106112616,1,Bima,Nadin,verified
+P048,tanggalPutusan,2026-09-17,putusan_879_pid.sus_2026_pn_dps_20261106112616,27,Bima,Nadin,verified
+P048,T1.terdakwaKode,P048,putusan_879_pid.sus_2026_pn_dps_20261106112616,1,Bima,Nadin,verified
+P048,jenisNarkotika,"Narkotika Golongan I bukan tanaman jenis Metamfetamina/shabu (total berat brutto 4,63 gram atau berat netto 2,72 gram; berdasarkan uji Labfor No. LAB: 970/NNF/2026 tanggal 02 Juni 2026 positif mengandung sediaan metamfetamina dan urine Terdakwa negatif mengandung narkotika/psikotropika); terdaftar dalam Golongan I Nomor Urut 61 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.",putusan_879_pid.sus_2026_pn_dps_20261106112616,"1, 12, 17, 23",Bima,Nadin,verified
+P048,beratBarangBuktiGram,2.72,putusan_879_pid.sus_2026_pn_dps_20261106112616,"1, 12, 17, 23",Bima,Nadin,verified
+P048,pasalDakwaan,"Dakwaan Kesatu: Pasal 114 Ayat (1) Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_879_pid.sus_2026_pn_dps_20261106112616,"4, 11, 16, 22",Bima,Nadin,verified
+P048,pasalTerbukti,Pasal 609 Ayat (1) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan alternatif kedua Penuntut Umum).,putusan_879_pid.sus_2026_pn_dps_20261106112616,34,Bima,Nadin,verified
+P048,T1.tuntutanBulan,72,putusan_879_pid.sus_2026_pn_dps_20261106112616,5,Bima,Nadin,verified
+P048,T1.vonisBulan,60,putusan_879_pid.sus_2026_pn_dps_20261106112616,32,Bima,Nadin,verified
+P048,dendaRupiah,5000000,putusan_879_pid.sus_2026_pn_dps_20261106112616,"1, 22",Bima,Nadin,verified
+P048,barangBukti,"1. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,22 gram dan berat netto 0,12 gram, kode A1.
+2. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,24 gram dan berat netto 0,14 gram, kode A2.
+3. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,24 gram dan berat netto 0,14 gram, kode A3.
+4. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,23 gram dan berat netto 0,13 gram, kode A4.
+5. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,24 gram dan berat netto 0,14 gram, Kode A5.
+6. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,23 gram dan berat Netto 0,13 gram, Kode A6.
+7. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,23 gram dan berat netto 0,13 gram, Kode A7.
+8. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,20 gram dan berat netto 0,10 gram, Kode A8.
+9. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,23 gram dan berat netto 0,13 gram, kode A9.
+10. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,24 gram dan berat netto 0,14 gram, kode A10.
+11. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,22 gram dan berat netto 0,12 gram, kode A11.
+12. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,20 gram dan berat netto 0,10 gram, kode A12.
+13. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,23 gram dan berat netto 0,13 gram, kode A13.
+14. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,40 gram dan berat netto 0,32 gram, kode A14.
+15. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,12 gram dan berat netto 0,04 gram, kode A15.
+16. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung Narkotika dengan berat brutto 0,40 gram dan berat Netto 0,30 gram, kode A16.
+17. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung narkotika dengan berat brutto 0,40 gram dan berat netto 0,30 gram, kode A17.
+18. 1 (satu) plastik klip yang berisikan kristal bening yang mengandung narkotika dengan berat brutto 0,36 gram dan berat netto 0,11 gram, kode A18.
+19. 14 (empat belas) potongan pipet warna hitam.
+20. 1 (satu) bekas pembungkus permen kopiko.
+21. 1 (satu) bekas pembungkus rokok Dunhil warna hitam.
+22. 1 (satu) tas kain warna kuning.
+23. 1 (satu) bendel pipet warna hitam.
+24. 1 (satu) buah timbangan elektrik.
+25. 1 (satu) buah bong.
+26. 1 (satu) korek api gas.
+27. 1 (satu) plaster bening.
+28. 1 (satu) buah gunting.
+29. 4 (empat) bendel plastik klip kosong.
+30. 1 (satu) buah HP Samsung Galaxy A04 warna merah muda dengan nomor Imei 358320685074064.
+
+Status barang bukti:
+-Nomor 1 sampai dengan 29 dirampas untuk dimusnahkan 
+-Nomor 30 dirampas untuk negara.",putusan_879_pid.sus_2026_pn_dps_20261106112616,"1, 11, 22",Bima,Nadin,verified
+P048,keadaanMemberatkan,Perbuatan Terdakwa dilakukan pada saat pemerintah sedang giat-giatnya melakukan pemberantasan peredaran gelap dan penyalahgunaan narkotika; Perbuatan Terdakwa sangat meresahkan masyarakat; Terdakwa pernah dijatuhi pidana dalam perkara lain.,putusan_879_pid.sus_2026_pn_dps_20261106112616,22,Bima,Nadin,verified
+P048,keadaanMeringankan,Terdakwa mengakui terus terang perbuatannya sehingga tidak mempersulit jalannya persidangan dan bersikap sopan di persidangan; Terdakwa menyesali perbuatannya dan berjanji tidak akan mengulanginya lagi di masa mendatang.,putusan_879_pid.sus_2026_pn_dps_20261106112616,22,Bima,Nadin,verified
+P049,nomorPerkara,439/Pid.Sus/2026/PN Dps,putusan_439_pid.sus_2026_pn_dps_20261104115441,1,Bima,Nadin,verified
+P049,pengadilan,Pengadilan Negeri Denpasar,putusan_439_pid.sus_2026_pn_dps_20261104115441,1,Bima,Nadin,verified
+P049,tanggalPutusan,2026-07-23,putusan_439_pid.sus_2026_pn_dps_20261104115441,30,Bima,Nadin,verified
+P049,T1.terdakwaKode,P049,putusan_439_pid.sus_2026_pn_dps_20261104115441,1,Bima,Nadin,verified
+P049,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Kokaina (berdasarkan Berita Acara Pemeriksaan Laboratoris Kriminalistik No. Lab.: 233/NNF/2026 tanggal 12 Februari 2026 positif mengandung sediaan Kokaina dan urine Terdakwa positif mengandung metabolit Kokaina / Ecgonine Methyl Ester); terdaftar dalam Golongan I Nomor Urut 7 Lampiran I Undang-Undang Republik Indonesia Nomor 35 Tahun 2009 tentang Narkotika.,putusan_439_pid.sus_2026_pn_dps_20261104115441,"1, 8, 16, 32",Bima,Nadin,verified
+P049,beratBarangBuktiGram,2223.87,putusan_439_pid.sus_2026_pn_dps_20261104115441,"1, 8, 16, 32",Bima,Nadin,verified
+P049,pasalDakwaan,"Dakwaan Kesatu: Pasal 610 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.
+
+Dakwaan Kedua: Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana.",putusan_439_pid.sus_2026_pn_dps_20261104115441,"4, 8, 20, 31",Bima,Nadin,verified
+P049,pasalTerbukti,Pasal 609 Ayat (2) huruf a Undang-Undang Republik Indonesia Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana Jo. Undang-Undang Republik Indonesia Nomor 1 Tahun 2026 tentang Penyesuaian Pidana (sebagaimana dakwaan alternatif kedua Penuntut Umum).,putusan_439_pid.sus_2026_pn_dps_20261104115441,33,Bima,Nadin,verified
+P049,T1.tuntutanBulan,192,putusan_439_pid.sus_2026_pn_dps_20261104115441,11,Bima,Nadin,verified
+P049,T1.vonisBulan,132,putusan_439_pid.sus_2026_pn_dps_20261104115441,31,Bima,Nadin,verified
+P049,dendaRupiah,1000000,putusan_439_pid.sus_2026_pn_dps_20261104115441,"1, 31",Bima,Nadin,verified
+P049,barangBukti,"1. 1 (satu) buah kemasan plastik warna hitam yang di dalamnya berisi serbuk berwarna putih yang merupakan narkotika jenis Kokaina dengan berat 2.212,12 gram Brutto atau 1.608,69 gram Netto (Kode A).
+2. 1 (satu) buah kemasan plastik warna hitam yang di dalamnya berisi serbuk berwarna putih yang merupakan narkotika jenis Kokaina dengan berat 630,61 gram Brutto atau 307,45 gram Netto (Kode B).
+3. 1 (satu) buah kemasan plastik warna hitam yang di dalamnya berisi serbuk berwarna putih yang merupakan narkotika jenis Kokaina dengan berat 629,01 gram Brutto atau 307,73 gram Netto (Kode C).
+4. 1 (satu) buah tas koper warna hitam merek SAMSONITE.
+5. 1 (satu) buah handphone warna kuning Merk Samsung, Type Galaxy A15, IMEI1: 353038371757660, IMEI2: 358227701757665, dengan No. Whatsapp dan Signal +573215484016.
+6. 1 (satu) buah Boarding Pass Qatar Airways dengan No. Penerbangan QR 960 rute Doha - Denpasar.[cite: 146, 173]
+7. Uang tunai sejumlah 580 (lima ratus delapan puluh) euro.
+
+Status barang bukti:
+-Nomor 1 sampai dengan 6 dirampas untuk dimusnahkan 
+-Nomor 7 dirampas untuk negara.",putusan_439_pid.sus_2026_pn_dps_20261104115441,"1, 8, 31",Bima,Nadin,verified
+P049,keadaanMemberatkan,Perbuatan Terdakwa bertentangan dengan program pemerintah untuk memberantas peredaran gelap/ilegal Narkotika.[,putusan_439_pid.sus_2026_pn_dps_20261104115441,31,Bima,Nadin,verified
+P049,keadaanMeringankan,Terdakwa bersikap sopan di persidangan; Terdakwa mengakui terus terang perbuatannya; Terdakwa belum pernah dihukum; Terdakwa adalah seorang pengidap gangguan bipolar.,putusan_439_pid.sus_2026_pn_dps_20261104115441,31,Bima,Nadin,verified
+P050,nomorPerkara,1426/Pid.Sus/2018/PN.Dps,putusan_1426_pid.sus_2018_pn_dps_20261105170435,1,Bima,Nadin,verified
+P050,pengadilan,Pengadilan Negeri Denpasar,putusan_1426_pid.sus_2018_pn_dps_20261105170435,1,Bima,Nadin,verified
+P050,tanggalPutusan,2019-02-13,putusan_1426_pid.sus_2018_pn_dps_20261105170435,20,Bima,Nadin,verified
+P050,T1.terdakwaKode,P050,putusan_1426_pid.sus_2018_pn_dps_20261105170435,1,Bima,Nadin,verified
+P050,jenisNarkotika,Narkotika Golongan I bukan tanaman jenis Metamfetamina/sabhu (berdasarkan Berita Acara Pemeriksaan Laboratoris Kriminalistik Pusat Laboratorium Forensik Bareskrim Polri Cabang Denpasar No.Lab. 1198/NNF/2018 tanggal 25 Oktober 2018 adalah benar mengandung sediaan Metamfetamina dan urine Terdakwa positif mengandung Metamfetamina); terdaftar dalam golongan I (satu) nomor urut 61 Lampiran I Undang-Undang Republik Indonesia No. 35 tahun 2009 tentang Narkotika.,putusan_1426_pid.sus_2018_pn_dps_20261105170435,"1, 2, 7, 13",Bima,Nadin,verified
+P050,beratBarangBuktiGram,0.19,putusan_1426_pid.sus_2018_pn_dps_20261105170435,"1, 2, 7, 13",Bima,Nadin,verified
+P050,pasalDakwaan,"Dakwaan Kesatu: Pasal 112 Ayat (1) Undang-Undang Republik Indonesia No. 35 Tahun 2009 tentang Narkotika.
+
+Dakwaan Kedua: Pasal 127 Ayat (1) huruf a Undang-Undang Republik Indonesia No. 35 Tahun 2009 tentang Narkotika.",putusan_1426_pid.sus_2018_pn_dps_20261105170435,"1, 2, 7, 13",Bima,Nadin,verified
+P050,pasalTerbukti,Pasal 127 Ayat (1) huruf a Undang-Undang Republik Indonesia No. 35 Tahun 2009 tentang Narkotika (sebagaimana dakwaan kedua Penuntut Umum).,putusan_1426_pid.sus_2018_pn_dps_20261105170435,13,Bima,Nadin,verified
+P050,T1.tuntutanBulan,24,putusan_1426_pid.sus_2018_pn_dps_20261105170435,13,Bima,Nadin,verified
+P050,T1.vonisBulan,16,putusan_1426_pid.sus_2018_pn_dps_20261105170435,13,Bima,Nadin,verified
+P050,dendaRupiah,0,putusan_1426_pid.sus_2018_pn_dps_20261105170435,"1, 13",Bima,Nadin,verified
+P050,barangBukti,"1. 1 (satu) plastik klip berisi kristal bening Narkotika jenis Sabhu dengan berat bersih 0,19 gram (disisihkan berat bersih 0,09 gram untuk pemeriksaan Labfor, sisanya berat bersih 0,10 gram netto).
+2. 1 (satu) potongan pipet warna biru muda.
+
+Status barang bukti:
+-Dirampas untuk dimusnahkan.",putusan_1426_pid.sus_2018_pn_dps_20261105170435,"1, 2, 13",Bima,Nadin,verified
+P050,keadaanMemberatkan,Perbuatan terdakwa tersebut bertentangan dengan kebijaksanaan pemerintah yang sedang giat-giatnya memberantas Narkotika.,putusan_1426_pid.sus_2018_pn_dps_20261105170435,13,Bima,Nadin,verified
+P050,keadaanMeringankan,Terdakwa belum pernah dihukum; Terdakwa mengakui dengan terus terang perbuatannya sehingga memperlancar proses persidangan; Terdakwa sangat menyesali perbuatannya.,putusan_1426_pid.sus_2018_pn_dps_20261105170435,13,Bima,Nadin,verified
