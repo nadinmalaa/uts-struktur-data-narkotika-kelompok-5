@@ -68,7 +68,7 @@ public class DynamicArray<T> implements StrukturData<T> {
     @Override
     public boolean contains(T data) {
         for (int i = 0; i < size; i++) {
-            if (data.equals(elements[i])) {
+            if (java.util.Objects.equals(data, elements[i])) {
                 return true;
             }
         }

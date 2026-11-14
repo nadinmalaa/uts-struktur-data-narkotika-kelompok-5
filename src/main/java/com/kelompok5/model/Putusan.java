@@ -1,38 +1,35 @@
 package com.kelompok5.model;
-
+import com.kelompok5.structure.DynamicArray;
 import java.time.LocalDate;
 
 public class Putusan {
 
-    private String caseId;
-    private String nomorPerkara;
-    private String pengadilan;
-    private LocalDate tanggalPutusan;
-    private String terdakwaKode;
-    private String jenisNarkotika;
-    private double beratBarangBuktiGram;
-    private String pasalDakwaan;
-    private String pasalTerbukti;
-    private int tuntutanBulan;
-    private int vonisBulan;
-    private long dendaRupiah;
-    private String barangBukti;
-    private String keadaanMemberatkan;
-    private String keadaanMeringankan;
-    private String sourcePages;
+    private final String caseId;
+    private final String nomorPerkara;
+    private final String pengadilan;
+    private final LocalDate tanggalPutusan;
+
+    private final DynamicArray<TerdakwaData> daftarTerdakwa;
+
+    private final String jenisNarkotika;
+    private final double beratBarangBuktiGram;
+    private final String pasalDakwaan;
+    private final String pasalTerbukti;
+    private final long dendaRupiah;
+    private final String barangBukti;
+    private final String keadaanMemberatkan;
+    private final String keadaanMeringankan;
+    private final String sourcePages;
 
     public Putusan(
             String caseId,
             String nomorPerkara,
             String pengadilan,
             LocalDate tanggalPutusan,
-            String terdakwaKode,
             String jenisNarkotika,
             double beratBarangBuktiGram,
             String pasalDakwaan,
             String pasalTerbukti,
-            int tuntutanBulan,
-            int vonisBulan,
             long dendaRupiah,
             String barangBukti,
             String keadaanMemberatkan,
@@ -42,124 +39,185 @@ public class Putusan {
         this.caseId = requireText(caseId, "caseId");
         this.nomorPerkara = requireText(nomorPerkara, "nomorPerkara");
         this.pengadilan = requireText(pengadilan, "pengadilan");
-        this.tanggalPutusan = tanggalPutusan;
-        this.terdakwaKode = requireText(terdakwaKode, "terdakwaKode");
-        this.jenisNarkotika = normalize(jenisNarkotika);
 
-        if (beratBarangBuktiGram < 0 || tuntutanBulan < 0
-                || vonisBulan < 0 || dendaRupiah < 0) {
+        if (tanggalPutusan == null) {
             throw new IllegalArgumentException(
-                    "Nilai numerik tidak boleh negatif");
+                    "Tanggal putusan tidak boleh null");
         }
 
+        if (!Double.isFinite(beratBarangBuktiGram)
+                || beratBarangBuktiGram < 0) {
+            throw new IllegalArgumentException(
+                    "Berat barang bukti tidak valid");
+        }
+
+        if (dendaRupiah < 0) {
+            throw new IllegalArgumentException(
+                    "Denda tidak boleh negatif");
+        }
+
+        this.tanggalPutusan = tanggalPutusan;
+        this.jenisNarkotika = normalize(jenisNarkotika);
         this.beratBarangBuktiGram = beratBarangBuktiGram;
         this.pasalDakwaan = normalize(pasalDakwaan);
         this.pasalTerbukti = normalize(pasalTerbukti);
-        this.tuntutanBulan = tuntutanBulan;
-        this.vonisBulan = vonisBulan;
         this.dendaRupiah = dendaRupiah;
         this.barangBukti = normalize(barangBukti);
         this.keadaanMemberatkan = normalize(keadaanMemberatkan);
         this.keadaanMeringankan = normalize(keadaanMeringankan);
         this.sourcePages = normalize(sourcePages);
+
+        this.daftarTerdakwa = new DynamicArray<>();
     }
 
-    private String requireText(String value, String fieldName) {
+    private static String requireText(String value, String fieldName) {
         if (value == null || value.isBlank()) {
             throw new IllegalArgumentException(
                     fieldName + " tidak boleh kosong");
         }
+
         return value.trim();
     }
 
-    private String normalize(String value) {
+    private static String normalize(String value) {
         return value == null ? "" : value.trim();
     }
+
+    // Menambahkan terdakwa ke perkara ini
+    public void tambahTerdakwa(TerdakwaData terdakwa) {
+        if (terdakwa == null) {
+            throw new IllegalArgumentException(
+                    "Data terdakwa tidak boleh null");
+        }
+
+        if (!caseId.equalsIgnoreCase(terdakwa.getCaseId())) {
+            throw new IllegalArgumentException(
+                    "Case ID terdakwa tidak sesuai dengan putusan");
+        }
+
+        for (int i = 0; i < daftarTerdakwa.size(); i++) {
+            if (daftarTerdakwa.get(i).getKode()
+                    .equalsIgnoreCase(terdakwa.getKode())) {
+                throw new IllegalArgumentException(
+                        "Kode terdakwa sudah terdaftar pada perkara ini");
+            }
+        }
+
+        daftarTerdakwa.add(terdakwa);
+    }
+
+    public TerdakwaData getTerdakwa(int index) {
+        return daftarTerdakwa.get(index);
+    }
+
+    public int jumlahTerdakwa() {
+        return daftarTerdakwa.size();
+    }
+
+    public DynamicArray<TerdakwaData> getDaftarTerdakwa() {
+        return daftarTerdakwa;
+    }
+
     public String getCaseId() {
         return caseId;
     }
+
     public String getNomorPerkara() {
         return nomorPerkara;
     }
+
     public String getPengadilan() {
         return pengadilan;
     }
+
     public LocalDate getTanggalPutusan() {
         return tanggalPutusan;
     }
-    public String getTerdakwaKode() {
-        return terdakwaKode;
-    }
+
     public String getJenisNarkotika() {
         return jenisNarkotika;
     }
+
     public double getBeratBarangBuktiGram() {
         return beratBarangBuktiGram;
     }
+
     public String getPasalDakwaan() {
         return pasalDakwaan;
     }
+
     public String getPasalTerbukti() {
         return pasalTerbukti;
     }
-    public int getTuntutanBulan() {
-        return tuntutanBulan;
-    }
-    public int getVonisBulan() {
-        return vonisBulan;
-    }
+
     public long getDendaRupiah() {
         return dendaRupiah;
     }
+
     public String getBarangBukti() {
         return barangBukti;
     }
+
     public String getKeadaanMemberatkan() {
         return keadaanMemberatkan;
     }
+
     public String getKeadaanMeringankan() {
         return keadaanMeringankan;
     }
+
     public String getSourcePages() {
         return sourcePages;
     }
 
-    public void setVonisBulan(int vonisBulan) {
-        if (vonisBulan < 0) {
-            throw new IllegalArgumentException(
-                    "Vonis tidak boleh negatif");
+    // Menghitung total tuntutan seluruh terdakwa dalam perkara
+    public long totalTuntutanBulan() {
+        long total = 0;
+
+        for (int i = 0; i < daftarTerdakwa.size(); i++) {
+            total += daftarTerdakwa.get(i).getTuntutanBulan();
         }
-        this.vonisBulan = vonisBulan;
+
+        return total;
     }
 
-    public void setDendaRupiah(long dendaRupiah) {
-        if (dendaRupiah < 0) {
-            throw new IllegalArgumentException(
-                    "Denda tidak boleh negatif");
+    // Menghitung total vonis seluruh terdakwa dalam perkara
+    public long totalVonisBulan() {
+        long total = 0;
+
+        for (int i = 0; i < daftarTerdakwa.size(); i++) {
+            total += daftarTerdakwa.get(i).getVonisBulan();
         }
-        this.dendaRupiah = dendaRupiah;
+
+        return total;
     }
 
     @Override
     public String toString() {
-        return "\n=== DATA PUTUSAN ===" +
-                "\nCase ID              : " + caseId +
-                "\nNomor Perkara        : " + nomorPerkara +
-                "\nPengadilan           : " + pengadilan +
-                "\nTanggal Putusan      : " + tanggalPutusan +
-                "\nKode Terdakwa        : " + terdakwaKode +
-                "\nJenis Narkotika      : " + jenisNarkotika +
-                "\nBerat Barang Bukti   : " + beratBarangBuktiGram + " gram" +
-                "\nPasal Dakwaan        : " + pasalDakwaan +
-                "\nPasal Terbukti       : " + pasalTerbukti +
-                "\nTuntutan             : " + tuntutanBulan + " bulan" +
-                "\nVonis                : " + vonisBulan + " bulan" +
-                "\nDenda                : Rp" + dendaRupiah +
-                "\nBarang Bukti         : " + barangBukti +
-                "\nKeadaan Memberatkan  : " + keadaanMemberatkan +
-                "\nKeadaan Meringankan  : " + keadaanMeringankan +
-                "\nSource Pages         : " + sourcePages;
+        StringBuilder hasil = new StringBuilder();
 
+        hasil.append("\n=== DATA PUTUSAN ===")
+                .append("\nCase ID             : ").append(caseId)
+                .append("\nNomor Perkara       : ").append(nomorPerkara)
+                .append("\nPengadilan          : ").append(pengadilan)
+                .append("\nTanggal Putusan     : ").append(tanggalPutusan)
+                .append("\nJenis Narkotika     : ").append(jenisNarkotika)
+                .append("\nBerat Barang Bukti  : ")
+                .append(beratBarangBuktiGram).append(" gram")
+                .append("\nPasal Dakwaan       : ").append(pasalDakwaan)
+                .append("\nPasal Terbukti      : ").append(pasalTerbukti)
+                .append("\nDenda               : Rp").append(dendaRupiah)
+                .append("\nBarang Bukti        : ").append(barangBukti)
+                .append("\nKeadaan Memberatkan : ").append(keadaanMemberatkan)
+                .append("\nKeadaan Meringankan : ").append(keadaanMeringankan)
+                .append("\nSource Pages        : ").append(sourcePages)
+                .append("\nJumlah Terdakwa     : ").append(jumlahTerdakwa());
+
+        for (int i = 0; i < daftarTerdakwa.size(); i++) {
+            hasil.append("\n").append(i + 1).append(". ")
+                    .append(daftarTerdakwa.get(i));
+        }
+
+        return hasil.toString();
     }
 }
-

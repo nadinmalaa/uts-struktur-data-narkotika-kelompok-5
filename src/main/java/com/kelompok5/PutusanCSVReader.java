@@ -1,8 +1,8 @@
-
 package com.kelompok5;
 
 import com.kelompok5.manager.PutusanManager;
 import com.kelompok5.model.Putusan;
+import com.kelompok5.model.TerdakwaData;
 import com.kelompok5.structure.DynamicArray;
 
 import org.apache.commons.csv.CSVFormat;
@@ -21,20 +21,32 @@ public class PutusanCSVReader {
     private final DynamicArray<TerdakwaData> semuaTerdakwa =
             new DynamicArray<>();
 
-    // IMPORT SELURUH DATA
+    private final DynamicArray<ProvenanceData> semuaProvenance =
+            new DynamicArray<>();
+
+    // =====================================================
+    // IMPORT DATA
+    // =====================================================
+
     public void importData(
             String filePutusan,
             String fileTerdakwa,
             String fileProvenance,
             PutusanManager manager) {
 
+        if (manager == null) {
+            System.out.println("Manager tidak boleh null.");
+            return;
+        }
+
+        semuaTerdakwa.clear();
+        semuaProvenance.clear();
+
         int berhasil = 0;
         int ditolak = 0;
         int jumlahBaris = 0;
 
-        semuaTerdakwa.clear();
-
-        // 1. Membaca seluruh data terdakwa
+        // 1. Membaca data terdakwa
         System.out.println("\nMembaca data terdakwa...");
 
         try (Reader reader = Files.newBufferedReader(
@@ -44,17 +56,18 @@ public class PutusanCSVReader {
             for (CSVRecord row : parser) {
                 try {
                     TerdakwaData data = new TerdakwaData(
-                            row.get("caseId"),
-                            row.get("kodeTerdakwa"),
-                            angka(row.get("tuntutanBulan")),
-                            angka(row.get("vonisBulan"))
+                            wajib(row.get("caseId")),
+                            wajib(row.get("kodeTerdakwa")),
+                            angkaWajib(row.get("tuntutanBulan")),
+                            angkaWajib(row.get("vonisBulan"))
                     );
 
                     semuaTerdakwa.add(data);
 
                 } catch (Exception e) {
                     System.out.println(
-                            "Terdakwa baris " + row.getRecordNumber()
+                            "Data terdakwa baris "
+                                    + row.getRecordNumber()
                                     + " ditolak: " + e.getMessage()
                     );
                 }
@@ -68,8 +81,7 @@ public class PutusanCSVReader {
         }
 
         // 2. Membaca data provenance
-        DynamicArray<ProvenanceData> provenance =
-                new DynamicArray<>();
+        System.out.println("Membaca data provenance...");
 
         try (Reader reader = Files.newBufferedReader(
                 Path.of(fileProvenance), StandardCharsets.UTF_8);
@@ -77,26 +89,32 @@ public class PutusanCSVReader {
 
             for (CSVRecord row : parser) {
                 try {
-                    provenance.add(new ProvenanceData(
-                            row.get("caseId"),
-                            row.get("sourcePages")
-                    ));
+                    semuaProvenance.add(
+                            new ProvenanceData(
+                                    wajib(row.get("caseId")),
+                                    nilai(row.get("sourcePages"))
+                            )
+                    );
 
                 } catch (Exception e) {
                     System.out.println(
-                            "Provenance dilewati: " + e.getMessage()
+                            "Provenance baris "
+                                    + row.getRecordNumber()
+                                    + " dilewati: " + e.getMessage()
                     );
                 }
             }
 
         } catch (Exception e) {
             System.out.println(
-                    "Gagal membaca provenance: " + e.getMessage()
+                    "Gagal membaca CSV provenance: " + e.getMessage()
             );
             return;
         }
 
-        // 3. Membaca maksimal 50 putusan
+        // 3. Membaca data putusan
+        System.out.println("Membaca data putusan...");
+
         try (Reader reader = Files.newBufferedReader(
                 Path.of(filePutusan), StandardCharsets.UTF_8);
              CSVParser parser = parser(reader)) {
@@ -105,52 +123,53 @@ public class PutusanCSVReader {
                 jumlahBaris++;
 
                 try {
-                    if (jumlahBaris > 50) {
-                        ditolak++;
-                        continue;
-                    }
-
                     String caseId = wajib(row.get("caseId"));
 
-                    // Mengambil terdakwa pertama untuk ringkasan Putusan.
-                    // Semua terdakwa tetap disimpan terpisah.
-                    TerdakwaData terdakwa = cariTerdakwa(caseId);
-
-                    if (terdakwa == null) {
-                        throw new IllegalArgumentException(
-                                "Data terdakwa tidak ditemukan."
-                        );
-                    }
-
-                    String sourcePages =
-                            cariSourcePages(caseId, provenance);
-
+                    // Buat satu objek Putusan untuk satu perkara.
                     Putusan putusan = new Putusan(
                             caseId,
                             wajib(row.get("nomorPerkara")),
                             wajib(row.get("pengadilanNegeri")),
                             tanggal(row.get("tanggalPutusan")),
-                            terdakwa.kode,
                             wajib(row.get("jenisNarkotika")),
-                            desimal(row.get("beratBarangBuktiGram")),
-                            row.get("pasalDakwaan"),
-                            row.get("pasalTerbukti"),
-                            terdakwa.tuntutan,
-                            terdakwa.vonis,
+                            desimalWajib(row.get("beratBarangBuktiGram")),
+                            nilai(row.get("pasalDakwaan")),
+                            nilai(row.get("pasalTerbukti")),
                             bilanganPanjang(row.get("dendaRupiah")),
-                            row.get("barangBukti"),
-                            row.get("keadaanMemberatkan"),
-                            row.get("keadaanMeringankan"),
-                            sourcePages
+                            nilai(row.get("barangBukti")),
+                            nilai(row.get("keadaanMemberatkan")),
+                            nilai(row.get("keadaanMeringankan")),
+                            cariSourcePages(caseId)
                     );
 
+                    // Masukkan SEMUA terdakwa yang memiliki caseId sama.
+                    int jumlahTerdakwa = 0;
+
+                    for (int i = 0; i < semuaTerdakwa.size(); i++) {
+                        TerdakwaData terdakwa = semuaTerdakwa.get(i);
+
+                        if (terdakwa.getCaseId().equalsIgnoreCase(caseId)) {
+                            putusan.tambahTerdakwa(terdakwa);
+                            jumlahTerdakwa++;
+                        }
+                    }
+
+                    if (jumlahTerdakwa == 0) {
+                        throw new IllegalArgumentException(
+                                "Tidak ditemukan data terdakwa untuk perkara "
+                                        + caseId
+                        );
+                    }
+
+                    // Masukkan perkara ke manager.
                     if (manager.tambahPutusan(putusan)) {
                         berhasil++;
                     } else {
                         ditolak++;
 
                         System.out.println(
-                                "Putusan duplikat ditolak: " + caseId
+                                "Putusan gagal ditambahkan atau duplikat: "
+                                        + caseId
                         );
                     }
 
@@ -164,35 +183,45 @@ public class PutusanCSVReader {
                 }
             }
 
-            // Hasil impor
-            System.out.println("\n========== HASIL IMPOR ==========");
-            System.out.println("Jumlah baris putusan : " + jumlahBaris);
-            System.out.println("Putusan berhasil     : " + berhasil);
-            System.out.println("Putusan ditolak      : " + ditolak);
-            System.out.println(
-                    "Jumlah di aplikasi   : " + manager.jumlahPutusan()
-            );
-            System.out.println(
-                    "Jumlah data terdakwa : " + semuaTerdakwa.size()
-            );
-            System.out.println(
-                    "Invariant valid      : " + manager.validateInvariant()
-            );
-
-            if (jumlahBaris != 50) {
-                System.out.println(
-                        "PERINGATAN: CSV seharusnya berisi 50 record."
-                );
-            }
-
         } catch (Exception e) {
             System.out.println(
                     "Gagal membaca CSV putusan: " + e.getMessage()
             );
+            return;
+        }
+
+        // 4. Menampilkan hasil impor
+        System.out.println("\n========== HASIL IMPOR ==========");
+        System.out.println("Jumlah baris putusan : " + jumlahBaris);
+        System.out.println("Putusan berhasil     : " + berhasil);
+        System.out.println("Putusan ditolak      : " + ditolak);
+        System.out.println("Jumlah di aplikasi   : " + manager.jumlahPutusan());
+        System.out.println("Jumlah data terdakwa : " + semuaTerdakwa.size());
+        System.out.println("Invariant valid      : " + manager.validateInvariant());
+
+        if (jumlahBaris != 50) {
+            System.out.println(
+                    "PERINGATAN: Dataset seharusnya berisi 50 perkara."
+            );
+        }
+
+        if (berhasil != 50) {
+            System.out.println(
+                    "PERINGATAN: Belum seluruh 50 perkara berhasil diimpor."
+            );
+        }
+
+        if (semuaTerdakwa.size() != 55) {
+            System.out.println(
+                    "PERINGATAN: Jumlah data terdakwa seharusnya 55."
+            );
         }
     }
 
-    // MENAMPILKAN SEMUA PUTUSAN BESERTA SELURUH TERDAKWA
+    // =====================================================
+    // MENAMPILKAN PUTUSAN DAN SELURUH TERDAKWA
+    // =====================================================
+
     public void tampilkanPutusanDanSeluruhTerdakwa(
             PutusanManager manager) {
 
@@ -200,81 +229,47 @@ public class PutusanCSVReader {
                 "\n======= DATA PUTUSAN DAN SELURUH TERDAKWA ======="
         );
 
-        if (manager.isEmpty()) {
+        if (manager == null || manager.isEmpty()) {
             System.out.println("Belum ada data putusan.");
             return;
         }
 
         for (int i = 0; i < manager.jumlahPutusan(); i++) {
-
             Putusan putusan = manager.getPutusan(i);
 
             System.out.println("\n========================================");
             System.out.println("DATA PUTUSAN KE-" + (i + 1));
             System.out.println("========================================");
 
-            System.out.println("Case ID       : " + putusan.getCaseId());
-            System.out.println(
-                    "Nomor Perkara : " + putusan.getNomorPerkara()
-            );
-            System.out.println(
-                    "Pengadilan    : " + putusan.getPengadilan()
-            );
-            System.out.println(
-                    "Tanggal       : " + putusan.getTanggalPutusan()
-            );
-            System.out.println(
-                    "Jenis Narkotika: " + putusan.getJenisNarkotika()
-            );
-            System.out.println(
-                    "Berat Barang Bukti: "
-                            + putusan.getBeratBarangBuktiGram() + " gram"
-            );
-            System.out.println(
-                    "Pasal Terbukti : " + putusan.getPasalTerbukti()
-            );
-            System.out.println(
-                    "Denda         : Rp" + putusan.getDendaRupiah()
-            );
-
-            System.out.println("\n--- SELURUH TERDAKWA ---");
-
-            tampilkanTerdakwaBerdasarkanCaseId(
-                    putusan.getCaseId()
-            );
+            System.out.println(putusan);
         }
 
         System.out.println("\n========================================");
-        System.out.println(
-                "TOTAL PUTUSAN   : " + manager.jumlahPutusan()
-        );
-        System.out.println(
-                "TOTAL TERDAKWA  : " + semuaTerdakwa.size()
-        );
+        System.out.println("TOTAL PUTUSAN  : " + manager.jumlahPutusan());
+        System.out.println("TOTAL TERDAKWA : " + semuaTerdakwa.size());
         System.out.println("========================================");
     }
 
+    // =====================================================
     // MENAMPILKAN TERDAKWA BERDASARKAN CASE ID
+    // =====================================================
+
     public void tampilkanTerdakwaBerdasarkanCaseId(String caseId) {
+
+        if (caseId == null || caseId.isBlank()) {
+            System.out.println("Case ID tidak valid.");
+            return;
+        }
 
         boolean ditemukan = false;
         int nomor = 1;
 
         for (int i = 0; i < semuaTerdakwa.size(); i++) {
-
             TerdakwaData data = semuaTerdakwa.get(i);
 
-            if (data.caseId.equalsIgnoreCase(caseId.trim())) {
-
+            if (data.getCaseId().equalsIgnoreCase(caseId.trim())) {
                 System.out.println("\nTerdakwa ke-" + nomor);
-                System.out.println("Case ID       : " + data.caseId);
-                System.out.println("Kode Terdakwa : " + data.kode);
-                System.out.println(
-                        "Tuntutan      : " + data.tuntutan + " bulan"
-                );
-                System.out.println(
-                        "Vonis         : " + data.vonis + " bulan"
-                );
+                System.out.println(data);
 
                 nomor++;
                 ditemukan = true;
@@ -290,7 +285,10 @@ public class PutusanCSVReader {
         }
     }
 
+    // =====================================================
     // MENAMPILKAN SELURUH DATA TERDAKWA
+    // =====================================================
+
     public void tampilkanSemuaTerdakwa() {
 
         System.out.println("\n======= DAFTAR SELURUH TERDAKWA =======");
@@ -301,14 +299,8 @@ public class PutusanCSVReader {
         }
 
         for (int i = 0; i < semuaTerdakwa.size(); i++) {
-
-            TerdakwaData data = semuaTerdakwa.get(i);
-
             System.out.println(
-                    (i + 1) + ". Case ID: " + data.caseId
-                            + " | Kode: " + data.kode
-                            + " | Tuntutan: " + data.tuntutan + " bulan"
-                            + " | Vonis: " + data.vonis + " bulan"
+                    (i + 1) + ". " + semuaTerdakwa.get(i)
             );
         }
 
@@ -317,55 +309,43 @@ public class PutusanCSVReader {
         );
     }
 
+    // =====================================================
     // MENGHITUNG RATA-RATA VONIS TERDAKWA
+    // =====================================================
+
     public double rataRataVonisTerdakwa() {
 
         long total = 0;
         int jumlah = 0;
 
         for (int i = 0; i < semuaTerdakwa.size(); i++) {
+            TerdakwaData data = semuaTerdakwa.get(i);
 
-            int vonis = semuaTerdakwa.get(i).vonis;
-
-            if (vonis >= 0) {
-                total += vonis;
-                jumlah++;
-            }
+            total += data.getVonisBulan();
+            jumlah++;
         }
 
         return jumlah == 0 ? 0 : (double) total / jumlah;
     }
 
+    // =====================================================
     // MENGHITUNG JUMLAH TERDAKWA
+    // =====================================================
+
     public int jumlahDataTerdakwa() {
         return semuaTerdakwa.size();
     }
 
-    // MENCARI TERDAKWA PERTAMA BERDASARKAN CASE ID
-    private TerdakwaData cariTerdakwa(String caseId) {
+    // =====================================================
+    // MENCARI HALAMAN SUMBER PROVENANCE
+    // =====================================================
 
-        for (int i = 0; i < semuaTerdakwa.size(); i++) {
-
-            TerdakwaData data = semuaTerdakwa.get(i);
-
-            if (data.caseId.equalsIgnoreCase(caseId)) {
-                return data;
-            }
-        }
-
-        return null;
-    }
-
-    // MENCARI HALAMAN SUMBER
-    private String cariSourcePages(
-            String caseId,
-            DynamicArray<ProvenanceData> data) {
+    private String cariSourcePages(String caseId) {
 
         StringBuilder hasil = new StringBuilder();
 
-        for (int i = 0; i < data.size(); i++) {
-
-            ProvenanceData item = data.get(i);
+        for (int i = 0; i < semuaProvenance.size(); i++) {
+            ProvenanceData item = semuaProvenance.get(i);
 
             if (item.caseId.equalsIgnoreCase(caseId)
                     && !item.pages.isBlank()) {
@@ -381,7 +361,10 @@ public class PutusanCSVReader {
         return hasil.toString();
     }
 
+    // =====================================================
     // FORMAT CSV
+    // =====================================================
+
     private CSVParser parser(Reader reader) throws Exception {
 
         CSVFormat format = CSVFormat.DEFAULT.builder()
@@ -394,7 +377,10 @@ public class PutusanCSVReader {
         return format.parse(reader);
     }
 
-    // VALIDASI KOLOM WAJIB
+    // =====================================================
+    // VALIDASI STRING WAJIB
+    // =====================================================
+
     private String wajib(String value) {
 
         if (value == null || value.isBlank()) {
@@ -406,42 +392,89 @@ public class PutusanCSVReader {
         return value.trim();
     }
 
-    // KONVERSI INTEGER
-    private int angka(String value) {
+    // =====================================================
+    // MENGAMBIL STRING OPSIONAL
+    // =====================================================
+
+    private String nilai(String value) {
+        return value == null ? "" : value.trim();
+    }
+
+    // =====================================================
+    // KONVERSI INTEGER WAJIB
+    // =====================================================
+
+    private int angkaWajib(String value) {
 
         if (value == null || value.isBlank()
                 || value.trim().equals("-")) {
-            return 0;
+            throw new IllegalArgumentException(
+                    "Nilai tuntutan atau vonis kosong."
+            );
         }
 
-        return Integer.parseInt(value.trim());
+        int hasil = Integer.parseInt(value.trim());
+
+        if (hasil < 0) {
+            throw new IllegalArgumentException(
+                    "Nilai angka tidak boleh negatif."
+            );
+        }
+
+        return hasil;
     }
 
-    // KONVERSI DESIMAL
-    private double desimal(String value) {
+    // =====================================================
+    // KONVERSI DESIMAL WAJIB
+    // =====================================================
 
-        if (value == null || value.isBlank()) {
-            return 0;
+    private double desimalWajib(String value) {
+
+        if (value == null || value.isBlank()
+                || value.trim().equals("-")) {
+            throw new IllegalArgumentException(
+                    "Berat barang bukti kosong."
+            );
         }
 
-        return Double.parseDouble(
+        double hasil = Double.parseDouble(
                 value.trim().replace(",", ".")
         );
-    }
 
-    // KONVERSI LONG
-    private long bilanganPanjang(String value) {
-
-        if (value == null || value.isBlank()) {
-            return 0;
+        if (!Double.isFinite(hasil) || hasil < 0) {
+            throw new IllegalArgumentException(
+                    "Berat barang bukti tidak valid."
+            );
         }
 
-        String angka = value.trim().replaceAll("[^0-9-]", "");
-
-        return angka.isBlank() ? 0 : Long.parseLong(angka);
+        return hasil;
     }
 
+    // =====================================================
+    // KONVERSI LONG
+    // =====================================================
+
+    private long bilanganPanjang(String value) {
+
+        if (value == null || value.isBlank()
+                || value.trim().equals("-")) {
+            return 0L;
+        }
+
+        String angka = value.trim()
+                .replaceAll("[^0-9]", "");
+
+        if (angka.isBlank()) {
+            return 0L;
+        }
+
+        return Long.parseLong(angka);
+    }
+
+    // =====================================================
     // KONVERSI TANGGAL
+    // =====================================================
+
     private LocalDate tanggal(String value) {
 
         if (value == null || value.isBlank()) {
@@ -463,44 +496,24 @@ public class PutusanCSVReader {
         }
     }
 
-    // MODEL DATA TERDAKWA
-    private static class TerdakwaData {
+    // =====================================================
+    // MODEL DATA PROVENANCE
+    // =====================================================
 
-        String caseId;
-        String kode;
-        int tuntutan;
-        int vonis;
+    private static class ProvenanceData {
 
-        TerdakwaData(
-                String caseId,
-                String kode,
-                int tuntutan,
-                int vonis) {
+        private final String caseId;
+        private final String pages;
 
-            if (caseId == null || caseId.isBlank()
-                    || kode == null || kode.isBlank()) {
+        ProvenanceData(String caseId, String pages) {
 
+            if (caseId == null || caseId.isBlank()) {
                 throw new IllegalArgumentException(
-                        "Case ID atau kode terdakwa kosong."
+                        "Case ID provenance kosong."
                 );
             }
 
             this.caseId = caseId.trim();
-            this.kode = kode.trim();
-            this.tuntutan = tuntutan;
-            this.vonis = vonis;
-        }
-    }
-
-    // MODEL DATA PROVENANCE
-    private static class ProvenanceData {
-
-        String caseId;
-        String pages;
-
-        ProvenanceData(String caseId, String pages) {
-
-            this.caseId = caseId == null ? "" : caseId.trim();
             this.pages = pages == null ? "" : pages.trim();
         }
     }

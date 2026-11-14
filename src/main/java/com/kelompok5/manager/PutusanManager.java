@@ -1,19 +1,38 @@
 package com.kelompok5.manager;
 
 import com.kelompok5.model.Putusan;
+import com.kelompok5.model.TerdakwaData;
 import com.kelompok5.structure.DynamicArray;
 
+/**
+ * Mengelola kumpulan data putusan perkara narkotika.
+ * Satu Putusan mewakili satu perkara dan dapat memiliki
+ * lebih dari satu data terdakwa.
+ */
 public class PutusanManager {
 
     private final DynamicArray<Putusan> daftarPutusan;
 
-    // Constructor
+    private int langkahPencarianTerakhir;
+    private int perbandinganPengurutanTerakhir;
+    private int pergeseranPengurutanTerakhir;
+
     public PutusanManager() {
         daftarPutusan = new DynamicArray<>();
+        langkahPencarianTerakhir = 0;
+        perbandinganPengurutanTerakhir = 0;
+        pergeseranPengurutanTerakhir = 0;
     }
 
-    // Menambahkan putusan
+    // =====================================================
+    // TAMBAH DATA
+    // =====================================================
+
+    /**
+     * Menambahkan putusan jika caseId belum tersedia.
+     */
     public boolean tambahPutusan(Putusan putusan) {
+
         if (putusan == null) {
             return false;
         }
@@ -26,100 +45,35 @@ public class PutusanManager {
         return true;
     }
 
-    // Mencari berdasarkan Case ID (Linear Search)
-    public Putusan cariBerdasarkanCaseId(String caseId) {
-        if (caseId == null || caseId.isBlank()) {
-            return null;
-        }
-
-        String keyword = caseId.trim();
-
-        for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
-
-            if (p.getCaseId().equalsIgnoreCase(keyword)) {
-                return p;
-            }
-        }
-
-        return null;
+    /**
+     * Alias untuk kompatibilitas dengan PutusanCSVReader.
+     */
+    public boolean addPutusan(Putusan putusan) {
+        return tambahPutusan(putusan);
     }
 
-    // Mencari berdasarkan nomor perkara (Linear Search)
-    public Putusan cariBerdasarkanNomorPerkara(String nomorPerkara) {
-        if (nomorPerkara == null || nomorPerkara.isBlank()) {
-            return null;
-        }
-
-        String keyword = nomorPerkara.trim();
-
-        for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
-
-            if (p.getNomorPerkara().equalsIgnoreCase(keyword)) {
-                return p;
-            }
-        }
-
-        return null;
+    /**
+     * Alias tambahan untuk pemanggilan add().
+     */
+    public boolean add(Putusan putusan) {
+        return tambahPutusan(putusan);
     }
 
-    // Mencari Case ID sekaligus menghitung langkah
-    public int langkahCariCaseId(String caseId) {
-        if (caseId == null || caseId.isBlank()) {
-            return 0;
-        }
+    // =====================================================
+    // HAPUS DAN AKSES DATA
+    // =====================================================
 
-        int langkah = 0;
-        String keyword = caseId.trim();
-
-        for (int i = 0; i < daftarPutusan.size(); i++) {
-            langkah++;
-
-            Putusan p = daftarPutusan.get(i);
-
-            if (p.getCaseId().equalsIgnoreCase(keyword)) {
-                return langkah;
-            }
-        }
-
-        return langkah;
-    }
-
-    // Mencari nomor perkara sekaligus menghitung langkah
-    public int langkahCariNomorPerkara(String nomorPerkara) {
-        if (nomorPerkara == null || nomorPerkara.isBlank()) {
-            return 0;
-        }
-
-        int langkah = 0;
-        String keyword = nomorPerkara.trim();
-
-        for (int i = 0; i < daftarPutusan.size(); i++) {
-            langkah++;
-
-            Putusan p = daftarPutusan.get(i);
-
-            if (p.getNomorPerkara().equalsIgnoreCase(keyword)) {
-                return langkah;
-            }
-        }
-
-        return langkah;
-    }
-
-    // Menghapus putusan berdasarkan Case ID
     public boolean hapusPutusan(String caseId) {
-        if (caseId == null || caseId.isBlank()) {
+
+        if (caseId == null || caseId.trim().isEmpty()) {
             return false;
         }
 
-        String keyword = caseId.trim();
-
         for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
 
-            if (p.getCaseId().equalsIgnoreCase(keyword)) {
+            Putusan putusan = daftarPutusan.get(i);
+
+            if (putusan.getCaseId().equalsIgnoreCase(caseId.trim())) {
                 daftarPutusan.remove(i);
                 return true;
             }
@@ -128,35 +82,132 @@ public class PutusanManager {
         return false;
     }
 
-    // Mengambil putusan berdasarkan indeks
     public Putusan getPutusan(int index) {
         return daftarPutusan.get(index);
     }
 
-    // Menghitung jumlah putusan
     public int jumlahPutusan() {
         return daftarPutusan.size();
     }
 
-    // Menghitung rata-rata vonis
-    public double rataRataVonis() {
-        long totalVonis = 0;
-        int jumlah = 0;
+    public boolean isEmpty() {
+        return daftarPutusan.isEmpty();
+    }
+
+    public void clear() {
+        daftarPutusan.clear();
+        langkahPencarianTerakhir = 0;
+        perbandinganPengurutanTerakhir = 0;
+        pergeseranPengurutanTerakhir = 0;
+    }
+
+    // =====================================================
+    // PENCARIAN
+    // =====================================================
+
+    /**
+     * Linear search berdasarkan caseId.
+     */
+    public Putusan cariBerdasarkanCaseId(String caseId) {
+
+        langkahPencarianTerakhir = 0;
+
+        if (caseId == null || caseId.trim().isEmpty()) {
+            return null;
+        }
 
         for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
 
-            if (p.getVonisBulan() >= 0) {
-                totalVonis += p.getVonisBulan();
-                jumlah++;
+            langkahPencarianTerakhir++;
+
+            Putusan putusan = daftarPutusan.get(i);
+
+            if (putusan.getCaseId().equalsIgnoreCase(caseId.trim())) {
+                return putusan;
             }
         }
 
-        return jumlah == 0 ? 0 : (double) totalVonis / jumlah;
+        return null;
     }
 
-    // Menghitung total denda
+    /**
+     * Linear search berdasarkan nomor perkara.
+     */
+    public Putusan cariBerdasarkanNomorPerkara(String nomorPerkara) {
+
+        langkahPencarianTerakhir = 0;
+
+        if (nomorPerkara == null || nomorPerkara.trim().isEmpty()) {
+            return null;
+        }
+
+        for (int i = 0; i < daftarPutusan.size(); i++) {
+
+            langkahPencarianTerakhir++;
+
+            Putusan putusan = daftarPutusan.get(i);
+
+            if (putusan.getNomorPerkara()
+                    .equalsIgnoreCase(nomorPerkara.trim())) {
+                return putusan;
+            }
+        }
+
+        return null;
+    }
+
+    public int getLangkahPencarianTerakhir() {
+        return langkahPencarianTerakhir;
+    }
+
+    public int langkahCariCaseId(String caseId) {
+        cariBerdasarkanCaseId(caseId);
+        return langkahPencarianTerakhir;
+    }
+
+    public int langkahCariNomorPerkara(String nomorPerkara) {
+        cariBerdasarkanNomorPerkara(nomorPerkara);
+        return langkahPencarianTerakhir;
+    }
+
+    // =====================================================
+    // AGREGASI
+    // =====================================================
+
+    /**
+     * Rata-rata vonis seluruh terdakwa.
+     * Setiap terdakwa dihitung satu kali.
+     */
+    public double rataRataVonis() {
+
+        long totalVonis = 0;
+        int jumlahTerdakwa = 0;
+
+        for (int i = 0; i < daftarPutusan.size(); i++) {
+
+            Putusan putusan = daftarPutusan.get(i);
+
+            for (int j = 0; j < putusan.jumlahTerdakwa(); j++) {
+
+                TerdakwaData terdakwa = putusan.getTerdakwa(j);
+
+                totalVonis += terdakwa.getVonisBulan();
+                jumlahTerdakwa++;
+            }
+        }
+
+        if (jumlahTerdakwa == 0) {
+            return 0.0;
+        }
+
+        return (double) totalVonis / jumlahTerdakwa;
+    }
+
+    /**
+     * Total denda dihitung satu kali per perkara.
+     */
     public long totalDenda() {
+
         long total = 0;
 
         for (int i = 0; i < daftarPutusan.size(); i++) {
@@ -166,53 +217,93 @@ public class PutusanManager {
         return total;
     }
 
-    // Menampilkan seluruh putusan
+    /**
+     * Jumlah seluruh terdakwa dari semua perkara.
+     */
+    public int jumlahSeluruhTerdakwa() {
+
+        int total = 0;
+
+        for (int i = 0; i < daftarPutusan.size(); i++) {
+            total += daftarPutusan.get(i).jumlahTerdakwa();
+        }
+
+        return total;
+    }
+
+    private double rataRataVonisPerkara(Putusan putusan) {
+
+        if (putusan == null || putusan.jumlahTerdakwa() == 0) {
+            return 0.0;
+        }
+
+        long total = 0;
+
+        for (int i = 0; i < putusan.jumlahTerdakwa(); i++) {
+            total += putusan.getTerdakwa(i).getVonisBulan();
+        }
+
+        return (double) total / putusan.jumlahTerdakwa();
+    }
+
+    // =====================================================
+    // MENAMPILKAN DATA
+    // =====================================================
+
     public void tampilkanSemuaPutusan() {
+
         if (daftarPutusan.isEmpty()) {
             System.out.println("Belum ada data putusan.");
             return;
         }
 
+        System.out.println("\n========== DAFTAR PUTUSAN ==========");
+
         for (int i = 0; i < daftarPutusan.size(); i++) {
+            System.out.println("\nData ke-" + (i + 1));
             System.out.println(daftarPutusan.get(i));
         }
+
+        System.out.println("\nJumlah perkara: " + jumlahPutusan());
+        System.out.println("Jumlah terdakwa: " + jumlahSeluruhTerdakwa());
     }
 
-    // FILTER 1: Berdasarkan jenis narkotika
+    // =====================================================
+    // FILTER DATA
+    // =====================================================
+
     public void filterJenisNarkotika(String jenis) {
-        if (jenis == null || jenis.isBlank()) {
+
+        if (jenis == null || jenis.trim().isEmpty()) {
             System.out.println("Jenis narkotika tidak boleh kosong.");
             return;
         }
 
-        String keyword = jenis.trim();
         boolean ditemukan = false;
 
         for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
 
-            if (p.getJenisNarkotika() != null &&
-                    p.getJenisNarkotika().equalsIgnoreCase(keyword)) {
+            Putusan putusan = daftarPutusan.get(i);
 
-                System.out.println(p);
+            if (putusan.getJenisNarkotika()
+                    .toLowerCase()
+                    .contains(jenis.trim().toLowerCase())) {
+
+                System.out.println(putusan);
                 ditemukan = true;
             }
         }
 
         if (!ditemukan) {
             System.out.println(
-                    "Tidak ada putusan dengan jenis narkotika tersebut."
+                    "Tidak ditemukan putusan dengan jenis narkotika tersebut."
             );
         }
     }
 
-    // FILTER 2: Berdasarkan rentang berat barang bukti
     public void filterRentangBerat(double minimum, double maksimum) {
-        if (Double.isNaN(minimum) || Double.isNaN(maksimum)
-                || Double.isInfinite(minimum)
-                || Double.isInfinite(maksimum)
-                || minimum < 0 || maksimum < minimum) {
 
+        if (minimum < 0 || maksimum < minimum) {
             System.out.println("Rentang berat tidak valid.");
             return;
         }
@@ -220,54 +311,58 @@ public class PutusanManager {
         boolean ditemukan = false;
 
         for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
 
-            double berat = p.getBeratBarangBuktiGram();
+            Putusan putusan = daftarPutusan.get(i);
+            double berat = putusan.getBeratBarangBuktiGram();
 
             if (berat >= minimum && berat <= maksimum) {
-                System.out.println(p);
+                System.out.println(putusan);
                 ditemukan = true;
             }
         }
 
         if (!ditemukan) {
             System.out.println(
-                    "Tidak ada putusan dalam rentang berat tersebut."
+                    "Tidak ditemukan putusan dalam rentang berat tersebut."
             );
         }
     }
 
-    // FILTER 3: Berdasarkan pasal terbukti
     public void filterPasalTerbukti(String pasal) {
-        if (pasal == null || pasal.isBlank()) {
+
+        if (pasal == null || pasal.trim().isEmpty()) {
             System.out.println("Pasal tidak boleh kosong.");
             return;
         }
 
-        String keyword = pasal.trim();
         boolean ditemukan = false;
 
         for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
 
-            if (p.getPasalTerbukti() != null &&
-                    p.getPasalTerbukti().toLowerCase()
-                            .contains(keyword.toLowerCase())) {
+            Putusan putusan = daftarPutusan.get(i);
 
-                System.out.println(p);
+            if (putusan.getPasalTerbukti()
+                    .toLowerCase()
+                    .contains(pasal.trim().toLowerCase())) {
+
+                System.out.println(putusan);
                 ditemukan = true;
             }
         }
 
         if (!ditemukan) {
             System.out.println(
-                    "Tidak ada putusan dengan pasal tersebut."
+                    "Tidak ditemukan putusan dengan pasal tersebut."
             );
         }
     }
 
-    // FILTER 4: Berdasarkan rentang vonis
+    /**
+     * Perkara ditampilkan jika minimal satu terdakwa
+     * memiliki vonis dalam rentang yang dipilih.
+     */
     public void filterRentangVonis(int minimum, int maksimum) {
+
         if (minimum < 0 || maksimum < minimum) {
             System.out.println("Rentang vonis tidak valid.");
             return;
@@ -276,53 +371,171 @@ public class PutusanManager {
         boolean ditemukan = false;
 
         for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
 
-            int vonis = p.getVonisBulan();
+            Putusan putusan = daftarPutusan.get(i);
+            boolean cocok = false;
 
-            if (vonis >= minimum && vonis <= maksimum) {
-                System.out.println(p);
+            for (int j = 0; j < putusan.jumlahTerdakwa(); j++) {
+
+                int vonis = putusan.getTerdakwa(j).getVonisBulan();
+
+                if (vonis >= minimum && vonis <= maksimum) {
+                    cocok = true;
+                    break;
+                }
+            }
+
+            if (cocok) {
+                System.out.println(putusan);
                 ditemukan = true;
             }
         }
 
         if (!ditemukan) {
             System.out.println(
-                    "Tidak ada putusan dalam rentang vonis tersebut."
+                    "Tidak ditemukan terdakwa dengan rentang vonis tersebut."
             );
         }
     }
 
-    // Insertion Sort berdasarkan lama vonis (ascending)
+    // =====================================================
+    // PENGURUTAN
+    // =====================================================
+
+    /**
+     * Insertion Sort berdasarkan rata-rata vonis terdakwa
+     * pada setiap perkara, secara ascending.
+     */
     public void urutkanBerdasarkanVonis() {
+
+        perbandinganPengurutanTerakhir = 0;
+        pergeseranPengurutanTerakhir = 0;
+
         for (int i = 1; i < daftarPutusan.size(); i++) {
 
             Putusan key = daftarPutusan.get(i);
+            double nilaiKey = rataRataVonisPerkara(key);
+
             int j = i - 1;
 
-            while (j >= 0 &&
-                    daftarPutusan.get(j).getVonisBulan()
-                            > key.getVonisBulan()) {
+            while (j >= 0) {
 
-                daftarPutusan.set(
-                        j + 1,
-                        daftarPutusan.get(j)
-                );
+                perbandinganPengurutanTerakhir++;
 
-                j--;
+                Putusan pembanding = daftarPutusan.get(j);
+
+                double nilaiPembanding =
+                        rataRataVonisPerkara(pembanding);
+
+                if (nilaiPembanding > nilaiKey) {
+
+                    daftarPutusan.set(j + 1, pembanding);
+
+                    pergeseranPengurutanTerakhir++;
+                    j--;
+
+                } else {
+                    break;
+                }
             }
 
             daftarPutusan.set(j + 1, key);
         }
     }
 
-    // Memeriksa invariant struktur data
-    public boolean validateInvariant() {
-        return daftarPutusan.validateInvariant();
+    /**
+     * Alias untuk nama method sorting alternatif.
+     */
+    public void sortBerdasarkanRataRataVonis() {
+        urutkanBerdasarkanVonis();
     }
 
-    // Memeriksa apakah data kosong
-    public boolean isEmpty() {
-        return daftarPutusan.isEmpty();
+    public int getPerbandinganPengurutanTerakhir() {
+        return perbandinganPengurutanTerakhir;
+    }
+
+    public int getPergeseranPengurutanTerakhir() {
+        return pergeseranPengurutanTerakhir;
+    }
+
+    // Alias untuk kompatibilitas dengan Main versi sebelumnya.
+    public int getJumlahPerbandinganSorting() {
+        return perbandinganPengurutanTerakhir;
+    }
+
+    public int getJumlahPergeseranSorting() {
+        return pergeseranPengurutanTerakhir;
+    }
+
+    // =====================================================
+    // VALIDASI INVARIANT
+    // =====================================================
+
+    public boolean validateInvariant() {
+
+        if (!daftarPutusan.validateInvariant()) {
+            return false;
+        }
+
+        for (int i = 0; i < daftarPutusan.size(); i++) {
+
+            Putusan putusan = daftarPutusan.get(i);
+
+            if (putusan == null) {
+                return false;
+            }
+
+            if (putusan.getCaseId() == null
+                    || putusan.getCaseId().trim().isEmpty()) {
+                return false;
+            }
+
+            if (putusan.getDaftarTerdakwa() == null) {
+                return false;
+            }
+
+            if (!putusan.getDaftarTerdakwa().validateInvariant()) {
+                return false;
+            }
+
+            if (putusan.jumlahTerdakwa() == 0) {
+                return false;
+            }
+
+            // Validasi caseId dan kode terdakwa.
+            for (int j = 0; j < putusan.jumlahTerdakwa(); j++) {
+
+                TerdakwaData terdakwa = putusan.getTerdakwa(j);
+
+                if (terdakwa == null) {
+                    return false;
+                }
+
+                if (!putusan.getCaseId().equals(terdakwa.getCaseId())) {
+                    return false;
+                }
+
+                for (int k = j + 1;
+                     k < putusan.jumlahTerdakwa();
+                     k++) {
+
+                    if (terdakwa.getKode().equalsIgnoreCase(
+                            putusan.getTerdakwa(k).getKode())) {
+                        return false;
+                    }
+                }
+            }
+
+            // Validasi caseId putusan tidak duplikat.
+            for (int j = i + 1; j < daftarPutusan.size(); j++) {
+
+                if (putusan.getCaseId().equalsIgnoreCase(
+                        daftarPutusan.get(j).getCaseId())) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 }
