@@ -8,7 +8,7 @@ Dokumen ini melampirkan ringkasan hasil demonstrasi interaktif dari sistem pengo
 ## 1. Skenario Demonstrasi Fitur Utama
 
 ### A. Impor Data & Validasi Record
-* **Aksi**: Program membaca file `putusan-50 Data Putusan.csv`, `putusan-50 Data Terdakwa.csv`, dan `putusan-50 Data Provenance.csv`.
+* **Aksi**: Program membaca file `putusan-50 - Data Putusan.csv`, `putusan-50 - Data Terdakwa.csv`, dan `putusan-50 - Data Provenance.csv`.
 * **Output Konsol**:
     - Data berhasil dimuat sepenuhnya tanpa menghentikan program meskipun ditemukan baris data korup/invalid (misalnya tanda `-` pada kolom angka).
     - Status *invariant* struktur data terverifikasi valid.

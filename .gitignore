@@ -23,8 +23,8 @@
 hs_err_pid*
 replay_pid*
 
+# Build output
+target/
+
 # IntelliJ IDEA
 .idea/
-
-# Maven build output
-target/

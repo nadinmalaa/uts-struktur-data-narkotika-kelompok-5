@@ -20,10 +20,12 @@ public class Putusan {
     private String keadaanMeringankan;
     private String sourcePages;
 
-    public Putusan(String caseId, String nomorPerkara, String pengadilan, LocalDate tanggalPutusan,
-                   String terdakwaKode, String jenisNarkotika, double beratBarangBuktiGram,
-                   String pasalDakwaan, String pasalTerbukti, int tuntutanBulan, int vonisBulan,
-                   double dendaRupiah, String barangBukti, String keadaanMemberatkan,
+    public Putusan(String caseId, String nomorPerkara, String pengadilan,
+                   LocalDate tanggalPutusan, String terdakwaKode,
+                   String jenisNarkotika, double beratBarangBuktiGram,
+                   String pasalDakwaan, String pasalTerbukti,
+                   int tuntutanBulan, int vonisBulan, double dendaRupiah,
+                   String barangBukti, String keadaanMemberatkan,
                    String keadaanMeringankan, String sourcePages) {
         this.caseId = caseId;
         this.nomorPerkara = nomorPerkara;
@@ -43,7 +45,8 @@ public class Putusan {
         this.sourcePages = sourcePages;
     }
 
-    public Putusan() {}
+    public Putusan() {
+    }
 
     public String getCaseId() { return caseId; }
     public void setCaseId(String caseId) { this.caseId = caseId; }
