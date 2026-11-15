@@ -1,71 +1,227 @@
-# UTS Struktur Data Kelompok 5
+# Aplikasi Pengelolaan Data Putusan Pengadilan Kasus Narkotika
 
-Aplikasi Pengelolaan Data Putusan Pengadilan untuk Proyek UTS Struktur Data Kelompok 5.
-# UTS Struktur Data – Kelompok 5
+## Identitas Kelompok
 
-Aplikasi Pengelolaan Data Putusan Pengadilan untuk memenuhi tugas Ujian Tengah Semester mata kuliah Struktur Data.
+| Nama | NIM | GitHub |
+|---|---|---|
+| Nadin Mala Aprilia | 202510370110134 | [@nadinmalaa](https://github.com/nadinmalaa) |
+| Bima Nalasakti Nugraha | 202510370110143 | [@stellanala](https://github.com/stellanala) |
 
-## 1. Deskripsi Project
+## Deskripsi Proyek
 
-Project ini merupakan aplikasi berbasis Java untuk mengelola dan mengolah data putusan pengadilan. Aplikasi dikembangkan menggunakan konsep Object-Oriented Programming (OOP) dan implementasi struktur data secara manual.
+Proyek ini merupakan aplikasi berbasis Java untuk mengelola data putusan pengadilan terkait kasus narkotika. Aplikasi dikembangkan sebagai bagian dari tugas Ujian Tengah Semester (UTS) mata kuliah Struktur Data.
 
-Dataset kelompok terdiri dari 50 dokumen putusan pengadilan yang dikumpulkan dan disusun oleh anggota kelompok.
+Aplikasi memproses dataset putusan pengadilan yang terdiri dari 50 data putusan dan 55 data terdakwa. Data dilengkapi dengan informasi provenance untuk mendukung penelusuran sumber dan proses pengolahan data.
 
-## 2. Informasi Project
+Sistem menyediakan fitur pengelolaan data, pencarian, pengurutan, penyaringan, statistik, pencatatan aktivitas, serta ekspor laporan rekapitulasi.
 
-- **Nama Project:** Aplikasi Pengelolaan Data Putusan Pengadilan
-- **Kelompok:** 5
+## Tujuan Proyek
+
+1. Menerapkan konsep struktur data dalam pengelolaan data putusan pengadilan.
+2. Mengimplementasikan operasi penambahan, penghapusan, pencarian, dan pengurutan data.
+3. Mengolah dan memvalidasi dataset putusan, terdakwa, serta provenance.
+4. Menyediakan informasi statistik dan laporan rekapitulasi.
+5. Menerapkan pengujian untuk memastikan fungsi dan konsistensi struktur data.
+
+## Struktur Data yang Digunakan
+
+| Struktur Data | Kegunaan |
+|---|---|
+| Singly Linked List | Menyimpan dan mengelola kumpulan data putusan secara dinamis. |
+| Dynamic Array | Menyediakan penyimpanan data berbasis array yang dapat berkembang secara dinamis. |
+| Stack / AuditStack | Menyimpan riwayat aktivitas dan mendukung pencatatan operasi aplikasi. |
+| Hash Table | Mendukung pencarian data putusan menggunakan mekanisme hashing dengan Separate Chaining. |
+| Insertion Sort | Mengurutkan data berdasarkan rata-rata vonis. |
+
+## Teknologi yang Digunakan
+
 - **Bahasa Pemrograman:** Java
-- **Java SDK:** 25
-- **Struktur Data Utama:** Singly Linked List
-- **Struktur Data Sekunder:** Stack
+- **Build Tool:** Apache Maven
+- **Struktur Proyek:** Maven Standard Directory Layout
+- **Library CSV:** Apache Commons CSV
+- **Framework Pengujian:** JUnit 5
 - **IDE:** IntelliJ IDEA
+- **Version Control:** Git dan GitHub
 
-## 3. Struktur Data
+## Dataset
 
-### Singly Linked List
+Dataset yang digunakan dalam aplikasi terdiri dari:
 
-Digunakan sebagai struktur penyimpanan utama untuk mengelola data putusan.
+| Dataset | Jumlah |
+|---|---:|
+| Data putusan pengadilan | 50 |
+| Data terdakwa | 55 |
+| Data provenance | Menyesuaikan jumlah dan keterkaitan sumber data |
 
-Operasi yang direncanakan:
-- Add First
-- Add Last
-- Insert
-- Get
-- Remove
-- Search
+Data putusan memuat informasi perkara dan hasil putusan pengadilan. Data terdakwa menyimpan informasi pihak terdakwa yang berkaitan dengan perkara. Sementara itu, data provenance digunakan untuk mencatat asal data, sumber dokumen, proses ekstraksi, reviewer, dan status verifikasi.
 
-### Stack
+### Hasil Import Dataset
 
-Digunakan untuk menyimpan riwayat aktivitas atau audit operasi pengguna dengan prinsip LIFO (Last In, First Out).
-
-## 4. Fitur Aplikasi
-
-Fitur yang dikembangkan meliputi:
-
-- Pengelolaan data putusan.
-- Pencarian berdasarkan Case ID atau nomor perkara.
-- Penghapusan data.
-- Pengurutan berdasarkan vonis.
-- Perhitungan agregasi data.
-- Pencatatan riwayat operasi.
-- Import dan export data.
-
-*Status implementasi setiap fitur akan diperbarui selama pengembangan.*
-
-## 5. Struktur Folder
+Berdasarkan hasil eksekusi aplikasi, proses import dataset menghasilkan keluaran berikut:
 
 ```text
-uts-struktur-data-kelompok-5/
-│
-├── src/
-│   ├── main/
-│   │   └── java/
-│   └── test/
-│       └── java/
+========== HASIL IMPOR ==========
+Jumlah baris putusan : 50
+Putusan berhasil     : 50
+Putusan ditolak      : 0
+Jumlah di aplikasi   : 50
+Jumlah data terdakwa : 55
+Invariant valid      : true
+=================================
+```
+
+Hasil tersebut menunjukkan bahwa seluruh 50 baris putusan berhasil diproses tanpa penolakan dan invariant struktur data dinyatakan valid.
+
+## Fitur Aplikasi
+
+Aplikasi menyediakan fitur utama berikut:
+
+1. **Tampilkan seluruh data putusan**  
+   Menampilkan seluruh data putusan yang tersimpan dalam aplikasi.
+
+2. **Tambah data putusan**  
+   Menambahkan data putusan baru ke dalam sistem.
+
+3. **Hapus data putusan**  
+   Menghapus data putusan berdasarkan identitas yang ditentukan.
+
+4. **Cari data putusan**  
+   Melakukan pencarian data putusan berdasarkan kriteria yang tersedia.
+
+5. **Urutkan berdasarkan rata-rata vonis**  
+   Mengurutkan data putusan berdasarkan rata-rata vonis menggunakan Insertion Sort.
+
+6. **Tampilkan statistik**  
+   Menampilkan informasi statistik dari dataset putusan.
+
+7. **Tampilkan riwayat aktivitas**  
+   Menampilkan catatan aktivitas yang dilakukan selama aplikasi digunakan.
+
+8. **Tampilkan seluruh data terdakwa**  
+   Menampilkan data terdakwa yang berkaitan dengan putusan.
+
+9. **Filter data putusan**  
+   Menyaring data putusan berdasarkan kriteria tertentu.
+
+10. **Ekspor laporan rekapitulasi ke TXT**  
+    Menghasilkan laporan rekapitulasi dalam format teks.
+
+## Cara Menjalankan Aplikasi
+
+### 1. Persyaratan
+
+Pastikan perangkat telah memiliki:
+
+- Java Development Kit (JDK).
+- Apache Maven.
+- IntelliJ IDEA atau IDE Java lainnya.
+- Git.
+
+### 2. Clone Repository
+
+```bash
+git clone https://github.com/nadinmalaa/uts-struktur-data-narkotika-kelompok-5.git
+```
+
+Masuk ke direktori proyek:
+
+```bash
+cd uts-struktur-data-narkotika-kelompok-5
+```
+
+### 3. Build Project
+
+Jalankan perintah berikut:
+
+```bash
+mvn clean compile
+```
+
+Untuk membuat paket aplikasi:
+
+```bash
+mvn clean package
+```
+
+### 4. Menjalankan Aplikasi melalui IntelliJ IDEA
+
+1. Buka repository proyek melalui IntelliJ IDEA.
+2. Tunggu hingga proses sinkronisasi Maven selesai.
+3. Buka file `src/main/java/com/kelompok5/Main.java`.
+4. Jalankan method `main()` dengan memilih **Run 'Main.main()'**.
+5. Tunggu hingga proses import dataset selesai.
+6. Aplikasi akan menampilkan menu utama pada terminal.
+
+## Menu Utama Aplikasi
+
+Berikut menu utama yang ditampilkan ketika aplikasi berhasil dijalankan:
+
+```text
+====================================
+   APLIKASI PENGELOLAAN DATA PUTUSAN
+====================================
+1. Tampilkan seluruh data putusan
+2. Tambah data putusan
+3. Hapus data putusan
+4. Cari data putusan
+5. Urutkan berdasarkan rata-rata vonis
+6. Tampilkan statistik
+7. Tampilkan riwayat aktivitas
+8. Tampilkan seluruh data terdakwa
+9. Filter data putusan
+10. Ekspor laporan rekapitulasi ke TXT
+0. Keluar
+====================================
+Pilih menu:
+```
+
+| Pilihan | Operasi |
+|---|---|
+| 1 | Tampilkan seluruh data putusan |
+| 2 | Tambah data putusan |
+| 3 | Hapus data putusan |
+| 4 | Cari data putusan |
+| 5 | Urutkan berdasarkan rata-rata vonis |
+| 6 | Tampilkan statistik |
+| 7 | Tampilkan riwayat aktivitas |
+| 8 | Tampilkan seluruh data terdakwa |
+| 9 | Filter data putusan |
+| 10 | Ekspor laporan rekapitulasi ke TXT |
+| 0 | Keluar dari aplikasi |
+
+## Pengujian
+
+Pengujian dilakukan menggunakan JUnit 5 untuk memeriksa fungsi struktur data dan pengolahan dataset.
+
+Pengujian mencakup:
+
+- Pengujian operasi Dynamic Array.
+- Pengujian operasi Stack.
+- Pengujian Hash Table.
+- Pengujian pencarian dan pengelolaan data putusan.
+- Pengujian pembacaan dataset CSV.
+- Pengujian pengolahan data putusan.
+
+Untuk menjalankan seluruh pengujian, gunakan:
+
+```bash
+mvn test
+```
+
+Untuk menampilkan laporan pengujian, periksa direktori:
+
+```text
+target/surefire-reports/
+```
+
+## Struktur Repository
+
+```text
+uts-struktur-data-narkotika-kelompok-5/
 │
 ├── data/
-│   └── putusan-50.csv
+│   ├── putusan-50.csv
+│   └── ...
 │
 ├── docs/
 │   ├── adr/
@@ -73,84 +229,49 @@ uts-struktur-data-kelompok-5/
 │   ├── demo/
 │   └── data-provenance.csv
 │
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       ├── com/kelompok5/
+│   │       │   └── Main.java
+│   │       ├── datastructure/
+│   │       ├── model/
+│   │       ├── manager/
+│   │       └── service/
+│   │
+│   └── test/
+│       └── java/
+│
 ├── AI_USAGE.md
 ├── CONTRIBUTIONS.md
 ├── README.md
 └── pom.xml
 ```
 
-## 6. Anggota Kelompok
+## Dokumentasi Tambahan
 
-- Bima
-- Nadin
+Dokumentasi proyek tersedia pada direktori `docs/` dan file berikut:
 
-## 7. Teknologi
+- **AI_USAGE.md** — Dokumentasi penggunaan AI selama pengembangan proyek.
+- **CONTRIBUTIONS.md** — Dokumentasi kontribusi masing-masing anggota kelompok.
+- **docs/adr/** — Architecture Decision Records yang mencatat keputusan desain sistem.
+- **docs/trace/** — Dokumentasi penelusuran dan keterkaitan kebutuhan dengan implementasi.
+- **docs/demo/** — Dokumentasi demonstrasi aplikasi.
+- **docs/data-provenance.csv** — Dokumentasi asal-usul dan proses pengolahan data.
 
-- Java 25
-- IntelliJ IDEA
-- Git dan GitHub
-- Maven (akan dikonfigurasi)
+## Version Control dan Kolaborasi
 
-## 8. Status Pengembangan
+Pengembangan proyek menggunakan Git dan GitHub sebagai sarana version control dan kolaborasi kelompok.
 
-Project masih dalam tahap pengembangan. Penyusunan dataset, implementasi fitur, pengujian, dan dokumentasi dilakukan secara bertahap.
+Alur kolaborasi dilakukan melalui:
 
-## 9. Cara Menjalankan
+1. Pembuatan GitHub Issue untuk mencatat pekerjaan.
+2. Pembuatan branch untuk setiap fitur atau perbaikan.
+3. Implementasi dan pengujian pada branch masing-masing.
+4. Pengajuan Pull Request (PR) ke branch `main`.
+5. Code review oleh anggota kelompok.
+6. Penggabungan perubahan setelah proses review selesai.
 
-Setelah konfigurasi project selesai, buka project melalui IntelliJ IDEA, pastikan Java SDK sudah menggunakan versi 25, kemudian jalankan kelas utama aplikasi.
+## Penutup
 
-
-## Deskripsi Proyek
-
-Proyek ini merupakan aplikasi berbasis Java untuk mengelola 50 data putusan pengadilan terkait kasus narkotika. Aplikasi dirancang untuk mendukung penyimpanan, pencarian, pengurutan, pengolahan, serta pengelolaan data putusan.
-
-## Anggota Kelompok
-
-1. Nadin Mala Aprilia
-2. Bima Nalasakti Nugraha
-
-## Teknologi yang Digunakan
-
-- Java JDK 17
-- Maven
-- Git dan GitHub
-- IntelliJ IDEA
-
-## Fitur Aplikasi
-
-- Import data putusan dari file CSV.
-- Menampilkan seluruh data putusan.
-- Menambah dan menghapus data.
-- Mencari data berdasarkan nomor perkara.
-- Memfilter data putusan.
-- Mengurutkan data menggunakan algoritma Insertion Sort.
-- Menghitung statistik data.
-- Mencatat aktivitas menggunakan Audit Log.
-- Mengekspor data ke format TXT atau CSV.
-
-## Struktur Repository
-
-```text
-uts-struktur-data-kelompok-5/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   └── test/
-│       └── java/
-├── data/
-├── docs/
-├── pom.xml
-└── README.md
-```
-
-## Cara Menjalankan
-
-1. Pastikan Java JDK 17 sudah terinstal.
-2. Clone repository GitHub.
-3. Buka proyek menggunakan IntelliJ IDEA.
-4. Tunggu proses sinkronisasi Maven selesai.
-5. Jalankan file `Main.java`.
-
-## Status Pengembangan
-
-Pengembangan struktur data dan pengujian awal menggunakan data dummy telah dilakukan. Pengolahan dataset putusan asli, integrasi fitur, dan pengujian akhir masih dalam proses.
+Proyek ini menerapkan berbagai konsep struktur data untuk mendukung pengelolaan dataset putusan pengadilan kasus narkotika. Melalui implementasi struktur data, pengolahan CSV, pengujian, dan dokumentasi, diharapkan aplikasi dapat menjadi contoh penerapan konsep Struktur Data dalam menyelesaikan permasalahan pengelolaan data yang terstruktur.
