@@ -1,6 +1,6 @@
 # ADR-002: Penggunaan Stack (Tumpukan)
 
-**Status:** Accepted  
+**Status:** Accepted
 **Tanggal:** 6 November 2026
 
 ## 1. Konteks

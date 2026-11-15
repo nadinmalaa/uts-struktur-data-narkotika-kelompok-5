@@ -6,18 +6,42 @@ import model.Provenance;
 import org.testng.annotations.Test;
 import service.CsvParser;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 
 import static org.testng.Assert.*;
 
 public class MainTestBima {
 
+    private static final String PUTUSAN_CSV =
+            "data/putusan-50 - Data Putusan.csv";
+
+    private static final String TERDAKWA_CSV =
+            "data/putusan-50 - Data Terdakwa.csv";
+
+    private static final String PROVENANCE_CSV =
+            "data/putusan-50 - Data Provenance.csv";
+
     @Test
     public void testHapusElemenPertamaTengahAkhir() {
         SinglyLinkedList<Putusan> list = new SinglyLinkedList<>();
-        Putusan p1 = new Putusan("P001", "01/Pid/2026/PN Dps", "PN Denpasar", LocalDate.now(), "T01", "Sabu", 10.0, "Pasal 112", "Pasal 112", 12, 12, 1000000, "Barang bukti 1", "Berat", "Ringan", "1");
-        Putusan p2 = new Putusan("P002", "02/Pid/2026/PN Dps", "PN Denpasar", LocalDate.now(), "T02", "Ganja", 20.0, "Pasal 111", "Pasal 111", 24, 24, 2000000, "Barang bukti 2", "Berat", "Ringan", "2");
-        Putusan p3 = new Putusan("P003", "03/Pid/2026/PN Dps", "PN Denpasar", LocalDate.now(), "T03", "Ekstasi", 30.0, "Pasal 114", "Pasal 114", 36, 36, 3000000, "Barang bukti 3", "Berat", "Ringan", "3");
+
+        Putusan p1 = new Putusan("P001", "01/Pid/2026/PN Dps",
+                "PN Denpasar", LocalDate.now(), "T01", "Sabu",
+                10.0, "Pasal 112", "Pasal 112", 12, 12,
+                1000000, "Barang bukti 1", "Berat", "Ringan", "1");
+
+        Putusan p2 = new Putusan("P002", "02/Pid/2026/PN Dps",
+                "PN Denpasar", LocalDate.now(), "T02", "Ganja",
+                20.0, "Pasal 111", "Pasal 111", 24, 24,
+                2000000, "Barang bukti 2", "Berat", "Ringan", "2");
+
+        Putusan p3 = new Putusan("P003", "03/Pid/2026/PN Dps",
+                "PN Denpasar", LocalDate.now(), "T03", "Ekstasi",
+                30.0, "Pasal 114", "Pasal 114", 36, 36,
+                3000000, "Barang bukti 3", "Berat", "Ringan", "3");
 
         list.add(p1);
         list.add(p2);
@@ -43,7 +67,11 @@ public class MainTestBima {
     @Test
     public void testTambahKembaliDanInvariant() {
         SinglyLinkedList<Putusan> list = new SinglyLinkedList<>();
-        Putusan p1 = new Putusan("P001", "01/Pid/2026/PN Dps", "PN Denpasar", LocalDate.now(), "T01", "Sabu", 10.0, "Pasal 112", "Pasal 112", 12, 12, 1000000, "BB", "Berat", "Ringan", "1");
+
+        Putusan p1 = new Putusan("P001", "01/Pid/2026/PN Dps",
+                "PN Denpasar", LocalDate.now(), "T01", "Sabu",
+                10.0, "Pasal 112", "Pasal 112", 12, 12,
+                1000000, "BB", "Berat", "Ringan", "1");
 
         list.add(p1);
         list.add(p1);
@@ -56,6 +84,7 @@ public class MainTestBima {
     @Test
     public void testAuditStackSekunder() {
         AuditStack<String> auditStack = new AuditStack<>();
+
         assertTrue(auditStack.isEmpty());
 
         auditStack.push("TAMBAH: P026");
@@ -76,17 +105,21 @@ public class MainTestBima {
 
     @Test
     public void testLoadCsvToSinglyLinkedList() {
-        SinglyLinkedList<Putusan> dataset = CsvParser.parseCsv("data/putusan-50 Data Putusan.csv");
+        SinglyLinkedList<Putusan> dataset =
+                CsvParser.parseCsv(PUTUSAN_CSV);
 
-        assertNotNull(dataset, "Dataset linked list tidak boleh null");
-        assertFalse(dataset.isEmpty(), "Dataset harus berhasil memuat data dari file CSV");
-        assertTrue(dataset.validateInvariant(), "Invariant struktur data harus tetap valid setelah memuat CSV");
+        assertNotNull(dataset);
+        assertFalse(dataset.isEmpty());
+        assertTrue(dataset.validateInvariant());
     }
 
     @Test
     public void testSkenario2Search() {
-        SinglyLinkedList<Putusan> dataset = CsvParser.parseCsv("data/putusan-50 Data Putusan.csv");
-        assertNotNull(dataset, "Dataset harus berhasil dimuat");
+        SinglyLinkedList<Putusan> dataset =
+                CsvParser.parseCsv(PUTUSAN_CSV);
+
+        assertNotNull(dataset);
+        assertFalse(dataset.isEmpty());
 
         SinglyLinkedList.SearchResult<Putusan> resAwal = dataset.searchByCaseId("P001");
         assertTrue(resAwal.isFound(), "Perkara P001 harus ditemukan");
@@ -105,43 +138,56 @@ public class MainTestBima {
 
     @Test
     public void testSkenario5FilterGabungan() {
-        SinglyLinkedList<Putusan> dataset = CsvParser.parseCsv("data/putusan-50 Data Putusan.csv");
-        assertNotNull(dataset, "Dataset harus berhasil dimuat");
+        SinglyLinkedList<Putusan> dataset =
+                CsvParser.parseCsv(PUTUSAN_CSV);
 
-        SinglyLinkedList<Putusan> hasilFilter = dataset.filterByKriteria("Sabu", 0);
+        assertNotNull(dataset);
 
-        assertNotNull(hasilFilter, "Hasil filter gabungan tidak boleh null");
-        assertTrue(hasilFilter.validateInvariant(), "Invariant struktur data hasil filter gabungan harus valid");
+        SinglyLinkedList<Putusan> hasilFilter =
+                dataset.filterByKriteria("Sabu", 0);
+
+        assertNotNull(hasilFilter);
+        assertTrue(hasilFilter.validateInvariant());
     }
 
     @Test
     public void testSkenario7PenangananRecordInvalid() {
-        SinglyLinkedList<Putusan> dataset = CsvParser.parseCsv("data/putusan-50 Data Putusan.csv");
-        assertNotNull(dataset, "Dataset tidak boleh null meskipun menghadapi record invalid");
+        SinglyLinkedList<Putusan> dataset =
+                CsvParser.parseCsv(PUTUSAN_CSV);
 
-        assertTrue(dataset.validateInvariant(), "Invariant harus tetap valid setelah penanganan data");
+        assertNotNull(dataset);
+        assertTrue(dataset.validateInvariant());
     }
 
     @Test
     public void testSkenarioBaruTerdakwaDanProvenance() {
-        SinglyLinkedList<Terdakwa> datasetTerdakwa = CsvParser.parseTerdakwa("data/putusan-50 Data Terdakwa.csv");
-        assertNotNull(datasetTerdakwa, "Dataset terdakwa tidak boleh null");
-        assertTrue(datasetTerdakwa.validateInvariant(), "Invariant SinglyLinkedList terdakwa harus valid");
+        SinglyLinkedList<Terdakwa> datasetTerdakwa =
+                CsvParser.parseTerdakwa(TERDAKWA_CSV);
 
-        SinglyLinkedList<Provenance> datasetProv = CsvParser.parseProvenance("data/putusan-50 Data Provenance.csv");
-        assertNotNull(datasetProv, "Dataset provenance tidak boleh null");
-        assertTrue(datasetProv.validateInvariant(), "Invariant SinglyLinkedList provenance harus valid");
+        assertNotNull(datasetTerdakwa);
+        assertTrue(datasetTerdakwa.validateInvariant());
+
+        SinglyLinkedList<Provenance> datasetProv =
+                CsvParser.parseProvenance(PROVENANCE_CSV);
+
+        assertNotNull(datasetProv);
+        assertTrue(datasetProv.validateInvariant());
     }
 
     @Test
     public void testSkenarioGabunganRelasiData() {
-        SinglyLinkedList<Putusan> datasetPutusan = CsvParser.parseCsv("data/putusan-50 Data Putusan.csv");
-        SinglyLinkedList<Terdakwa> datasetTerdakwa = CsvParser.parseTerdakwa("data/putusan-50 Data Terdakwa.csv");
-        SinglyLinkedList<Provenance> datasetProv = CsvParser.parseProvenance("data/putusan-50 Data Provenance.csv");
+        SinglyLinkedList<Putusan> datasetPutusan =
+                CsvParser.parseCsv(PUTUSAN_CSV);
 
-        assertNotNull(datasetPutusan, "Dataset Putusan tidak boleh null");
-        assertNotNull(datasetTerdakwa, "Dataset Terdakwa tidak boleh null");
-        assertNotNull(datasetProv, "Dataset Provenance tidak boleh null");
+        SinglyLinkedList<Terdakwa> datasetTerdakwa =
+                CsvParser.parseTerdakwa(TERDAKWA_CSV);
+
+        SinglyLinkedList<Provenance> datasetProv =
+                CsvParser.parseProvenance(PROVENANCE_CSV);
+
+        assertNotNull(datasetPutusan);
+        assertNotNull(datasetTerdakwa);
+        assertNotNull(datasetProv);
 
         assertTrue(datasetPutusan.validateInvariant());
         assertTrue(datasetTerdakwa.validateInvariant());
@@ -154,6 +200,6 @@ public class MainTestBima {
         var searchResult = datasetPutusan.searchByCaseId("P001");
         assertTrue(searchResult.isFound(), "Perkara P001 harus ditemukan dalam dataset utama");
 
-        System.out.println("=== PENGUJIAN RELASI ANTAR KETIGA FILE CSV BERHASIL ===");
+        assertTrue(totalTerdakwa > 0);
     }
 }

@@ -2,7 +2,7 @@ package datastructure;
 
 public class SinglyLinkedList<T> {
 
-    // Node inner class untuk menampung data dan pointer berikutnya
+    // Node untuk menyimpan data dan pointer ke node berikutnya
     public static class Node<T> {
         public T data;
         public Node<T> next;
@@ -13,32 +13,8 @@ public class SinglyLinkedList<T> {
         }
     }
 
-    /**
-     * Kelas pembantu untuk menampung hasil pencarian beserta jumlah langkah (traversal steps)
-     */
-    public static class SearchResult<T> {
-        private final T data;
-        private final int steps;
-        private final boolean found;
-
-        public SearchResult(T data, int steps, boolean found) {
-            this.data = data;
-            this.steps = steps;
-            this.found = found;
-        }
-
-        public T getData() {
-            return data;
-        }
-
-        public int getSteps() {
-            return steps;
-        }
-
-        public boolean isFound() {
-            return found;
-        }
-    }
+    private Node<T> head;
+    private int size;
 
     private Node<T> head;
     private int size;
@@ -48,62 +24,77 @@ public class SinglyLinkedList<T> {
         this.size = 0;
     }
 
-    // 1. Menambahkan elemen baru di akhir list
+    // Menambahkan elemen di akhir list
     public void add(T data) {
         Node<T> newNode = new Node<>(data);
+
         if (head == null) {
             head = newNode;
         } else {
             Node<T> current = head;
+
             while (current.next != null) {
                 current = current.next;
             }
+
             current.next = newNode;
         }
+
         size++;
     }
 
-    // 2. Mendapatkan ukuran list
+    // Mengambil jumlah elemen
     public int size() {
         return size;
     }
 
-    // 3. Mengecek apakah list kosong
+    // Memeriksa apakah list kosong
     public boolean isEmpty() {
         return size == 0;
     }
 
-    // 4. Mengambil data berdasarkan indeks
+    // Mengambil data berdasarkan indeks
     public T get(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+            throw new IndexOutOfBoundsException(
+                    "Index: " + index + ", Size: " + size
+            );
         }
+
         Node<T> current = head;
+
         for (int i = 0; i < index; i++) {
             current = current.next;
         }
+
         return current.data;
     }
 
-    // 5. Menghapus elemen berdasarkan indeks
+    // Menghapus elemen berdasarkan indeks
     public T remove(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+            throw new IndexOutOfBoundsException(
+                    "Index di luar batas: " + index
+            );
         }
-        T removedData;
+
+        Node<T> removedNode;
+
         if (index == 0) {
             removedData = head.data;
             head = head.next;
         } else {
             Node<T> prev = null;
             Node<T> current = head;
-            for (int i = 0; i < index; i++) {
-                prev = current;
+
+            for (int i = 0; i < index - 1; i++) {
                 current = current.next;
             }
-            removedData = current.data;
-            prev.next = current.next;
+
+            removedNode = current.next;
+            current.next = removedNode.next;
         }
+
         size--;
         return removedData;
     }
@@ -119,50 +110,128 @@ public class SinglyLinkedList<T> {
         return countedSize == size;
     }
 
-    /**
-     * Skenario 2: Pencarian berdasarkan caseId dengan penghitungan langkah (traversal steps)
-     */
-    public SearchResult<T> searchByCaseId(String targetCaseId) {
+    // Memeriksa kesesuaian size dengan jumlah node
+    public boolean validateInvariant() {
+        int count = 0;
         Node<T> current = head;
+
+        while (current != null) {
+            count++;
+            current = current.next;
+        }
+
+        return count == size;
+    }
+
+    // Menampung hasil pencarian dan jumlah langkah
+    public static class SearchResult<T> {
+        private final boolean found;
+        private final T data;
+        private final int steps;
+
+        public SearchResult(boolean found, T data, int steps) {
+            this.found = found;
+            this.data = data;
+            this.steps = steps;
+        }
+
+        // Constructor alternatif untuk kompatibilitas
+        public SearchResult(T data, int steps, boolean found) {
+            this(found, data, steps);
+        }
+
+        public boolean isFound() {
+            return found;
+        }
+
+        public T getData() {
+            return data;
+        }
+
+        public int steps() {
+            return steps;
+        }
+
+        public int getSteps() {
+            return steps;
+        }
+    }
+
+    // Pencarian berdasarkan caseId
+    public SearchResult<T> searchByCaseId(String targetCaseId) {
         int steps = 0;
+        Node<T> current = head;
 
         while (current != null) {
             steps++;
+
             if (current.data instanceof model.Putusan) {
-                model.Putusan p = (model.Putusan) current.data;
-                if (p.getCaseId() != null && p.getCaseId().equalsIgnoreCase(targetCaseId)) {
-                    return new SearchResult<>(current.data, steps, true);
+                model.Putusan putusan = (model.Putusan) current.data;
+                String id = putusan.getCaseId();
+
+                if (id != null &&
+                        targetCaseId != null &&
+                        id.equalsIgnoreCase(targetCaseId)) {
+                    return new SearchResult<>(true, current.data, steps);
                 }
-            } else {
-                if (current.data != null && current.data.toString().contains(targetCaseId)) {
-                    return new SearchResult<>(current.data, steps, true);
+            } else if (current.data != null) {
+                // Pencarian alternatif untuk tipe data lainnya
+                try {
+                    java.lang.reflect.Method method =
+                            current.data.getClass().getMethod("getCaseId");
+
+                    Object result = method.invoke(current.data);
+
+                    if (result != null &&
+                            targetCaseId != null &&
+                            result.toString().equalsIgnoreCase(targetCaseId)) {
+                        return new SearchResult<>(
+                                true, current.data, steps
+                        );
+                    }
+                } catch (Exception e) {
+                    // Method getCaseId tidak tersedia
                 }
             }
+
             current = current.next;
         }
-        return new SearchResult<>(null, steps, false);
+
+        return new SearchResult<>(false, null, steps);
     }
 
-    /**
-     * Skenario 5: Filter Gabungan berdasarkan jenis narkotika dan minimum vonis bulan
-     */
-    public SinglyLinkedList<T> filterByKriteria(String targetJenisNarkotika, int minVonisBulan) {
-        SinglyLinkedList<T> filteredList = new SinglyLinkedList<>();
+    // Filter berdasarkan jenis narkotika dan minimum vonis
+    public SinglyLinkedList<T> filterByKriteria(
+            String targetJenisNarkotika,
+            int minVonisBulan) {
+
+        SinglyLinkedList<T> filteredList =
+                new SinglyLinkedList<>();
+
         Node<T> current = head;
 
         while (current != null) {
             if (current.data instanceof model.Putusan) {
-                model.Putusan p = (model.Putusan) current.data;
-                boolean matchJenis = (targetJenisNarkotika == null || targetJenisNarkotika.isEmpty() ||
-                        (p.getJenisNarkotika() != null && p.getJenisNarkotika().equalsIgnoreCase(targetJenisNarkotika)));
-                boolean matchVonis = (p.getVonisBulan() >= minVonisBulan);
+                model.Putusan putusan = (model.Putusan) current.data;
+
+                boolean matchJenis =
+                        targetJenisNarkotika == null ||
+                                targetJenisNarkotika.isEmpty() ||
+                                (putusan.getJenisNarkotika() != null &&
+                                        putusan.getJenisNarkotika()
+                                                .equalsIgnoreCase(targetJenisNarkotika));
+
+                boolean matchVonis =
+                        putusan.getVonisBulan() >= minVonisBulan;
 
                 if (matchJenis && matchVonis) {
                     filteredList.add(current.data);
                 }
             }
+
             current = current.next;
         }
+
         return filteredList;
     }
 }

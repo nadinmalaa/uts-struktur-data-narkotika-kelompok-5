@@ -1,6 +1,6 @@
 # ADR-001: Penggunaan Dynamic Array (Array Dinamis)
 
-**Status:** Accepted  
+**Status:** Accepted
 **Tanggal:** 6 November 2026
 
 ## 1. Konteks

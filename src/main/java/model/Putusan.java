@@ -20,10 +20,12 @@ public class Putusan {
     private String keadaanMeringankan;
     private String sourcePages;
 
-    public Putusan(String caseId, String nomorPerkara, String pengadilan, LocalDate tanggalPutusan,
-                   String terdakwaKode, String jenisNarkotika, double beratBarangBuktiGram,
-                   String pasalDakwaan, String pasalTerbukti, int tuntutanBulan, int vonisBulan,
-                   double dendaRupiah, String barangBukti, String keadaanMemberatkan,
+    public Putusan(String caseId, String nomorPerkara, String pengadilan,
+                   LocalDate tanggalPutusan, String terdakwaKode,
+                   String jenisNarkotika, double beratBarangBuktiGram,
+                   String pasalDakwaan, String pasalTerbukti,
+                   int tuntutanBulan, int vonisBulan, double dendaRupiah,
+                   String barangBukti, String keadaanMemberatkan,
                    String keadaanMeringankan, String sourcePages) {
         this.caseId = caseId;
         this.nomorPerkara = nomorPerkara;
@@ -122,55 +124,6 @@ public class Putusan {
         return tuntutanBulan;
     }
 
-    public void setTuntutanBulan(int tuntutanBulan) {
-        this.tuntutanBulan = tuntutanBulan;
-    }
-
-    public int getVonisBulan() {
-        return vonisBulan;
-    }
-
-    public void setVonisBulan(int vonisBulan) {
-        this.vonisBulan = vonisBulan;
-    }
-
-    public double getDendaRupiah() {
-        return dendaRupiah;
-    }
-
-    public void setDendaRupiah(double dendaRupiah) {
-        this.dendaRupiah = dendaRupiah;
-    }
-
-    public String getBarangBukti() {
-        return barangBukti;
-    }
-
-    public void setBarangBukti(String barangBukti) {
-        this.barangBukti = barangBukti;
-    }
-
-    public String getKeadaanMemberatkan() {
-        return keadaanMemberatkan;
-    }
-
-    public void setKeadaanMemberatkan(String keadaanMemberatkan) {
-        this.keadaanMemberatkan = keadaanMemberatkan;
-    }
-
-    public String getKeadaanMeringankan() {
-        return keadaanMeringankan;
-    }
-
-    public void setKeadaanMeringankan(String keadaanMeringankan) {
-        this.keadaanMeringankan = keadaanMeringankan;
-    }
-
-    public String getSourcePages() {
-        return sourcePages;
-    }
-
-    public void setSourcePages(String sourcePages) {
-        this.sourcePages = sourcePages;
-    }
+    public String getSourcePages() { return sourcePages; }
+    public void setSourcePages(String sourcePages) { this.sourcePages = sourcePages; }
 }

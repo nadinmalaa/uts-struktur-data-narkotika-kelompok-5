@@ -10,74 +10,66 @@ public class Provenance {
     private String extractionMethod;
     private String verificationStatus;
 
-    public Provenance() {}
-
-    public Provenance(String caseId, String sourceFile, String sourceCourt, String sourcePages,
-                      String extractor, String reviewer, String extractionMethod, String verificationStatus) {
-        this.caseId = caseId;
-        this.sourceFile = sourceFile;
-        this.sourceCourt = sourceCourt;
-        this.sourcePages = sourcePages;
-        this.extractor = extractor;
-        this.reviewer = reviewer;
-        this.extractionMethod = extractionMethod;
-        this.verificationStatus = verificationStatus;
-    }
-
-    // --- Getter dan Setter Tunggal ---
-
     public String getCaseId() {
-        return caseId;
+        return this.caseId;
     }
+
     public void setCaseId(String caseId) {
         this.caseId = caseId;
     }
 
     public String getSourceFile() {
-        return sourceFile;
+        return this.sourceFile;
     }
+
     public void setSourceFile(String sourceFile) {
         this.sourceFile = sourceFile;
     }
 
     public String getSourceCourt() {
-        return sourceCourt;
+        return this.sourceCourt;
     }
+
     public void setSourceCourt(String sourceCourt) {
         this.sourceCourt = sourceCourt;
     }
 
     public String getSourcePages() {
-        return sourcePages;
+        return this.sourcePages;
     }
+
     public void setSourcePages(String sourcePages) {
         this.sourcePages = sourcePages;
     }
 
     public String getExtractor() {
-        return extractor;
+        return this.extractor;
     }
+
     public void setExtractor(String extractor) {
         this.extractor = extractor;
     }
 
     public String getReviewer() {
-        return reviewer;
+        return this.reviewer;
     }
+
     public void setReviewer(String reviewer) {
         this.reviewer = reviewer;
     }
 
     public String getExtractionMethod() {
-        return extractionMethod;
+        return this.extractionMethod;
     }
+
     public void setExtractionMethod(String extractionMethod) {
         this.extractionMethod = extractionMethod;
     }
 
     public String getVerificationStatus() {
-        return verificationStatus;
+        return this.verificationStatus;
     }
+
     public void setVerificationStatus(String verificationStatus) {
         this.verificationStatus = verificationStatus;
     }

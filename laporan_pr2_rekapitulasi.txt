@@ -1,4 +1,4 @@
-=== LAPORAN REKAPITULASI PUTUSAN (PR 2) ===
-Total Kasus Terdaftar : 108
-Rata-rata Lama Vonis   : 0,00 bulan
+=== LAPORAN REKAPITULASI DATA TERDAKWA (PR 2) ===
+Total Terdakwa Terdaftar: 55
+Rata-rata Lama Vonis: 63,09 bulan
 ------------------------------------------

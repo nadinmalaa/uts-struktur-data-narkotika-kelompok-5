@@ -3,15 +3,26 @@ package com.kelompok5.manager;
 import com.kelompok5.model.Putusan;
 import com.kelompok5.model.TerdakwaData;
 import com.kelompok5.structure.DynamicArray;
+import com.kelompok5.structure.HashTable;
+
+import java.util.Locale;
 
 /**
  * Mengelola kumpulan data putusan perkara narkotika.
- * Satu Putusan mewakili satu perkara dan dapat memiliki
- * lebih dari satu data terdakwa.
+ *
+ * DynamicArray digunakan sebagai penyimpanan utama.
+ * HashTable digunakan sebagai indeks pencarian berdasarkan nomor perkara.
+ *
+ * Satu nomor perkara dapat memiliki lebih dari satu Putusan.
+ * Oleh karena itu, nilai HashTable berupa DynamicArray<Putusan>.
  */
 public class PutusanManager {
 
     private final DynamicArray<Putusan> daftarPutusan;
+
+    // Indeks Hash Table berdasarkan nomor perkara.
+    private final HashTable<String, DynamicArray<Putusan>>
+            indeksNomorPerkara;
 
     private int langkahPencarianTerakhir;
     private int perbandinganPengurutanTerakhir;
@@ -19,9 +30,96 @@ public class PutusanManager {
 
     public PutusanManager() {
         daftarPutusan = new DynamicArray<>();
+        indeksNomorPerkara = new HashTable<>();
+
         langkahPencarianTerakhir = 0;
         perbandinganPengurutanTerakhir = 0;
         pergeseranPengurutanTerakhir = 0;
+    }
+
+    // =====================================================
+    // NORMALISASI DAN PENGELOLAAN INDEKS HASH TABLE
+    // =====================================================
+
+    /**
+     * Menormalisasi nomor perkara agar pencarian
+     * tidak membedakan huruf kapital dan nonkapital.
+     */
+    private String normalisasiNomorPerkara(String nomorPerkara) {
+
+        if (nomorPerkara == null || nomorPerkara.trim().isEmpty()) {
+            return null;
+        }
+
+        return nomorPerkara.trim().toLowerCase(Locale.ROOT);
+    }
+
+    /**
+     * Menambahkan putusan ke indeks Hash Table.
+     *
+     * Jika nomor perkara sudah tersedia, putusan
+     * ditambahkan ke DynamicArray yang sudah ada.
+     */
+    private void tambahKeIndeksNomorPerkara(Putusan putusan) {
+
+        String key = normalisasiNomorPerkara(
+                putusan.getNomorPerkara()
+        );
+
+        if (key == null) {
+            return;
+        }
+
+        DynamicArray<Putusan> daftarDenganNomor =
+                indeksNomorPerkara.get(key);
+
+        if (daftarDenganNomor == null) {
+
+            daftarDenganNomor = new DynamicArray<>();
+
+            indeksNomorPerkara.put(
+                    key,
+                    daftarDenganNomor
+            );
+        }
+
+        daftarDenganNomor.add(putusan);
+    }
+
+    /**
+     * Menghapus putusan dari indeks Hash Table.
+     *
+     * Jika tidak ada lagi putusan dengan nomor perkara
+     * tersebut, key dihapus dari Hash Table.
+     */
+    private void hapusDariIndeksNomorPerkara(Putusan putusan) {
+
+        String key = normalisasiNomorPerkara(
+                putusan.getNomorPerkara()
+        );
+
+        if (key == null) {
+            return;
+        }
+
+        DynamicArray<Putusan> daftarDenganNomor =
+                indeksNomorPerkara.get(key);
+
+        if (daftarDenganNomor == null) {
+            return;
+        }
+
+        for (int i = 0; i < daftarDenganNomor.size(); i++) {
+
+            if (daftarDenganNomor.get(i) == putusan) {
+                daftarDenganNomor.remove(i);
+                break;
+            }
+        }
+
+        if (daftarDenganNomor.isEmpty()) {
+            indeksNomorPerkara.remove(key);
+        }
     }
 
     // =====================================================
@@ -42,6 +140,9 @@ public class PutusanManager {
         }
 
         daftarPutusan.add(putusan);
+
+        tambahKeIndeksNomorPerkara(putusan);
+
         return true;
     }
 
@@ -63,6 +164,11 @@ public class PutusanManager {
     // HAPUS DAN AKSES DATA
     // =====================================================
 
+    /**
+     * Menghapus putusan berdasarkan caseId.
+     *
+     * Data dihapus dari penyimpanan utama dan indeks Hash Table.
+     */
     public boolean hapusPutusan(String caseId) {
 
         if (caseId == null || caseId.trim().isEmpty()) {
@@ -74,7 +180,11 @@ public class PutusanManager {
             Putusan putusan = daftarPutusan.get(i);
 
             if (putusan.getCaseId().equalsIgnoreCase(caseId.trim())) {
+
+                hapusDariIndeksNomorPerkara(putusan);
+
                 daftarPutusan.remove(i);
+
                 return true;
             }
         }
@@ -94,8 +204,15 @@ public class PutusanManager {
         return daftarPutusan.isEmpty();
     }
 
+    /**
+     * Menghapus seluruh data dari penyimpanan utama
+     * dan indeks Hash Table.
+     */
     public void clear() {
+
         daftarPutusan.clear();
+        indeksNomorPerkara.clear();
+
         langkahPencarianTerakhir = 0;
         perbandinganPengurutanTerakhir = 0;
         pergeseranPengurutanTerakhir = 0;
@@ -106,7 +223,7 @@ public class PutusanManager {
     // =====================================================
 
     /**
-     * Linear search berdasarkan caseId.
+     * Linear Search berdasarkan caseId.
      */
     public Putusan cariBerdasarkanCaseId(String caseId) {
 
@@ -131,29 +248,68 @@ public class PutusanManager {
     }
 
     /**
-     * Linear search berdasarkan nomor perkara.
+     * Pencarian berdasarkan nomor perkara menggunakan Hash Table.
+     *
+     * Mengembalikan putusan pertama jika terdapat lebih dari
+     * satu putusan dengan nomor perkara yang sama.
      */
     public Putusan cariBerdasarkanNomorPerkara(String nomorPerkara) {
 
         langkahPencarianTerakhir = 0;
 
-        if (nomorPerkara == null || nomorPerkara.trim().isEmpty()) {
+        String key = normalisasiNomorPerkara(nomorPerkara);
+
+        if (key == null) {
             return null;
         }
 
-        for (int i = 0; i < daftarPutusan.size(); i++) {
+        DynamicArray<Putusan> hasil =
+                indeksNomorPerkara.get(key);
 
-            langkahPencarianTerakhir++;
-
-            Putusan putusan = daftarPutusan.get(i);
-
-            if (putusan.getNomorPerkara()
-                    .equalsIgnoreCase(nomorPerkara.trim())) {
-                return putusan;
-            }
+        if (hasil == null || hasil.isEmpty()) {
+            return null;
         }
 
-        return null;
+        // Satu akses indeks Hash Table.
+        // Bukan jumlah seluruh perbandingan node saat collision.
+        langkahPencarianTerakhir = 1;
+
+        return hasil.get(0);
+    }
+
+    /**
+     * Mengambil seluruh putusan berdasarkan nomor perkara.
+     *
+     * Hasil dikembalikan sebagai salinan DynamicArray
+     * agar perubahan pada hasil tidak mengubah indeks internal.
+     */
+    public DynamicArray<Putusan> cariSemuaBerdasarkanNomorPerkara(
+            String nomorPerkara) {
+
+        langkahPencarianTerakhir = 0;
+
+        DynamicArray<Putusan> hasil = new DynamicArray<>();
+
+        String key = normalisasiNomorPerkara(nomorPerkara);
+
+        if (key == null) {
+            return hasil;
+        }
+
+        DynamicArray<Putusan> daftarDenganNomor =
+                indeksNomorPerkara.get(key);
+
+        if (daftarDenganNomor == null) {
+            return hasil;
+        }
+
+        langkahPencarianTerakhir = 1;
+
+        for (int i = 0; i < daftarDenganNomor.size(); i++) {
+            hasil.add(daftarDenganNomor.get(i));
+        }
+
+        return hasil;
     }
 
     public int getLangkahPencarianTerakhir() {
@@ -237,6 +393,7 @@ public class PutusanManager {
 
     /**
      * Menghitung rata-rata vonis dalam satu perkara.
+     *
      * Nilai 0 tidak dimasukkan ke perhitungan.
      * Perkara tanpa data vonis valid diberi nilai
      * positif tak hingga agar ditempatkan paling akhir
@@ -503,11 +660,22 @@ public class PutusanManager {
     // VALIDASI INVARIANT
     // =====================================================
 
+    /**
+     * Memvalidasi konsistensi penyimpanan utama,
+     * indeks Hash Table, data putusan, dan data terdakwa.
+     */
     public boolean validateInvariant() {
 
         if (!daftarPutusan.validateInvariant()) {
             return false;
         }
+
+        if (!indeksNomorPerkara.validateInvariant()) {
+            return false;
+        }
+
+        int totalDataDalamIndeks = 0;
+        int jumlahKeyUnik = 0;
 
         for (int i = 0; i < daftarPutusan.size(); i++) {
 
@@ -519,6 +687,11 @@ public class PutusanManager {
 
             if (putusan.getCaseId() == null
                     || putusan.getCaseId().trim().isEmpty()) {
+                return false;
+            }
+
+            if (putusan.getNomorPerkara() == null
+                    || putusan.getNomorPerkara().trim().isEmpty()) {
                 return false;
             }
 
@@ -534,7 +707,100 @@ public class PutusanManager {
                 return false;
             }
 
-            // Validasi caseId dan kode terdakwa.
+            // =============================================
+            // VALIDASI INDEKS HASH TABLE
+            // =============================================
+
+            String key = normalisasiNomorPerkara(
+                    putusan.getNomorPerkara()
+            );
+
+            DynamicArray<Putusan> daftarDenganNomor =
+                    indeksNomorPerkara.get(key);
+
+            if (daftarDenganNomor == null) {
+                return false;
+            }
+
+            if (!daftarDenganNomor.validateInvariant()) {
+                return false;
+            }
+
+            // Setiap putusan harus muncul tepat satu kali
+            // dalam bucket nomor perkaranya.
+            int jumlahKemunculan = 0;
+
+            for (int j = 0; j < daftarDenganNomor.size(); j++) {
+
+                if (daftarDenganNomor.get(j) == putusan) {
+                    jumlahKemunculan++;
+                }
+            }
+
+            if (jumlahKemunculan != 1) {
+                return false;
+            }
+
+            // Hitung key unik berdasarkan penyimpanan utama.
+            boolean keySudahDihitung = false;
+
+            for (int j = 0; j < i; j++) {
+
+                String keySebelumnya = normalisasiNomorPerkara(
+                        daftarPutusan.get(j).getNomorPerkara()
+                );
+
+                if (key.equals(keySebelumnya)) {
+                    keySudahDihitung = true;
+                    break;
+                }
+            }
+
+            if (!keySudahDihitung) {
+
+                jumlahKeyUnik++;
+
+                totalDataDalamIndeks += daftarDenganNomor.size();
+
+                // Pastikan seluruh data dalam bucket
+                // benar-benar berasal dari penyimpanan utama.
+                for (int j = 0; j < daftarDenganNomor.size(); j++) {
+
+                    Putusan dataIndeks = daftarDenganNomor.get(j);
+
+                    if (dataIndeks == null) {
+                        return false;
+                    }
+
+                    String keyDataIndeks =
+                            normalisasiNomorPerkara(
+                                    dataIndeks.getNomorPerkara()
+                            );
+
+                    if (!key.equals(keyDataIndeks)) {
+                        return false;
+                    }
+
+                    boolean ditemukanDalamPenyimpananUtama = false;
+
+                    for (int k = 0; k < daftarPutusan.size(); k++) {
+
+                        if (daftarPutusan.get(k) == dataIndeks) {
+                            ditemukanDalamPenyimpananUtama = true;
+                            break;
+                        }
+                    }
+
+                    if (!ditemukanDalamPenyimpananUtama) {
+                        return false;
+                    }
+                }
+            }
+
+            // =============================================
+            // VALIDASI DATA TERDAKWA
+            // =============================================
+
             for (int j = 0; j < putusan.jumlahTerdakwa(); j++) {
 
                 TerdakwaData terdakwa = putusan.getTerdakwa(j);
@@ -565,7 +831,10 @@ public class PutusanManager {
                 }
             }
 
-            // Validasi caseId putusan tidak duplikat.
+            // =============================================
+            // VALIDASI DUPLIKASI CASE ID
+            // =============================================
+
             for (int j = i + 1; j < daftarPutusan.size(); j++) {
 
                 Putusan putusanLain = daftarPutusan.get(j);
@@ -579,6 +848,18 @@ public class PutusanManager {
                     return false;
                 }
             }
+        }
+
+        // Jumlah key pada Hash Table harus sama dengan
+        // jumlah nomor perkara unik di penyimpanan utama.
+        if (indeksNomorPerkara.size() != jumlahKeyUnik) {
+            return false;
+        }
+
+        // Jumlah seluruh elemen bucket harus sama
+        // dengan jumlah putusan pada penyimpanan utama.
+        if (totalDataDalamIndeks != daftarPutusan.size()) {
+            return false;
         }
 
         return true;

@@ -7,19 +7,8 @@ public class Terdakwa {
     private int vonisBulan;
     private String catatan;
 
-    public Terdakwa() {
-    }
-
-    public Terdakwa(String caseId, String kodeTerdakwa, int tuntutanBulan, int vonisBulan, String catatan) {
-        this.caseId = caseId;
-        this.kodeTerdakwa = kodeTerdakwa;
-        this.tuntutanBulan = tuntutanBulan;
-        this.vonisBulan = vonisBulan;
-        this.catatan = catatan;
-    }
-
     public String getCaseId() {
-        return caseId;
+        return this.caseId;
     }
 
     public void setCaseId(String caseId) {
@@ -27,7 +16,7 @@ public class Terdakwa {
     }
 
     public String getKodeTerdakwa() {
-        return kodeTerdakwa;
+        return this.kodeTerdakwa;
     }
 
     public void setKodeTerdakwa(String kodeTerdakwa) {
@@ -35,7 +24,7 @@ public class Terdakwa {
     }
 
     public int getTuntutanBulan() {
-        return tuntutanBulan;
+        return this.tuntutanBulan;
     }
 
     public void setTuntutanBulan(int tuntutanBulan) {
@@ -43,7 +32,7 @@ public class Terdakwa {
     }
 
     public int getVonisBulan() {
-        return vonisBulan;
+        return this.vonisBulan;
     }
 
     public void setVonisBulan(int vonisBulan) {
@@ -51,7 +40,7 @@ public class Terdakwa {
     }
 
     public String getCatatan() {
-        return catatan;
+        return this.catatan;
     }
 
     public void setCatatan(String catatan) {
