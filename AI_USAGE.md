@@ -1,31 +1,37 @@
-# Catatan Penggunaan Kecerdasan Buatan (AI Usage Log)
+Laporan Penggunaan AI (AI_USAGE.md)
+Tanggal: 6 November 2026
 
-Dokumen ini disusun sebagai bentuk transparansi akademik terkait pemanfaatan asisten berbasis Kecerdasan Buatan (AI) selama pengerjaan **UTS Struktur Data (Kelompok 5)**.
+Anggota: Bima Nalasakti Nugraha & Nadin Mala Aprilia
 
-## Alat AI yang Digunakan
-- **Gemini (Google AI)** – Berfungsi sebagai rekan diskusi teknis (*collaborative pair programmer*), alat bantu *debugging*, dan penyusunan draf dokumentasi.
+Alat AI: Google Gemini (Personal AI Collaborator)
 
----
+Tujuan:
 
-## Ruang Lingkup Penggunaan & Kontribusi
+Mendiskusikan konsep konfigurasi pengujian multi-framework (JUnit 5 & TestNG) menggunakan Maven Surefire Plugin.
 
-Penggunaan AI pada proyek ini difokuskan pada beberapa aspek teknis dan administratif berikut:
+Meminta penjelasan dan contoh perbaikan terkait penanganan potensi null pointer atau pencarian data pada SinglyLinkedList.java.
 
-1. **Resolusi Konflik & Refaktorisasi Kode:**
-    - Membantu menganalisis dan membersihkan duplikasi kode (*duplicate methods*) serta konflik *merge* pada kelas-kelas model (`Putusan`, `Terdakwa`, `Provenance`) dan normalisasi dependensi pada `pom.xml`.
+Meninjau status review kode dan langkah-langkah sinkronisasi Git di terminal serta GitHub.
 
-2. **Konsultasi Desain & Struktur Data:**
-    - Mendiskusikan implementasi `SinglyLinkedList` sebagai struktur penyimpanan data utama serta `AuditStack` (LIFO) untuk kebutuhan riwayat audit log.
-    - Memverifikasi konsep penjagaan *invariant* struktur data, operasi penelusuran (*traversal steps*), dan pencarian non-destruktif (`searchPreserve`).
+Ringkasan Aktivitas & Keluaran
+Prompt/Permintaan Utama:
 
-3. **Debugging & Pengujian Unit (TestNG):**
-    - Membantu mendiagnosis kendala teknis dan penyesuaian kerangka pengujian unit dari JUnit ke **TestNG** pada `MainTestBima.java`.
-    - Membantu mencocokkan jumlah langkah traversal (*traversal steps*) pada dataset putusan pengadilan hingga seluruh skenario pengujian berhasil lolos 100% (*9/9 passes*).
+"Bagaimana cara melakukan git add, commit, dan push untuk file pom.xml yang sudah dicek?"
 
-4. **Penyusunan Kerangka Dokumentasi:**
-    - Membantu menyusun kerangka penulisan dokumentasi teknis seperti `README.md`, `CONTRIBUTIONS.md`, serta catatan arsitektur sistem agar terstruktur rapi sesuai standar perangkat lunak.
+Diskusi perbaikan logika pada kode SinglyLinkedList.java agar menggunakan atribut caseId secara langsung guna menghindari pencocokan teks yang kurang akurat.
 
----
+Bagian Keluaran yang Digunakan:
 
-## Verifikasi dan Integritas Akademik (Human-in-the-Loop)
-Seluruh kode, draf logika, dan hasil yang didiskusikan bersama AI **tidak diadopsi secara mentah**. Seluruhnya melalui proses *review*, pengujian manual, dan penyesuaian ulang secara langsung oleh anggota kelompok (Bima & Nadin) di lingkungan IntelliJ IDEA hingga sistem terbukti stabil, akurat, dan lolos seluruh pengujian.
+Panduan perintah Git untuk melakukan sinkronisasi branch (git pull, git add, git commit, git push).
+
+Referensi struktur perbaikan baris kode untuk mengatasi komentar review dari Nadin.
+
+Perubahan yang Dilakukan
+Melakukan penyesuaian konfigurasi pengujian dan penambahan catatan/komentar verifikasi pada pom.xml.
+
+Memperbarui logika pencarian di dalam SinglyLinkedList.java agar lebih akurat dan sesuai dengan standar struktur data kasus hukum narkotika.
+
+Cara Verifikasi
+Seluruh 60 unit test (51 JUnit 5 dan 9 TestNG) telah dijalankan secara lokal di IntelliJ IDEA dan menghasilkan status BUILD SUCCESS tanpa mengabaikan pengujian yang ada.
+
+Perubahan kode telah diverifikasi melalui riwayat diff di GitHub dan memastikan seluruh status review telah diperbarui sebelum digabungkan (merge).
