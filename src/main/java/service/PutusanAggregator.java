@@ -1,91 +1,114 @@
 package service;
 
-import datastructure.DynamicArray;
-import model.Putusan;
+import com.kelompok5.manager.PutusanManager;
+import com.kelompok5.model.Putusan;
+import com.kelompok5.model.TerdakwaData;
 
-import java.io.FileWriter;
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Locale;
 
 public class PutusanAggregator {
-    private DynamicArray<Putusan> daftarPutusan;
 
-    public PutusanAggregator(DynamicArray<Putusan> daftarPutusan) {
-        this.daftarPutusan = daftarPutusan;
+    private final PutusanManager manager;
+
+    public PutusanAggregator(PutusanManager manager) {
+        if (manager == null) {
+            throw new IllegalArgumentException(
+                    "PutusanManager tidak boleh null");
+        }
+        this.manager = manager;
     }
 
-    // 1. Menghitung total kasus
     public int hitungTotalKasus() {
-        return daftarPutusan.size();
+        return manager.jumlahPutusan();
     }
 
-    // 2. Menghitung rata-rata lama vonis (dalam bulan)
     public double hitungRataRataVonis() {
-        int totalKasus = daftarPutusan.size();
-        if (totalKasus == 0) return 0.0;
-
-        long totalBulan = 0;
-        for (int i = 0; i < totalKasus; i++) {
-            totalBulan += daftarPutusan.get(i).getVonisBulan();
-        }
-        return (double) totalBulan / totalKasus;
+        return manager.rataRataVonis();
     }
 
-    // 3. Menghitung jumlah kasus berdasarkan jenis narkotika
     public int hitungBerdasarkanJenisNarkotika(String jenisTarget) {
-        int count = 0;
-        for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
-            if (p.getJenisNarkotika() != null && p.getJenisNarkotika().equalsIgnoreCase(jenisTarget)) {
-                count++;
+        if (jenisTarget == null || jenisTarget.isBlank()) {
+            throw new IllegalArgumentException(
+                    "Jenis narkotika tidak boleh kosong");
+        }
+
+        int jumlah = 0;
+
+        for (int i = 0; i < manager.jumlahPutusan(); i++) {
+            Putusan putusan = manager.getPutusan(i);
+            String jenis = putusan.getJenisNarkotika();
+
+            if (jenis != null
+                    && jenis.equalsIgnoreCase(jenisTarget.trim())) {
+                jumlah++;
             }
         }
-        return count;
+
+        return jumlah;
     }
 
-    // 4. Fitur Pengurutan Vonis (Sorting) Menggunakan Bubble Sort (Ascending)
-    public void sortByVonisAscending() {
-        int n = daftarPutusan.size();
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                Putusan p1 = daftarPutusan.get(j);
-                Putusan p2 = daftarPutusan.get(j + 1);
-
-                if (p1.getVonisBulan() > p2.getVonisBulan()) {
-                    // Tukar posisi (Swap)
-                    daftarPutusan.set(j, p2);
-                    daftarPutusan.set(j + 1, p1);
-                }
-            }
-        }
-    }
-
-    // 5. Fitur Ekspor Data: Menghasilkan string laporan ringkasan
     public String generateLaporanRingkasan() {
         StringBuilder sb = new StringBuilder();
-        sb.append("=== LAPORAN REKAPITULASI PUTUSAN KASUS ===\n");
-        sb.append("Total Kasus Terdaftar : ").append(hitungTotalKasus()).append("\n");
-        sb.append("Rata-rata Lama Vonis   : ").append(String.format("%.2f", hitungRataRataVonis())).append(" bulan\n");
-        sb.append("------------------------------------------\n");
-        sb.append("Daftar Urutan Putusan (Berdasarkan Vonis):\n");
 
-        for (int i = 0; i < daftarPutusan.size(); i++) {
-            Putusan p = daftarPutusan.get(i);
-            sb.append(i + 1).append(". Nomor: ").append(p.getNomorPerkara())
-                    .append(" | Vonis: ").append(p.getVonisBulan()).append(" bulan")
-                    .append(" | Jenis: ").append(p.getJenisNarkotika()).append("\n");
+        sb.append("=== LAPORAN REKAPITULASI PUTUSAN KASUS ===\n");
+        sb.append("Total Kasus       : ")
+                .append(hitungTotalKasus()).append("\n");
+        sb.append("Total Terdakwa    : ")
+                .append(manager.jumlahSeluruhTerdakwa()).append("\n");
+        sb.append("Rata-rata Vonis   : ")
+                .append(String.format(
+                        Locale.US, "%.2f", hitungRataRataVonis()))
+                .append(" bulan\n");
+        sb.append("Total Denda       : Rp ")
+                .append(manager.totalDenda()).append("\n");
+        sb.append("------------------------------------------\n");
+        sb.append("DAFTAR PERKARA DAN TERDAKWA\n");
+
+        for (int i = 0; i < manager.jumlahPutusan(); i++) {
+            Putusan putusan = manager.getPutusan(i);
+
+            sb.append("\n").append(i + 1).append(". ")
+                    .append(putusan.getNomorPerkara()).append("\n");
+
+            sb.append("   Jenis Narkotika: ")
+                    .append(putusan.getJenisNarkotika()).append("\n");
+
+            for (int j = 0; j < putusan.jumlahTerdakwa(); j++) {
+                TerdakwaData terdakwa = putusan.getTerdakwa(j);
+
+                sb.append("   - ").append(terdakwa.getKode())
+                        .append(" | Tuntutan: ")
+                        .append(terdakwa.getTuntutanBulan())
+                        .append(" bulan | Vonis: ");
+
+                if (terdakwa.getVonisBulan() == 0) {
+                    sb.append("Tidak ditemukan\n");
+                } else {
+                    sb.append(terdakwa.getVonisBulan())
+                            .append(" bulan\n");
+                }
+            }
         }
 
         return sb.toString();
     }
 
-    // 6. Fitur Ekspor Data ke File Fisik (txt)
-    public void eksporLaporanKeFile(String namaFile) {
-        String isiLaporan = generateLaporanRingkasan();
-        try (FileWriter writer = new FileWriter(namaFile)) {
-            writer.write(isiLaporan);
-            System.out.println("Berhasil mengekspor laporan ke file: " + namaFile);
-        } catch (IOException e) {
-            System.err.println("Gagal menulis file ekspor: " + e.getMessage());
+    public void eksporLaporanKeFile(String namaFile) throws IOException {
+        if (namaFile == null || namaFile.isBlank()) {
+            throw new IllegalArgumentException(
+                    "Nama file tidak boleh kosong");
+        }
+
+        Path path = Path.of(namaFile);
+
+        try (BufferedWriter writer = Files.newBufferedWriter(
+                path, StandardCharsets.UTF_8)) {
+            writer.write(generateLaporanRingkasan());
         }
     }
 }

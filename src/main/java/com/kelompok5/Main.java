@@ -4,7 +4,7 @@ import com.kelompok5.manager.PutusanManager;
 import com.kelompok5.manager.AuditLog;
 import com.kelompok5.model.Putusan;
 import com.kelompok5.model.TerdakwaData;
-
+import service.PutusanAggregator;
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -12,6 +12,8 @@ public class Main {
 
     private static final Scanner input = new Scanner(System.in);
     private static final PutusanManager manager = new PutusanManager();
+    private static final PutusanAggregator aggregator =
+            new PutusanAggregator(manager);
     private static final AuditLog audit = new AuditLog();
     private static final PutusanCSVReader csvReader = new PutusanCSVReader();
 
@@ -73,6 +75,10 @@ public class Main {
                     filterData();
                     break;
 
+                case 10:
+                    eksporLaporan();
+                    break;
+
                 case 0:
                     System.out.println("Terima kasih. Program selesai.");
                     break;
@@ -104,6 +110,7 @@ public class Main {
         System.out.println("7. Tampilkan riwayat aktivitas");
         System.out.println("8. Tampilkan seluruh data terdakwa");
         System.out.println("9. Filter data putusan");
+        System.out.println("10. Ekspor laporan rekapitulasi ke TXT");
         System.out.println("0. Keluar");
         System.out.println("====================================");
     }
@@ -544,6 +551,35 @@ public class Main {
                         ? "VALID"
                         : "TIDAK VALID")
         );
+    }
+
+    // =====================================================
+    // EKSPOR LAPORAN
+    // =====================================================
+
+    private static void eksporLaporan() {
+
+        System.out.println("\n=== EKSPOR LAPORAN PUTUSAN ===");
+
+        String namaFile = "laporan-rekapitulasi-putusan.txt";
+
+        try {
+
+            aggregator.eksporLaporanKeFile(namaFile);
+
+            audit.catatAktivitas(
+                    "Mengekspor laporan rekapitulasi putusan ke " + namaFile
+            );
+
+            System.out.println("Laporan berhasil diekspor!");
+            System.out.println("Lokasi file: " + namaFile);
+
+        } catch (java.io.IOException e) {
+
+            System.out.println(
+                    "Gagal mengekspor laporan: " + e.getMessage()
+            );
+        }
     }
 
     // =====================================================
