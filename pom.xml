@@ -34,6 +34,7 @@
     </dependencies>
 
     <build>
+        <!-- Verifikasi Surefire plugin OK -->
         <plugins>
 
             <!-- Java Compiler -->
