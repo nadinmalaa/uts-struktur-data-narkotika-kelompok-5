@@ -230,7 +230,7 @@ public class MainTestBima {
         assertNotNull(dataset);
         assertFalse(dataset.isEmpty());
 
-        int totalKasus = dataset.size();
+        int totalTerdakwa = dataset.size();
         long totalVonis = 0;
 
         for (int i = 0; i < dataset.size(); i++) {
@@ -238,10 +238,10 @@ public class MainTestBima {
         }
 
         double rataRataVonis =
-                (double) totalVonis / totalKasus;
+                (double) totalVonis / totalTerdakwa;
 
         System.out.println("=== HASIL AGREGASI PR 2 ===");
-        System.out.println("Total Kasus: " + totalKasus);
+        System.out.println("Total Terdakwa: " + totalTerdakwa);
         System.out.println("Rata-rata Vonis: "
                 + String.format("%.2f", rataRataVonis)
                 + " bulan");
@@ -249,9 +249,9 @@ public class MainTestBima {
         String namaFileExport = "laporan_pr2_rekapitulasi.txt";
 
         StringBuilder sb = new StringBuilder();
-        sb.append("=== LAPORAN REKAPITULASI PUTUSAN (PR 2) ===\n");
-        sb.append("Total Kasus Terdaftar: ")
-                .append(totalKasus).append("\n");
+        sb.append("=== LAPORAN REKAPITULASI DATA TERDAKWA (PR 2) ===\n");
+        sb.append("Total Terdakwa Terdaftar: ")
+                .append(totalTerdakwa).append("\n");
         sb.append("Rata-rata Lama Vonis: ")
                 .append(String.format("%.2f", rataRataVonis))
                 .append(" bulan\n");
@@ -269,6 +269,6 @@ public class MainTestBima {
             fail("Gagal menulis file ekspor: " + e.getMessage());
         }
 
-        assertTrue(totalKasus > 0);
+        assertTrue(totalTerdakwa > 0);
     }
 }
