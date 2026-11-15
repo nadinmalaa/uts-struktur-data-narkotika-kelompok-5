@@ -47,6 +47,7 @@
                     <target>17</target>
                 </configuration>
             </plugin>
+                 <!-- Review Surefine plugin OK -->
 
             <!-- TestNG / Surefire Test Runner -->
             <plugin>
