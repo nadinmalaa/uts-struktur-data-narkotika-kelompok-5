@@ -331,9 +331,25 @@ class PutusanManagerTest {
 
         manager.clear();
 
-        assertTrue(manager.isEmpty());
-        assertEquals(0, manager.jumlahPutusan());
-        assertEquals(0, manager.totalDenda());
-        assertTrue(manager.validateInvariant());
+        manager.clear();
+
+        assertTrue(
+                manager.isEmpty(),
+                "Manager harus kosong setelah clear() dipanggil"
+        );
+        assertEquals(
+                0,
+                manager.jumlahPutusan(),
+                "Jumlah putusan harus 0 setelah clear()"
+        );
+        assertEquals(
+                0,
+                manager.totalDenda(),
+                "Total denda harus 0 setelah clear()"
+        );
+        assertTrue(
+                manager.validateInvariant(),
+                "Invariant harus tetap valid setelah clear()"
+        );
     }
 }
