@@ -20,7 +20,11 @@ public class Putusan {
     private String keadaanMeringankan;
     private String sourcePages;
 
-    public Putusan(String caseId, String nomorPerkara, String pengadilan, LocalDate tanggalPutusan, String terdakwaKode, String jenisNarkotika, double beratBarangBuktiGram, String pasalDakwaan, String pasalTerbukti, int tuntutanBulan, int vonisBulan, double dendaRupiah, String barangBukti, String keadaanMemberatkan, String keadaanMeringankan, String sourcePages) {
+    public Putusan(String caseId, String nomorPerkara, String pengadilan, LocalDate tanggalPutusan,
+                   String terdakwaKode, String jenisNarkotika, double beratBarangBuktiGram,
+                   String pasalDakwaan, String pasalTerbukti, int tuntutanBulan, int vonisBulan,
+                   double dendaRupiah, String barangBukti, String keadaanMemberatkan,
+                   String keadaanMeringankan, String sourcePages) {
         this.caseId = caseId;
         this.nomorPerkara = nomorPerkara;
         this.pengadilan = pengadilan;
@@ -43,7 +47,7 @@ public class Putusan {
     }
 
     public String getCaseId() {
-        return this.caseId;
+        return caseId;
     }
 
     public void setCaseId(String caseId) {
@@ -51,7 +55,7 @@ public class Putusan {
     }
 
     public String getNomorPerkara() {
-        return this.nomorPerkara;
+        return nomorPerkara;
     }
 
     public void setNomorPerkara(String nomorPerkara) {
@@ -59,7 +63,7 @@ public class Putusan {
     }
 
     public String getPengadilan() {
-        return this.pengadilan;
+        return pengadilan;
     }
 
     public void setPengadilan(String pengadilan) {
@@ -67,7 +71,7 @@ public class Putusan {
     }
 
     public LocalDate getTanggalPutusan() {
-        return this.tanggalPutusan;
+        return tanggalPutusan;
     }
 
     public void setTanggalPutusan(LocalDate tanggalPutusan) {
@@ -75,7 +79,7 @@ public class Putusan {
     }
 
     public String getTerdakwaKode() {
-        return this.terdakwaKode;
+        return terdakwaKode;
     }
 
     public void setTerdakwaKode(String terdakwaKode) {
@@ -83,7 +87,7 @@ public class Putusan {
     }
 
     public String getJenisNarkotika() {
-        return this.jenisNarkotika;
+        return jenisNarkotika;
     }
 
     public void setJenisNarkotika(String jenisNarkotika) {
@@ -91,7 +95,7 @@ public class Putusan {
     }
 
     public double getBeratBarangBuktiGram() {
-        return this.beratBarangBuktiGram;
+        return beratBarangBuktiGram;
     }
 
     public void setBeratBarangBuktiGram(double beratBarangBuktiGram) {
@@ -99,7 +103,7 @@ public class Putusan {
     }
 
     public String getPasalDakwaan() {
-        return this.pasalDakwaan;
+        return pasalDakwaan;
     }
 
     public void setPasalDakwaan(String pasalDakwaan) {
@@ -107,7 +111,7 @@ public class Putusan {
     }
 
     public String getPasalTerbukti() {
-        return this.pasalTerbukti;
+        return pasalTerbukti;
     }
 
     public void setPasalTerbukti(String pasalTerbukti) {
@@ -115,7 +119,7 @@ public class Putusan {
     }
 
     public int getTuntutanBulan() {
-        return this.tuntutanBulan;
+        return tuntutanBulan;
     }
 
     public void setTuntutanBulan(int tuntutanBulan) {
@@ -123,7 +127,7 @@ public class Putusan {
     }
 
     public int getVonisBulan() {
-        return this.vonisBulan;
+        return vonisBulan;
     }
 
     public void setVonisBulan(int vonisBulan) {
@@ -131,7 +135,7 @@ public class Putusan {
     }
 
     public double getDendaRupiah() {
-        return this.dendaRupiah;
+        return dendaRupiah;
     }
 
     public void setDendaRupiah(double dendaRupiah) {
@@ -139,7 +143,7 @@ public class Putusan {
     }
 
     public String getBarangBukti() {
-        return this.barangBukti;
+        return barangBukti;
     }
 
     public void setBarangBukti(String barangBukti) {
@@ -147,7 +151,7 @@ public class Putusan {
     }
 
     public String getKeadaanMemberatkan() {
-        return this.keadaanMemberatkan;
+        return keadaanMemberatkan;
     }
 
     public void setKeadaanMemberatkan(String keadaanMemberatkan) {
@@ -155,7 +159,7 @@ public class Putusan {
     }
 
     public String getKeadaanMeringankan() {
-        return this.keadaanMeringankan;
+        return keadaanMeringankan;
     }
 
     public void setKeadaanMeringankan(String keadaanMeringankan) {
@@ -163,7 +167,7 @@ public class Putusan {
     }
 
     public String getSourcePages() {
-        return this.sourcePages;
+        return sourcePages;
     }
 
     public void setSourcePages(String sourcePages) {

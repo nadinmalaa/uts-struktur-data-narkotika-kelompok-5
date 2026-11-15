@@ -1,6 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by Fernflower dec
 package model;
 
 public class Terdakwa {
@@ -10,8 +7,19 @@ public class Terdakwa {
     private int vonisBulan;
     private String catatan;
 
+    public Terdakwa() {
+    }
+
+    public Terdakwa(String caseId, String kodeTerdakwa, int tuntutanBulan, int vonisBulan, String catatan) {
+        this.caseId = caseId;
+        this.kodeTerdakwa = kodeTerdakwa;
+        this.tuntutanBulan = tuntutanBulan;
+        this.vonisBulan = vonisBulan;
+        this.catatan = catatan;
+    }
+
     public String getCaseId() {
-        return this.caseId;
+        return caseId;
     }
 
     public void setCaseId(String caseId) {
@@ -19,7 +27,7 @@ public class Terdakwa {
     }
 
     public String getKodeTerdakwa() {
-        return this.kodeTerdakwa;
+        return kodeTerdakwa;
     }
 
     public void setKodeTerdakwa(String kodeTerdakwa) {
@@ -27,7 +35,7 @@ public class Terdakwa {
     }
 
     public int getTuntutanBulan() {
-        return this.tuntutanBulan;
+        return tuntutanBulan;
     }
 
     public void setTuntutanBulan(int tuntutanBulan) {
@@ -35,7 +43,7 @@ public class Terdakwa {
     }
 
     public int getVonisBulan() {
-        return this.vonisBulan;
+        return vonisBulan;
     }
 
     public void setVonisBulan(int vonisBulan) {
@@ -43,7 +51,7 @@ public class Terdakwa {
     }
 
     public String getCatatan() {
-        return this.catatan;
+        return catatan;
     }
 
     public void setCatatan(String catatan) {

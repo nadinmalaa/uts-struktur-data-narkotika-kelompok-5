@@ -13,6 +13,33 @@ public class SinglyLinkedList<T> {
         }
     }
 
+    /**
+     * Kelas pembantu untuk menampung hasil pencarian beserta jumlah langkah (traversal steps)
+     */
+    public static class SearchResult<T> {
+        private final T data;
+        private final int steps;
+        private final boolean found;
+
+        public SearchResult(T data, int steps, boolean found) {
+            this.data = data;
+            this.steps = steps;
+            this.found = found;
+        }
+
+        public T getData() {
+            return data;
+        }
+
+        public int getSteps() {
+            return steps;
+        }
+
+        public boolean isFound() {
+            return found;
+        }
+    }
+
     private Node<T> head;
     private int size;
 
@@ -63,7 +90,6 @@ public class SinglyLinkedList<T> {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
-
         T removedData;
         if (index == 0) {
             removedData = head.data;
@@ -84,8 +110,8 @@ public class SinglyLinkedList<T> {
 
     // 6. Validasi invariant struktur data (memastikan size sesuai dengan jumlah node fisik)
     public boolean validateInvariant() {
-        int countedSize = 0;
         Node<T> current = head;
+        int countedSize = 0;
         while (current != null) {
             countedSize++;
             current = current.next;
@@ -93,53 +119,50 @@ public class SinglyLinkedList<T> {
         return countedSize == size;
     }
 
-    // Inner class untuk hasil pencarian
-    public static class SearchResult<T> {
-        private boolean found;
-        private T data;
-        private int steps;
-
-        public SearchResult(boolean found, T data, int steps) {
-            this.found = found;
-            this.data = data;
-            this.steps = steps;
-        }
-
-        public boolean isFound() { return found; }
-        public T getData() { return data; }
-        public int steps() { return steps; }
-        public int getSteps() { return steps; }
-    }
-
-    // 7. Pencarian berdasarkan Case ID (opsional penunjang test)
+    /**
+     * Skenario 2: Pencarian berdasarkan caseId dengan penghitungan langkah (traversal steps)
+     */
     public SearchResult<T> searchByCaseId(String targetCaseId) {
-        int steps = 0;
         Node<T> current = head;
+        int steps = 0;
+
         while (current != null) {
             steps++;
-            // Menggunakan toString atau refleksi sederhana jika objek memiliki getCaseId
-            try {
-                java.lang.reflect.Method method = current.data.getClass().getMethod("getCaseId");
-                String id = (String) method.invoke(current.data);
-                if (id != null && id.equals(targetCaseId)) {
-                    return new SearchResult<>(true, current.data, steps);
+            if (current.data instanceof model.Putusan) {
+                model.Putusan p = (model.Putusan) current.data;
+                if (p.getCaseId() != null && p.getCaseId().equalsIgnoreCase(targetCaseId)) {
+                    return new SearchResult<>(current.data, steps, true);
                 }
-            } catch (Exception e) {
-                // Ignore jika method tidak ditemukan
+            } else {
+                if (current.data != null && current.data.toString().contains(targetCaseId)) {
+                    return new SearchResult<>(current.data, steps, true);
+                }
             }
             current = current.next;
         }
-        return new SearchResult<>(false, null, steps);
+        return new SearchResult<>(null, steps, false);
     }
 
-    // 8. Filter dummy penunjang test
-    public SinglyLinkedList<T> filterByKriteria(String keyword, int val) {
-        SinglyLinkedList<T> filtered = new SinglyLinkedList<>();
+    /**
+     * Skenario 5: Filter Gabungan berdasarkan jenis narkotika dan minimum vonis bulan
+     */
+    public SinglyLinkedList<T> filterByKriteria(String targetJenisNarkotika, int minVonisBulan) {
+        SinglyLinkedList<T> filteredList = new SinglyLinkedList<>();
         Node<T> current = head;
+
         while (current != null) {
-            filtered.add(current.data);
+            if (current.data instanceof model.Putusan) {
+                model.Putusan p = (model.Putusan) current.data;
+                boolean matchJenis = (targetJenisNarkotika == null || targetJenisNarkotika.isEmpty() ||
+                        (p.getJenisNarkotika() != null && p.getJenisNarkotika().equalsIgnoreCase(targetJenisNarkotika)));
+                boolean matchVonis = (p.getVonisBulan() >= minVonisBulan);
+
+                if (matchJenis && matchVonis) {
+                    filteredList.add(current.data);
+                }
+            }
             current = current.next;
         }
-        return filtered;
+        return filteredList;
     }
 }
