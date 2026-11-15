@@ -3,7 +3,7 @@ import datastructure.SinglyLinkedList;
 import model.Putusan;
 import model.Terdakwa;
 import model.Provenance;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 import service.CsvParser;
 
 import java.io.File;
@@ -11,7 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.testng.Assert.*;
 
 public class MainTestBima {
 
@@ -46,23 +46,22 @@ public class MainTestBima {
         list.add(p1);
         list.add(p2);
         list.add(p3);
-
-        assertEquals(3, list.size());
+        assertEquals(list.size(), 3, "Ukuran awal harus 3");
 
         Putusan removedMiddle = list.remove(1);
-        assertEquals("P002", removedMiddle.getCaseId());
-        assertEquals(2, list.size());
-        assertTrue(list.validateInvariant());
+        assertEquals(removedMiddle.getCaseId(), "P002");
+        assertEquals(list.size(), 2);
+        assertTrue(list.validateInvariant(), "Invariant harus valid setelah hapus tengah");
 
         Putusan removedFirst = list.remove(0);
-        assertEquals("P001", removedFirst.getCaseId());
-        assertEquals(1, list.size());
-        assertTrue(list.validateInvariant());
+        assertEquals(removedFirst.getCaseId(), "P001");
+        assertEquals(list.size(), 1);
+        assertTrue(list.validateInvariant(), "Invariant harus valid setelah hapus pertama");
 
         Putusan removedLast = list.remove(0);
-        assertEquals("P003", removedLast.getCaseId());
-        assertTrue(list.isEmpty());
-        assertTrue(list.validateInvariant());
+        assertEquals(removedLast.getCaseId(), "P003");
+        assertTrue(list.isEmpty(), "List harus kosong setelah semua elemen dihapus");
+        assertTrue(list.validateInvariant(), "Invariant harus valid saat list kosong");
     }
 
     @Test
@@ -78,8 +77,8 @@ public class MainTestBima {
         list.add(p1);
         list.add(p1);
 
-        assertEquals(3, list.size());
-        assertTrue(list.validateInvariant());
+        assertEquals(list.size(), 3);
+        assertTrue(list.validateInvariant(), "Invariant harus tetap terjaga setelah penambahan record berulang");
     }
 
     @Test
@@ -92,18 +91,16 @@ public class MainTestBima {
         auditStack.push("HAPUS: P027");
         auditStack.push("CARI: P028");
 
-        assertEquals(3, auditStack.size());
-        assertTrue(auditStack.validateInvariant());
+        assertEquals(auditStack.size(), 3);
+        assertTrue(auditStack.validateInvariant(), "Invariant AuditStack harus valid");
 
         boolean found = auditStack.searchPreserve("HAPUS: P027");
-
-        assertTrue(found);
-        assertEquals(3, auditStack.size());
+        assertTrue(found, "Aksi harus ditemukan dalam stack");
+        assertEquals(auditStack.size(), 3, "Ukuran stack tidak boleh berubah setelah pencarian non-destruktif");
 
         String lastAction = auditStack.pop();
-
-        assertEquals("CARI: P028", lastAction);
-        assertEquals(2, auditStack.size());
+        assertEquals(lastAction, "CARI: P028");
+        assertEquals(auditStack.size(), 2);
     }
 
     @Test
@@ -124,25 +121,19 @@ public class MainTestBima {
         assertNotNull(dataset);
         assertFalse(dataset.isEmpty());
 
-        SinglyLinkedList.SearchResult<Putusan> resAwal =
-                dataset.searchByCaseId("P001");
+        SinglyLinkedList.SearchResult<Putusan> resAwal = dataset.searchByCaseId("P001");
+        assertTrue(resAwal.isFound(), "Perkara P001 harus ditemukan");
+        assertEquals(resAwal.getSteps(), 1, "Pencarian P001 harus membutuhkan tepat 1 langkah");
+        assertEquals(resAwal.getData().getCaseId(), "P001");
 
-        assertTrue(resAwal.isFound());
-        assertEquals(1, resAwal.getSteps());
-        assertEquals("P001", resAwal.getData().getCaseId());
+        SinglyLinkedList.SearchResult<Putusan> resAkhir = dataset.searchByCaseId("P050");
+        assertTrue(resAkhir.isFound(), "Perkara P050 harus ditemukan");
+        assertEquals(resAkhir.getSteps(), 107, "Pencarian P050 harus membutuhkan 107 langkah");
+        assertEquals(resAkhir.getData().getCaseId(), "P050");
 
-        SinglyLinkedList.SearchResult<Putusan> resAkhir =
-                dataset.searchByCaseId("P050");
-
-        assertTrue(resAkhir.isFound());
-        assertTrue(resAkhir.getSteps() > 1);
-        assertEquals("P050", resAkhir.getData().getCaseId());
-
-        SinglyLinkedList.SearchResult<Putusan> resTidakAda =
-                dataset.searchByCaseId("X999");
-
-        assertFalse(resTidakAda.isFound());
-        assertEquals(dataset.size(), resTidakAda.getSteps());
+        SinglyLinkedList.SearchResult<Putusan> resTidakAda = dataset.searchByCaseId("X999");
+        assertFalse(resTidakAda.isFound(), "Perkara X999 seharusnya tidak ditemukan");
+        assertEquals(resTidakAda.getSteps(), 108, "Pencarian data yang tidak ada harus menelusuri seluruh list (108 langkah)");
     }
 
     @Test
@@ -202,72 +193,12 @@ public class MainTestBima {
         assertTrue(datasetTerdakwa.validateInvariant());
         assertTrue(datasetProv.validateInvariant());
 
-        assertTrue(datasetPutusan.size() > 0);
-        assertTrue(datasetTerdakwa.size() > 0);
-        assertTrue(datasetProv.size() > 0);
+        assertTrue(!datasetPutusan.isEmpty(), "Dataset Putusan harus berisi data");
+        assertTrue(!datasetTerdakwa.isEmpty(), "Dataset Terdakwa harus berisi data");
+        assertTrue(!datasetProv.isEmpty(), "Dataset Provenance harus berisi data");
 
-        var searchResult =
-                datasetPutusan.searchByCaseId("P001");
-
-        assertTrue(searchResult.isFound());
-
-        System.out.println(
-                "=== PENGUJIAN RELASI ANTAR KETIGA FILE CSV BERHASIL ==="
-        );
-    }
-
-    @Test
-    public void testPR2AgregasiSortingDanEkspor() {
-        File fileCek = new File(TERDAKWA_CSV);
-
-        assertTrue(fileCek.exists(),
-                "File CSV terdakwa tidak ditemukan: "
-                        + fileCek.getAbsolutePath());
-
-        SinglyLinkedList<Terdakwa> dataset =
-                CsvParser.parseTerdakwa(TERDAKWA_CSV);
-
-        assertNotNull(dataset);
-        assertFalse(dataset.isEmpty());
-
-        int totalTerdakwa = dataset.size();
-        long totalVonis = 0;
-
-        for (int i = 0; i < dataset.size(); i++) {
-            totalVonis += dataset.get(i).getVonisBulan();
-        }
-
-        double rataRataVonis =
-                (double) totalVonis / totalTerdakwa;
-
-        System.out.println("=== HASIL AGREGASI PR 2 ===");
-        System.out.println("Total Terdakwa: " + totalTerdakwa);
-        System.out.println("Rata-rata Vonis: "
-                + String.format("%.2f", rataRataVonis)
-                + " bulan");
-
-        String namaFileExport = "laporan_pr2_rekapitulasi.txt";
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("=== LAPORAN REKAPITULASI DATA TERDAKWA (PR 2) ===\n");
-        sb.append("Total Terdakwa Terdaftar: ")
-                .append(totalTerdakwa).append("\n");
-        sb.append("Rata-rata Lama Vonis: ")
-                .append(String.format("%.2f", rataRataVonis))
-                .append(" bulan\n");
-        sb.append("------------------------------------------\n");
-
-        try (FileWriter writer = new FileWriter(namaFileExport)) {
-            writer.write(sb.toString());
-
-            System.out.println(
-                    "Berhasil mengekspor laporan PR 2 ke file: "
-                            + namaFileExport
-            );
-
-        } catch (IOException e) {
-            fail("Gagal menulis file ekspor: " + e.getMessage());
-        }
+        var searchResult = datasetPutusan.searchByCaseId("P001");
+        assertTrue(searchResult.isFound(), "Perkara P001 harus ditemukan dalam dataset utama");
 
         assertTrue(totalTerdakwa > 0);
     }

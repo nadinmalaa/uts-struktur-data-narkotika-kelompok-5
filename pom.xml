@@ -23,17 +23,18 @@
             <version>1.10.0</version>
         </dependency>
 
-        <!-- JUnit 5 -->
+        <!-- TestNG Framework -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.11.4</version>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.10.0</version>
             <scope>test</scope>
         </dependency>
 
     </dependencies>
 
     <build>
+        <!-- Verifikasi Surefire plugin OK -->
         <plugins>
 
             <!-- Java Compiler -->
@@ -46,8 +47,9 @@
                     <target>17</target>
                 </configuration>
             </plugin>
+                 <!-- Review Surefine plugin OK -->
 
-            <!-- JUnit 5 Test Runner -->
+            <!-- TestNG / Surefire Test Runner -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>

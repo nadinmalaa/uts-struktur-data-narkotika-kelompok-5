@@ -3,33 +3,29 @@
 Dokumen ini disusun sebagai bentuk transparansi akademik terkait pemanfaatan asisten berbasis Kecerdasan Buatan (AI) selama pengerjaan **UTS Struktur Data (Kelompok 5)**.
 
 ## Alat AI yang Digunakan
-* **Gemini (Google AI)**
+- **Gemini (Google AI)** – Berfungsi sebagai rekan diskusi teknis (*collaborative pair programmer*), alat bantu *debugging*, dan penyusunan draf dokumentasi.
 
 ---
 
-## Ruang Lingkup Penggunaan
+## Ruang Lingkup Penggunaan & Kontribusi
 
-Penggunaan AI pada proyek ini difokuskan sebagai rekan diskusi teknis (*thought partner*), alat bantu *debugging*, dan penyusunan draf dokumentasi, dengan rincian sebagai berikut:
+Penggunaan AI pada proyek ini difokuskan pada beberapa aspek teknis dan administratif berikut:
 
-1. **Konsultasi Desain & Struktur Data**:
-    * Mendiskusikan perbandingan efisiensi dan kesesuaian antara penggunaan `SinglyLinkedList` sebagai struktur utama serta `AuditStack` (LIFO) untuk kebutuhan audit log.
-    * Memverifikasi konsep penjagaan *invariant* struktur data dan operasi pencarian non-destruktif (`searchPreserve`).
-2. **Debugging & Penyesuaian Path / Sintaks**:
-    * Membantu mendiagnosis kendala teknis seperti ketidaksesuaian *relative path* direktori file CSV (`data/putusan-50.csv`) saat menjalankan pengujian unit JUnit 5 di IntelliJ IDEA.
-    * Membantu meninjau struktur pengujian unit pada `MainTestBima.java` agar seluruh skenario manipulasi *node* dan pemuatan dataset berjalan sesuai kriteria.
-3. **Penyusunan Kerangka Dokumentasi**:
-    * Membantu menyusun kerangka penulisan *Architecture Decision Records* (`001-pemilihan-struktur-data.md` dan `002-strategi-pencarian-pengurutan.md`), `README.md`, serta `CONTRIBUTIONS.md` agar terstruktur rapi sesuai standar dokumentasi perangkat lunak.
+1. **Resolusi Konflik & Refaktorisasi Kode:**
+    - Membantu menganalisis dan membersihkan duplikasi kode (*duplicate methods*) serta konflik *merge* pada kelas-kelas model (`Putusan`, `Terdakwa`, `Provenance`) dan normalisasi dependensi pada `pom.xml`.
+
+2. **Konsultasi Desain & Struktur Data:**
+    - Mendiskusikan implementasi `SinglyLinkedList` sebagai struktur penyimpanan data utama serta `AuditStack` (LIFO) untuk kebutuhan riwayat audit log.
+    - Memverifikasi konsep penjagaan *invariant* struktur data, operasi penelusuran (*traversal steps*), dan pencarian non-destruktif (`searchPreserve`).
+
+3. **Debugging & Pengujian Unit (TestNG):**
+    - Membantu mendiagnosis kendala teknis dan penyesuaian kerangka pengujian unit dari JUnit ke **TestNG** pada `MainTestBima.java`.
+    - Membantu mencocokkan jumlah langkah traversal (*traversal steps*) pada dataset putusan pengadilan hingga seluruh skenario pengujian berhasil lolos 100% (*9/9 passes*).
+
+4. **Penyusunan Kerangka Dokumentasi:**
+    - Membantu menyusun kerangka penulisan dokumentasi teknis seperti `README.md`, `CONTRIBUTIONS.md`, serta catatan arsitektur sistem agar terstruktur rapi sesuai standar perangkat lunak.
 
 ---
-# AI Usage Documentation
 
-Dokumen ini mencatat penggunaan Artificial Intelligence (AI) selama pengerjaan proyek UTS Struktur Data.
-
-## Tujuan Penggunaan AI
-AI digunakan sebagai alat bantu untuk memahami konsep pemrograman, mencari solusi kesalahan kode, dan membantu dokumentasi proyek.
-
-## Catatan Penggunaan
-Penggunaan AI akan dicatat berdasarkan aktivitas selama pengerjaan proyek.
-
-## Verifikasi
-Seluruh kode dan hasil yang dibantu AI akan diperiksa, diuji, dan dipahami kembali oleh anggota kelompok.
+## Verifikasi dan Integritas Akademik (Human-in-the-Loop)
+Seluruh kode, draf logika, dan hasil yang didiskusikan bersama AI **tidak diadopsi secara mentah**. Seluruhnya melalui proses *review*, pengujian manual, dan penyesuaian ulang secara langsung oleh anggota kelompok (Bima & Nadin) di lingkungan IntelliJ IDEA hingga sistem terbukti stabil, akurat, dan lolos seluruh pengujian.

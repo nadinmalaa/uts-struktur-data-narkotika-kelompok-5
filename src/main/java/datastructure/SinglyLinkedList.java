@@ -16,6 +16,9 @@ public class SinglyLinkedList<T> {
     private Node<T> head;
     private int size;
 
+    private Node<T> head;
+    private int size;
+
     public SinglyLinkedList() {
         this.head = null;
         this.size = 0;
@@ -78,9 +81,10 @@ public class SinglyLinkedList<T> {
         Node<T> removedNode;
 
         if (index == 0) {
-            removedNode = head;
+            removedData = head.data;
             head = head.next;
         } else {
+            Node<T> prev = null;
             Node<T> current = head;
 
             for (int i = 0; i < index - 1; i++) {
@@ -92,7 +96,18 @@ public class SinglyLinkedList<T> {
         }
 
         size--;
-        return removedNode.data;
+        return removedData;
+    }
+
+    // 6. Validasi invariant struktur data (memastikan size sesuai dengan jumlah node fisik)
+    public boolean validateInvariant() {
+        Node<T> current = head;
+        int countedSize = 0;
+        while (current != null) {
+            countedSize++;
+            current = current.next;
+        }
+        return countedSize == size;
     }
 
     // Memeriksa kesesuaian size dengan jumlah node
