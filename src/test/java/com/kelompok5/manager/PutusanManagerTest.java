@@ -331,8 +331,6 @@ class PutusanManagerTest {
 
         manager.clear();
 
-        manager.clear();
-
         assertTrue(
                 manager.isEmpty(),
                 "Manager harus kosong setelah clear() dipanggil"
