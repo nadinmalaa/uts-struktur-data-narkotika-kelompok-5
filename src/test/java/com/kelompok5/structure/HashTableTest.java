@@ -142,4 +142,30 @@ class HashTableTest {
 
         assertFalse(hashTable.isEmpty());
     }
+
+    @Test
+    void testRemoveNodeInCollisionChain() {
+        hashTable.put("Aa", 100);
+        hashTable.put("BB", 200);
+
+        assertEquals(200, hashTable.remove("BB"));
+        assertEquals(100, hashTable.get("Aa"));
+        assertNull(hashTable.get("BB"));
+        assertEquals(1, hashTable.size());
+
+        assertTrue(hashTable.validateInvariant());
+    }
+
+    @Test
+    void testRemoveTailNodeInCollisionChain() {
+        hashTable.put("Aa", 100);
+        hashTable.put("BB", 200);
+
+        assertEquals(100, hashTable.remove("Aa"));
+        assertEquals(200, hashTable.get("BB"));
+        assertNull(hashTable.get("Aa"));
+        assertEquals(1, hashTable.size());
+
+        assertTrue(hashTable.validateInvariant());
+    }
 }

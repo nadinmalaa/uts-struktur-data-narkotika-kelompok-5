@@ -1,8 +1,11 @@
 package com.kelompok5.structure;
 
 /**
- * Implementasi Hash Table menggunakan Separate Chaining.
- * Collision ditangani menggunakan linked list.
+ * Implementasi struktur data Hash Table menggunakan Separate Chaining.
+ * Collision ditangani menggunakan linked list pada setiap bucket.
+ *
+ * @param <K> tipe data key
+ * @param <V> tipe data value
  */
 public class HashTable<K, V> {
 
@@ -12,10 +15,19 @@ public class HashTable<K, V> {
     private HashNode<K, V>[] buckets;
     private int size;
 
+    /**
+     * Membuat Hash Table dengan kapasitas default.
+     */
     public HashTable() {
         this(DEFAULT_CAPACITY);
     }
 
+    /**
+     * Membuat Hash Table dengan kapasitas awal tertentu.
+     *
+     * @param capacity kapasitas awal Hash Table
+     * @throws IllegalArgumentException jika kapasitas kurang dari atau sama dengan 0
+     */
     @SuppressWarnings("unchecked")
     public HashTable(int capacity) {
         if (capacity <= 0) {
@@ -29,8 +41,14 @@ public class HashTable<K, V> {
     }
 
     /**
-     * Menambahkan data ke Hash Table.
-     * Jika key sudah ada, value akan diperbarui.
+     * Menambahkan pasangan key dan value ke Hash Table.
+     * Jika key sudah ada, value lama akan diperbarui.
+     * Jika key belum ada, node baru ditambahkan ke bucket.
+     *
+     * @param key key yang akan disimpan
+     * @param value value yang akan disimpan
+     * @return value lama jika key sudah ada, atau null jika key baru
+     * @throws IllegalArgumentException jika key atau value null
      */
     public V put(K key, V value) {
         validateKeyValue(key, value);
@@ -64,7 +82,10 @@ public class HashTable<K, V> {
     }
 
     /**
-     * Mengambil value berdasarkan key.
+     * Mencari value berdasarkan key.
+     *
+     * @param key key yang dicari
+     * @return value jika ditemukan, atau null jika tidak ditemukan
      */
     public V get(K key) {
         if (key == null) {
@@ -86,7 +107,10 @@ public class HashTable<K, V> {
     }
 
     /**
-     * Memeriksa keberadaan key.
+     * Memeriksa apakah suatu key terdapat dalam Hash Table.
+     *
+     * @param key key yang diperiksa
+     * @return true jika key ditemukan, false jika tidak ditemukan
      */
     public boolean containsKey(K key) {
         if (key == null) {
@@ -108,7 +132,10 @@ public class HashTable<K, V> {
     }
 
     /**
-     * Menghapus data berdasarkan key.
+     * Menghapus pasangan key dan value berdasarkan key.
+     *
+     * @param key key yang akan dihapus
+     * @return value yang dihapus, atau null jika key tidak ditemukan
      */
     public V remove(K key) {
         if (key == null) {
@@ -143,6 +170,7 @@ public class HashTable<K, V> {
 
     /**
      * Menghapus seluruh isi Hash Table.
+     * Kapasitas tabel dikembalikan ke kapasitas default.
      */
     @SuppressWarnings("unchecked")
     public void clear() {
@@ -153,24 +181,47 @@ public class HashTable<K, V> {
         size = 0;
     }
 
+    /**
+     * Mengambil jumlah pasangan key dan value yang tersimpan.
+     *
+     * @return jumlah elemen dalam Hash Table
+     */
     public int size() {
         return size;
     }
 
+    /**
+     * Mengambil kapasitas bucket Hash Table saat ini.
+     *
+     * @return jumlah bucket yang tersedia
+     */
     public int capacity() {
         return buckets.length;
     }
 
+    /**
+     * Memeriksa apakah Hash Table tidak memiliki elemen.
+     *
+     * @return true jika kosong, false jika memiliki elemen
+     */
     public boolean isEmpty() {
         return size == 0;
     }
 
+    /**
+     * Menghitung rasio jumlah elemen terhadap kapasitas bucket.
+     *
+     * @return nilai load factor Hash Table
+     */
     public double loadFactor() {
         return (double) size / buckets.length;
     }
 
     /**
-     * Menghitung indeks bucket.
+     * Menghitung indeks bucket berdasarkan hash code key.
+     *
+     * @param key key yang digunakan untuk menghitung indeks
+     * @return indeks bucket yang sesuai
      */
     private int hash(K key) {
         return Math.floorMod(
@@ -180,7 +231,9 @@ public class HashTable<K, V> {
     }
 
     /**
-     * Memperbesar kapasitas dan memindahkan node.
+     * Memperbesar kapasitas Hash Table menjadi dua kali lipat.
+     * Seluruh node dipindahkan ke bucket baru berdasarkan
+     * hasil perhitungan hash yang baru.
      */
     @SuppressWarnings("unchecked")
     private void resize() {
@@ -208,6 +261,13 @@ public class HashTable<K, V> {
         }
     }
 
+    /**
+     * Memvalidasi key dan value sebelum disimpan.
+     *
+     * @param key key yang akan divalidasi
+     * @param value value yang akan divalidasi
+     * @throws IllegalArgumentException jika key atau value null
+     */
     private void validateKeyValue(K key, V value) {
         if (key == null) {
             throw new IllegalArgumentException(
@@ -223,7 +283,12 @@ public class HashTable<K, V> {
     }
 
     /**
-     * Memeriksa konsistensi Hash Table.
+     * Memeriksa konsistensi struktur internal Hash Table.
+     * Pemeriksaan meliputi posisi bucket, keunikan key,
+     * validitas key dan value, serta kesesuaian jumlah node.
+     *
+     * @return true jika seluruh invariant terpenuhi,
+     *         false jika ditemukan ketidaksesuaian
      */
     public boolean validateInvariant() {
         if (buckets == null || buckets.length == 0) {
